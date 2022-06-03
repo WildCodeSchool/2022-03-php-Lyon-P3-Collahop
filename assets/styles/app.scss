@@ -47,11 +47,10 @@ $z-fixed: 100;
   .side_icon {
     font-size: 1.6rem;
     color: $white-color;
-  }
-  
-  .side_icon:hover {
-     color: rgb(245, 245, 245);
-     transition: all 1s ease;
-     transform: scale(1.2);
-     transition-duration: 500ms;
-  }
+        &:hover {
+        color: rgb(245, 245, 245);
+        transition: all 1s ease;
+        transform: scale(1.2);
+        transition-duration: 500ms;
+    }
+}
