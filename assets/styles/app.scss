@@ -34,23 +34,35 @@ $z-fixed: 100;
     background-color: $color-logo;
     top: 55%;
     z-index: $z-fixed;
-  }
 
-  .side_link {
-    text-decoration: none;
-    display: grid;
-    padding: 0.5rem 0 0.5rem 1rem;
-    color: $white-color;
-    transition: .3s;
-  }
+    a {
+      text-decoration: none;
+      display: grid;
+      padding: 0.5rem 0 0.5rem 1rem;
+      color: $white-color;
+      transition: .3s;
   
-  .side_icon {
-    font-size: 1.6rem;
-    color: $white-color;
-        &:hover {
-        color: rgb(245, 245, 245);
-        transition: all 1s ease;
-        transform: scale(1.2);
-        transition-duration: 500ms;
+      i {
+        font-size: 1.6rem;
+        color: $white-color;
+            &:hover {
+            color: rgb(245, 245, 245);
+            transition: all 1s ease;
+            transform: scale(1.2);
+            transition-duration: 500ms;
+            }
+          }
+        }
+      }
+
+@media screen and (max-width:768px) {
+    .sidebar_body {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sidebar_body {
+        display: none;
     }
 }
