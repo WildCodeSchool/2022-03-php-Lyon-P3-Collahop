@@ -15,6 +15,7 @@ $color-color: #50a0c8;
 $color-slogan: #141728;
 $white-color: white;
 $hover-btn-color: #f4f3f3;
+$z-fixed: 100;
 
 *, ::before, ::after {
     margin: 0;
@@ -22,4 +23,35 @@ $hover-btn-color: #f4f3f3;
     box-sizing: border-box;
 }
 
+/* ========= Sidebar for social medias through homepage ========= */
 
+.sidebar_body {
+    position: fixed;
+    height: 12.2em;
+    padding: 1rem 1rem 0rem 0rem;
+    transition: 0.5s;
+    border-radius: 0 20px 20px 0;
+    background-color: $color-logo;
+    top: 55%;
+    z-index: $z-fixed;
+  }
+
+  .side_link {
+    text-decoration: none;
+    display: grid;
+    padding: 0.5rem 0 0.5rem 1rem;
+    color: $white-color;
+    transition: .3s;
+  }
+  
+  .side_icon {
+    font-size: 1.6rem;
+    color: $white-color;
+  }
+  
+  .side_icon:hover {
+     color: rgb(245, 245, 245);
+     transition: all 1s ease;
+     transform: scale(1.2);
+     transition-duration: 500ms;
+  }
