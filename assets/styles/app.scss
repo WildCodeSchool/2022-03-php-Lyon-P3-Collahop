@@ -2,6 +2,9 @@
 @import "wcs";
 
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 $color-typography: #287878;
 $color-logo: #10dddd;
@@ -9,4 +12,10 @@ $color-image: #78a0a0;
 $color-keywords: #2878a0;
 $color-color: #50a0c8;
 $color-slogan: #141728;
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
