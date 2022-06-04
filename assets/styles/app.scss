@@ -24,3 +24,17 @@ $z-fixed: 100;
     box-sizing: border-box;
 }
 
+
+.semi_circle_left {
+    height: 11em;
+    width: 5em; 
+    background: $color-logo;
+    border-radius: 100px 0 0 100px;
+}
+
+.semi_circle_right {
+    height: 9em;
+    width: 5em; 
+    background: $white;
+    border-radius: 0px 100px 100px 0px;
+}
