@@ -27,7 +27,7 @@ $z-fixed: 100;
 
 .semi_circle_left {
     height: 11em;
-    width: 5em; 
+    width: 6em; 
     background: $color-logo;
     border-radius: 100px 0 0 100px;
 }
@@ -35,6 +35,6 @@ $z-fixed: 100;
 .semi_circle_right {
     height: 9em;
     width: 5em; 
-    background: $white;
+    background: red;
     border-radius: 0px 100px 100px 0px;
 }
