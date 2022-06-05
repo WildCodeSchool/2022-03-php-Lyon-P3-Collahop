@@ -30,6 +30,30 @@ $text-align: justify;
     color: $white;
 }
 
+/* ===== Background image section ===== */
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-image: url(background_home.jpg);*/
+    z-index: 3;
+    background-position: 50% 50%;
+    color: $white;
+}
+
+.container-fluid {
+    background-color: #141726;
+    opacity: 0.8;
+}
+
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-image: url(background_home.jpg);*/
+  }
+
 /* ===== Homepage semi-circles sesctions ===== */
 
 /* Background color = white */
@@ -37,7 +61,7 @@ $text-align: justify;
 .semi_circle_left {
     height: 9em;
     width: 5em;
-    background: rgb(168, 167, 167);
+    background: $white;
     border-radius: 0 100px 100px 0;
     border: 4px solid white;
     transition: 1000ms ease-out;
@@ -46,7 +70,7 @@ $text-align: justify;
 .semi_circle_right {
     height: 15em;
     width: 7em; 
-    background-color: #10dddd!important;
+    background-color: $color-logo;
     border-radius: 130px 0px 0px 130px;
 }
 
@@ -54,21 +78,21 @@ $text-align: justify;
 
 .body_text_container {
     .share_economy {
-        font-size: 2.2em !important;
+        font-size: 2.2em;
         letter-spacing: 0.225em;
         text-transform: uppercase;
-        font-weight: 600 !important;
+        font-weight: 600;
         color: #7b7b7b;
     }
 
     h1 {
-        font-size: 4.8em !important;
-        font-weight: 600 !important;
+        font-size: 4.8em;
+        font-weight: 600;
     }
 
     .transparent_weight {
-        color: transparent !important;
-        font-weight: 700 !important;
+        color: transparent;
+        font-weight: 700;
         /* Mettre en blanc après avoir placé l'image de fond */
         -webkit-text-stroke: 2px rgb(195, 195, 195);
     }
@@ -79,9 +103,8 @@ $text-align: justify;
     }
 
     p {
-        font-size: 1.4em !important;
+        font-size: 1.4em;
         text-align: $text-align;
-        color: grey;
     }
 }
 
@@ -115,11 +138,11 @@ $text-align: justify;
     padding: 0;
 
     h4 {
-        font-weight: 600!important;
+        font-weight: 600;
     }
 
     .rectangle_text {
-        font-size: 0.8em!important;
+        font-size: 0.9em;
         padding-right: 30px;
         padding-top: 20px;
         padding-bottom: 30px;
@@ -135,5 +158,9 @@ $text-align: justify;
     
     .rectangle_3 {
         background-color:#313843;
+    }
+
+    .rectangle_img {
+        max-width: 150px;
     }
 }
