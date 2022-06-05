@@ -17,6 +17,7 @@ $color-color: #50a0c8;
 $color-slogan: #141728;
 $white-color: white;
 $hover-btn-color: #f4f3f3;
+$secondary-homepage-color: #7b7b7b;
 $z-fixed: 100;
 
 *, ::before, ::after {
@@ -40,3 +41,14 @@ $z-fixed: 100;
 }
 
 /* ===== Text container for the homepage ***** */
+
+.body_text_container {
+
+    .share_economy {
+        font-size: 2.2em!important;
+        letter-spacing: 0.225em;
+        text-transform: uppercase;
+        font-weight: 600!important;
+        color: #7b7b7b;
+    }
+}
