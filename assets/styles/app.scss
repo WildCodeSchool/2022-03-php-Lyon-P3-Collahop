@@ -4,10 +4,10 @@
 @import "sidebar";
 
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 $color-typography: #287878;
 $color-logo: #10dddd;
@@ -21,14 +21,14 @@ $secondary-homepage-color: #7b7b7b;
 $z-fixed: 100;
 $text-align: justify;
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: grey;
     color: $white;
 }
-
 
 /* ===== Homepage semi-circles sesctions ===== */
 
@@ -43,61 +43,97 @@ $text-align: justify;
     transition: 1000ms ease-out;
 }
 
+.semi_circle_right {
+    height: 15em;
+    width: 7em; 
+    background-color: #10dddd!important;
+    border-radius: 130px 0px 0px 130px;
+}
+
 /* ===== Text container for the homepage ***** */
 
 .body_text_container {
-
     .share_economy {
-        font-size: 2.2em!important;
+        font-size: 2.2em !important;
         letter-spacing: 0.225em;
         text-transform: uppercase;
-        font-weight: 600!important;
+        font-weight: 600 !important;
         color: #7b7b7b;
     }
 
-
-        h1 {
-            font-size: 4.8em !important;
-            font-weight: 600 !important;
-        }
-
-        .transparent_weight {
-            color: transparent !important;
-            font-weight: 700 !important;
-            /* Mettre en blanc après avoir placé l'image de fond */
-            -webkit-text-stroke: 2px rgb(195, 195, 195);
-          }
-
-          .growth_word{
-            color: $color-logo;
-            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-        }
-
-        p {
-            font-size: 1.4em!important;
-            text-align: $text-align;
-        }
+    h1 {
+        font-size: 4.8em !important;
+        font-weight: 600 !important;
     }
 
-           /* ===== Hompage buttons ===== */
+    .transparent_weight {
+        color: transparent !important;
+        font-weight: 700 !important;
+        /* Mettre en blanc après avoir placé l'image de fond */
+        -webkit-text-stroke: 2px rgb(195, 195, 195);
+    }
 
-        @mixin homepage-buttons {
-            padding: 10px;
-            border-radius: 25px;
-            width: 190px;
-            font-weight: 600;
-            font-size: larger;
-        }
+    .growth_word {
+        color: $color-logo;
+        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    }
 
-        .contact_btn {
-            @include homepage-buttons;
-            border: 2px solid white;
-            background-color: transparent
-        }
+    p {
+        font-size: 1.4em !important;
+        text-align: $text-align;
+        color: grey;
+    }
+}
 
-        .services_btn {
-            @include homepage-buttons;
-            margin-left: 20px;
-            background-color: #10dddd;
-            border: 2px solid #10dddd;
-        }
+/* ===== Hompage buttons ===== */
+
+@mixin homepage-buttons {
+    padding: 10px;
+    border-radius: 25px;
+    width: 190px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.contact_btn {
+    @include homepage-buttons;
+    border: 2px solid grey;
+    background-color: transparent;
+}
+
+.services_btn {
+    @include homepage-buttons;
+    margin-left: 20px;
+    background-color: #10dddd;
+    border: 2px solid #10dddd;
+}
+
+/* ===== Rectangle group homepage section ===== */
+
+.rectangle_group {
+
+    padding: 0;
+
+    h4 {
+        font-weight: 600!important;
+    }
+
+    .rectangle_text {
+        font-size: 0.8em!important;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .rectangle_1 {
+        background-color: $color-logo;
+    }
+    
+    .rectangle_2 {
+        background-color: #A19696
+    }
+    
+    .rectangle_3 {
+        background-color:#313843;
+    }
+}
