@@ -6,7 +6,6 @@ $secondary-homepage-color: #7b7b7b;
 $white-color: white;
 $color-logo: #10dddd;
 
-
 *,
 ::before,
 ::after {
@@ -14,7 +13,7 @@ $color-logo: #10dddd;
     padding: 0;
     box-sizing: border-box;
     color: $white;
-    font-family: ('League Spartan');
+    font-family: ("League Spartan");
 }
 
 /* ===== Background image section ===== */
@@ -34,12 +33,12 @@ body {
     opacity: 0.8;
 }
 
-.bg-image{
+.bg-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     /* background-image: url(background_home.jpg);*/
-  }
+}
 
 /* ===== Homepage semi-circles sesctions ===== */
 
@@ -56,7 +55,7 @@ body {
 
 .semi_circle_right {
     height: 15em;
-    width: 7em; 
+    width: 7em;
     background-color: $color-logo;
     border-radius: 130px 0px 0px 130px;
 }
@@ -64,7 +63,6 @@ body {
 /* ===== Text container for the homepage ***** */
 
 .body_text_container {
-
     .share_economy {
         font-size: 2.2em;
         letter-spacing: 0.225em;
@@ -76,7 +74,7 @@ body {
     h1 {
         font-size: 5.8em;
         font-weight: 600;
-       line-height: 0.8em;
+        line-height: 0.8em;
     }
 
     .transparent_weight {
@@ -115,7 +113,6 @@ body {
 /* ===== Rectangle group homepage section ===== */
 
 .rectangle_group {
-
     padding: 0;
 
     h4 {
@@ -123,25 +120,25 @@ body {
     }
 
     .rectangle_text {
-        font-size: 0.9em;
-        padding-right: 30px;
-        padding-top: 20px;
-        padding-bottom: 30px;
+        @include rectangle-text;
     }
-    
+
     .rectangle_1 {
         background-color: $color-logo;
+        padding-bottom: 20px;
     }
-    
+
     .rectangle_2 {
-        background-color: #A19696
+        background-color: #a19696;
+        padding-bottom: 20px;
     }
-    
+
     .rectangle_3 {
-        background-color:#313843;
+        background-color: #313843;
+        padding-bottom: 20px;
     }
 
     .rectangle_img {
-        max-width: 150px;
+        max-width: 130px;
     }
 }
