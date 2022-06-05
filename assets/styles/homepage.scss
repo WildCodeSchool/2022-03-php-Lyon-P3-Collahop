@@ -33,15 +33,14 @@ section :is(p) {
 
 /* ===== Background image section ===== */
 
-body {
+/* body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-image: url(background_home.jpg);*/
+    background-image: url(background_home.jpg);
     z-index: 3;
     background-position: 50% 50%;
-    color: $white;
-}
+} */
 
 .container-fluid {
     background-color: #141726;
