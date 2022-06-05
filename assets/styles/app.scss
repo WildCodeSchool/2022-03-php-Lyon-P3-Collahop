@@ -51,4 +51,17 @@ $z-fixed: 100;
         font-weight: 600!important;
         color: #7b7b7b;
     }
-}
+
+
+        h1 {
+            font-size: 4.8em !important;
+            font-weight: 600 !important;
+        }
+
+        .transparent_weight {
+            color: transparent !important;
+            font-weight: 700 !important;
+            /* Mettre en blanc après avoir placé l'image de fond */
+            -webkit-text-stroke: 2px rgb(195, 195, 195);
+          }
+    }
