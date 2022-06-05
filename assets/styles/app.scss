@@ -78,3 +78,26 @@ $text-align: justify;
             text-align: $text-align;
         }
     }
+
+           /* ===== Hompage buttons ===== */
+
+        @mixin homepage-buttons {
+            padding: 10px;
+            border-radius: 25px;
+            width: 190px;
+            font-weight: 600;
+            font-size: larger;
+        }
+
+        .contact_btn {
+            @include homepage-buttons;
+            border: 2px solid white;
+            background-color: transparent
+        }
+
+        .services_btn {
+            @include homepage-buttons;
+            margin-left: 20px;
+            background-color: #10dddd;
+            border: 2px solid #10dddd;
+        }
