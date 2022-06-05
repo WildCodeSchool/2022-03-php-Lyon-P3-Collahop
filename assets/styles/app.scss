@@ -78,6 +78,7 @@ body {
 /* ===== Text container for the homepage ***** */
 
 .body_text_container {
+
     .share_economy {
         font-size: 2.2em;
         letter-spacing: 0.225em;
@@ -87,8 +88,9 @@ body {
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 5.8em;
         font-weight: 600;
+       line-height: 0.8em;
     }
 
     .transparent_weight {
@@ -104,7 +106,7 @@ body {
     }
 
     p {
-        font-size: 1.4em;
+        font-size: 1.5em;
         text-align: $text-align;
     }
 }
@@ -112,7 +114,7 @@ body {
 /* ===== Hompage buttons ===== */
 
 @mixin homepage-buttons {
-    padding: 10px;
+    padding: 5px;
     border-radius: 25px;
     width: 190px;
     font-weight: 600;
