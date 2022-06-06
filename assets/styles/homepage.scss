@@ -5,6 +5,7 @@ $text-align: justify;
 $secondary-homepage-color: #7b7b7b;
 $white-color: white;
 $color-logo: #10dddd;
+$font-size : 5.8em;
 
 
 /* ===== general settings ===== */
@@ -92,7 +93,6 @@ section :is(p) {
     .transparent_weight {
         color: transparent;
         font-weight: 700;
-        /* Mettre en blanc après avoir placé l'image de fond */
         -webkit-text-stroke: 2px rgb(195, 195, 195);
     }
 
@@ -144,5 +144,12 @@ section :is(p) {
 
     .rectangle_img {
         max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    h1 {
+        font-size: calc($font-size - 3.3vw);
     }
 }
