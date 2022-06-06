@@ -22,5 +22,7 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@popperjs/core": "^2.11.5"
+    }
 }
