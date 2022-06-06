@@ -11,7 +11,7 @@ class ContactList
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private int $id;
+    private $id;
 
     #[ORM\Column(type: 'string', length: 255)]
     private string $firstname;
@@ -23,10 +23,10 @@ class ContactList
     private string $company;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private string $email;
+    private $email;
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private string $message;
+    private $message;
 
     public function getId(): ?int
     {
