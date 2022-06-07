@@ -2,11 +2,14 @@
 @import "~bootstrap/scss/bootstrap";
 @import "wcs";
 @import "sidebar";
+@import "homepage";
+@import "mixins";
 
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 $color-typography: #287878;
 $color-logo: #10dddd;
@@ -16,11 +19,6 @@ $color-color: #50a0c8;
 $color-slogan: #141728;
 $white-color: white;
 $hover-btn-color: #f4f3f3;
+$secondary-homepage-color: #7b7b7b;
 $z-fixed: 100;
-
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+$text-align: justify;
