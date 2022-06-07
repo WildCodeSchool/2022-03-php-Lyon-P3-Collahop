@@ -39,22 +39,27 @@ section :is(p) {
     background-position: center;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    background-image: url(background_home.jpg);
     z-index: 3;
     background-position: 50% 50%;
+    background-color: #141726;
 } */
 
 .container-fluid {
     background-color: #141726;
-    opacity: 0.8;
-}
+    opacity: 1;
+} 
 
-.bg-image {
-    background-size: cover;
+.bg_image {
+    background-image: url(../images/homepage_img/homepage_background.jpg);
+    background-size: cover!important ;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-image: url(background_home.jpg);*/
+    background-position: 60% 60%;
+    z-index: 2; 
+    opacity:0.5;
 }
+
+
 
 /* ===== Homepage semi-circles sesctions ===== */
 
@@ -99,7 +104,7 @@ section :is(p) {
 
     .growth_word {
         color: $color-logo;
-        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        @include text-shadow;
     }
 
     p {
@@ -113,6 +118,7 @@ section :is(p) {
     @include homepage-buttons;
     border: 2px solid grey;
     background-color: transparent;
+    border: 1px solid white;
 }
 
 .services_btn {
