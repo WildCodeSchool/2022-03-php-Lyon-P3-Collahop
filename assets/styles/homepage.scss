@@ -34,31 +34,13 @@ section :is(p) {
 
 /* ===== Background image section ===== */
 
-/* body {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    z-index: 3;
-    background-position: 50% 50%;
-    background-color: #141726;
-} */
-
 .container-fluid {
     background-color: #141726;
-    opacity: 1;
-} 
-
-.bg_image {
-    background-image: url(../images/homepage_img/homepage_background.jpg);
-    background-size: cover!important ;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/homepage_img/homepage_background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 60%;
-    z-index: 2; 
-    opacity:0.5;
-}
-
+} 
 
 
 /* ===== Homepage semi-circles sesctions ===== */
