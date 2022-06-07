@@ -137,9 +137,9 @@ section :is(p) {
     }
 }
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 720px)
 {
     h1 {
-        font-size: calc($font-size - 3.3vw);
+        font-size: 14em;
     }
 }
