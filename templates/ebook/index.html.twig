@@ -14,8 +14,11 @@
         <div class="d-flex justify-content-center">
         {{ form_start(form) }}
             <p class="mb-3">{{ form_widget(form.lastname) }}</p>
+            <p class="mb-3">{{ form_errors(form.lastname) }}</p>
             <p class="mb-3">{{ form_widget(form.firstname) }}</p>
+            <p class="mb-3">{{ form_errors(form.firstname) }}</p>
             <p class="mb-3">{{ form_widget(form.company) }}</p>
+            <p class="mb-3">{{ form_errors(form.company) }}</p>
             <p class="mb-3">{{ form_widget(form.email) }}</p>
             <p class="mb-3">{{ form_errors(form.email) }}</p>
         </div>

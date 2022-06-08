@@ -17,26 +17,31 @@ class Contact
     private int $id;
 
     #[ORM\Column(type: 'string', length: 255)]
-    #[Assert\NotBlank]
-    #[Assert\Length(max: 255)]
+    #[Assert\NotBlank(message: 'Veuillez compléter ce champ')]
+    #[Assert\Length(max: 255, maxMessage: 'Le prénom saisi est trop long, il ne devrait pas dépasser
+     {{ limit }} caractères')]
     #[Assert\Type('string')]
     private string $firstname;
 
     #[ORM\Column(type: 'string', length: 255)]
-    #[Assert\NotBlank]
-    #[Assert\Length(max: 255)]
+    #[Assert\NotBlank(message: 'Veuillez compléter ce champ')]
+    #[Assert\Length(max: 255, maxMessage: 'Le nom saisi est trop long, il ne devrait pas dépasser
+     {{ limit }} caractères')]
     #[Assert\Type('string')]
     private string $lastname;
 
     #[ORM\Column(type: 'string', length: 255)]
-    #[Assert\NotBlank]
-    #[Assert\Length(max: 255)]
+    #[Assert\NotBlank(message: 'Veuillez compléter ce champ')]
+    #[Assert\Length(max: 255, maxMessage: 'Le nom de société saisi est trop long, il ne devrait pas dépasser
+     {{ limit }} caractères')]
     #[Assert\Type('string')]
     private string $company;
 
     #[ORM\Column(type: 'string', length: 255)]
-    #[Assert\Email]
-
+    #[Assert\NotBlank(message: 'Veuillez compléter ce champ')]
+    #[Assert\Length(max: 255, maxMessage: 'L\'adresse email saisie est trop longue, elle ne devrait pas dépasser
+     {{ limit }} caractères')]
+    #[Assert\Email(message: 'L\'adresse email saisie n\'est pas valide')]
     private string $email;
 
     #[ORM\Column(type: 'text', nullable: true)]
