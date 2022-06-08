@@ -137,10 +137,121 @@ section :is(p) {
     }
 }
 
-@media screen and (max-width: 720px)
+/* ===== Medias  ===== */
+@media screen and (max-width: 1700px)
 {
+.body_text_container {
+
+    .share_economy {
+        font-size: 2em!important;
+        letter-spacing: 0.2em!important;
+    }
+
     h1 {
-        font-size: 14em;
+        font-size: 75px!important; 
+        line-height: 1em!important;
+    }
+
+    p {
+        font-size: 1.4em!important;
+    }
+  }
+
+    .semi_circle_right {
+        height: 14em;
+        width: 7em;
     }
 }
 
+@media screen and (max-width: 1400px)
+{
+    .body_text_container 
+    {
+        padding-left: 1em!important; 
+    }
+
+    .main_home_title {
+        font-size: 70px!important; 
+        
+    }
+    .semi_circle_right {
+        height: 14em;
+        width: 7em;
+    }
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    
+}
+
+@media screen and (max-width: 992px)
+{
+   
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+    .homepage_first_section {
+        padding: 1.4em!important; 
+    }
+    .share_economy {
+        font-size: 1.8em!important; 
+        display: flex; 
+        justify-content: center; 
+    }
+
+    .main_home_title {
+        font-size: 2.4em!important; 
+        line-height: 1.9em!important; 
+    }
+
+    .semi_circle_left {
+        display: none; 
+    }
+
+    .semi_circle_right {
+        display: none!important;
+    }
+
+    .buttons-group {
+        display: flex; 
+        border: 1px white solid !important;
+        justify-content: center; 
+    }
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .homepage_first_section {
+        padding: 1.4em!important; 
+    }
+    .share_economy {
+        font-size: 1.8em!important; 
+        display: flex; 
+        justify-content: center; 
+    }
+
+    .main_home_title {
+        font-size: 2.4em!important; 
+        line-height: 1.9em!important; 
+    }
+
+    .semi_circle_left {
+        display: none; 
+    }
+
+    .semi_circle_right {
+        display: none!important;
+    }
+
+    .buttons-group {
+        display: flex; 
+        border: 1px white solid !important;
+        justify-content: center; 
+    }
+}
