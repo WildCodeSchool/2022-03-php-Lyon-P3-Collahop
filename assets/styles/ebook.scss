@@ -1,0 +1,51 @@
+@import "app";
+@import "mixins";
+
+.ebook {
+  font-family: 'League Spartan';
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/teamwork.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.ebook-title {
+  @include text-shadow;
+  font-size: 35px;
+}
+
+.title-fill-form {
+  color: #A2A2D4;
+  font-weight: 300;
+  font-size: 35px;
+}
+
+.ebook-input {
+  background-color: #E6E6F9;
+  color: #C6C6E9;
+  padding-left: 50px;
+  border-radius: 25px;
+  width: 350px;
+}
+
+.ebook-btn {
+  background-color: #7F7EC2;
+  width: max-content;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  box-shadow: 3px 3px gray; 
+}
+
+.ebook-text {
+  width: 65%;
+  text-align: justify !important;
+  line-height: 1rem;
+  font-weight: 200;
+  font-size: 14.5px;
+}
+
+.ebook-form-frame {
+  width: 40%;
+}
