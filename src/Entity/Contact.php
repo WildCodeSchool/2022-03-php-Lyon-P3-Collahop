@@ -36,7 +36,7 @@ class Contact
 
     #[ORM\Column(type: 'string', length: 255)]
     #[Assert\Email]
-    
+
     private string $email;
 
     #[ORM\Column(type: 'text', nullable: true)]
