@@ -3,30 +3,45 @@
 namespace App\Entity;
 
 use App\Repository\ContactRepository;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 #[ORM\Entity(repositoryClass: ContactRepository::class)]
+#[UniqueEntity('email', message: 'Cette adresse email existe déjà')]
 class Contact
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private $id;
+    private int $id;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $firstname;
+    #[Assert\NotBlank]
+    #[Assert\Length(max: 255)]
+    #[Assert\Type('string')]
+    private string $firstname;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $lastname;
+    #[Assert\NotBlank]
+    #[Assert\Length(max: 255)]
+    #[Assert\Type('string')]
+    private string $lastname;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $company;
+    #[Assert\NotBlank]
+    #[Assert\Length(max: 255)]
+    #[Assert\Type('string')]
+    private string $company;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $email;
+    #[Assert\Email]
+    
+    private string $email;
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private $message;
+    #[Assert\Type('string')]
+    private string $message;
 
     public function getId(): ?int
     {
@@ -86,7 +101,7 @@ class Contact
         return $this->message;
     }
 
-    public function setMessage(?string $message): self
+    public function setMessage(string $message = ''): self
     {
         $this->message = $message;
 

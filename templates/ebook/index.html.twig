@@ -17,6 +17,7 @@
             <p class="mb-3">{{ form_widget(form.firstname) }}</p>
             <p class="mb-3">{{ form_widget(form.company) }}</p>
             <p class="mb-3">{{ form_widget(form.email) }}</p>
+            <p class="mb-3">{{ form_errors(form.email) }}</p>
         </div>
         <button class="ebook-btn align-self-center mb-3 px-3 pt-1">{{ button_label|default('RECEVOIR') }}</button>
         {{ form_end(form) }}
