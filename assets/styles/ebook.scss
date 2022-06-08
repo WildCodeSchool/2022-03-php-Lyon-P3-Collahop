@@ -17,7 +17,7 @@
 
 .title-fill-form {
   color: #A2A2D4;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-size: 35px;
 }
 
@@ -45,6 +45,7 @@
   line-height: 1rem;
   font-weight: 200;
   font-size: 14.5px;
+  color: $color-slogan;
 }
 
 .ebook-form-frame {

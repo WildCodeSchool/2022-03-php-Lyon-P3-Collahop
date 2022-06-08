@@ -29,16 +29,13 @@ $z-fixed: 100;
             transition: all 1s ease;
             transform: scale(1.2);
             transition-duration: 500ms;
+            &:visited {
+              color: rgb(129, 129, 129);
+              }
             }
           }
         }
       }
-
-@media screen and (max-width:768px) {
-    .sidebar_body {
-        display: none;
-    }
-}
 
 @media screen and (max-width:768px) {
     .sidebar_body {
