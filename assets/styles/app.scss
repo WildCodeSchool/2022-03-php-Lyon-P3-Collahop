@@ -3,6 +3,7 @@
 @import "wcs";
 @import "sidebar";
 @import "homepage";
+@import "homepage_part2";
 @import "mixins";
 
 @import "~bootstrap/scss/bootstrap";
@@ -17,7 +18,7 @@ $color-image: #78a0a0;
 $color-keywords: #2878a0;
 $color-color: #50a0c8;
 $color-slogan: #141728;
-$white-color: white;
+$white: white;
 $hover-btn-color: #f4f3f3;
 $secondary-homepage-color: #7b7b7b;
 $z-fixed: 100;
