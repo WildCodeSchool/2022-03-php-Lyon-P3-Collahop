@@ -3,11 +3,8 @@
 {% block title %}Accueil
 {% endblock %}
 
-
 {% block body %}
-
 	{% include "home/partials/_sidebar_user.html.twig" %}
-
 	<div class="container-fluid bg_image_home">
 		<section class="row homepage_first_section">
 
@@ -77,54 +74,41 @@
 			</div>
 		</section>
 	</div>
-
-	<div class="container-fluid-part2 col-xl-12 col-lg-12">
-		<section class="row homepage_second_section col-xl-12 col-lg-12 d-flex justify-content-center p-5">
-
+	<div class="container-fluid-part2 col-xl-12 col-lg-12 d-flex justify-content-center">
+		<section class="row homepage_second_section col-xl-11 col-lg-11 p-5">
 			<div class="col-xl-3 col-lg-11">
-
 				<div class="body_part2 p-4">
 					<h1 class="homepage_part2_title">Connaissez-vous <span class="transparent_weight_part2">vos leviers </span></br><span class="growth_word_part2">de développement ? </span></h1>
                 </div>
     			<div class="summary_section p-4">
-				    <h5>Pour un dirigeant, croître est un enjeu majeur et évoluer est une nécessité. Beaucoup d'entreprises souhaitent développer leur CA mais ne savent pas comment faire.Par manque de temps, d'investissement ou de ressources, vous vous retrouvez à stagner. Il s'agit de penser différemment et d'identifier les axes de développement de votre entreprise avec un diagnostic précis.</h5>
+				    <p>Pour un dirigeant, croître est un enjeu majeur et évoluer est une nécessité. Beaucoup d'entreprises souhaitent développer leur CA mais ne savent pas comment faire.Par manque de temps, d'investissement ou de ressources, vous vous retrouvez à stagner. Il s'agit de penser différemment et d'identifier les axes de développement de votre entreprise avec un diagnostic précis.</p>
 			    </div>
-
             </div>
-
 	        <div class="row col-xl-9 col-lg-12 d-flex justify-content-around py-5">
-
 		        <div class="punchline1 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
 			        <img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline1.png') }}" alt="...">
                     <p class="punchline_text text-center px-2">Trouvez de nouvelles voies et solutions</p>
 	            </div>
-
                 <div class="punchline2 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
 			        <img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline2.png') }}" alt="...">
                     <p class="punchline_text text-center px-2">Enrichissez vos axes de réflexion et d'innovation</p>
 	            </div>
-
                 <div class="punchline3 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
 			        <img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline3.png') }}" alt="...">
                     <p class="punchline_text text-center px-2">Descontruisez votre façon de penser</p>
 	            </div>
-
                 <div class="punchline4 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
 			        <img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline4.png') }}" alt="...">
                     <p class="punchline_text text-center px-2">Intégrez l'économie du partage dans votre stratégie</p>
 	            </div>
-
                 <div class="d-flex flex-column align-items-center">
                     <img class="timer" src="{{ asset('build/images/homepage_img/horloge.png') }}" alt="...">
                     <p class="get_one_hour d-flex text-center">Vous avez une heure devant vous ?</p>
                 </div>
-
                 <div class="d-flex justify-content-center">
-                    <h2 class="diagnostic d-flex align-items-center px-2">Diagnostic offert</h2>
+                    <p class="diagnostic d-flex align-items-center px-2">Diagnostic offert</p>
                 </div>
-
             </div>
-
         </section>
     </div>
 {% endblock %}
