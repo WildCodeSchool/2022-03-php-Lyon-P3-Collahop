@@ -23,3 +23,12 @@ $hover-btn-color: #f4f3f3;
 $secondary-homepage-color: #7b7b7b;
 $z-fixed: 100;
 $text-align: justify;
+
+$primary: $color-logo;
+$z-fixed: 100;
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

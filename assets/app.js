@@ -9,7 +9,7 @@
 import './styles/app.scss';
 import './styles/homepage.scss';
 import './styles/mixins.scss';
-
+import './styles/ebook.scss';
 require('bootstrap');
 
 // start the Stimulus application
