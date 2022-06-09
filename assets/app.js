@@ -13,9 +13,6 @@ import './styles/ebook.scss';
 import "./styles/navbar.scss";
 require("bootstrap");
 
-// start the Stimulus application
-import "./bootstrap";
-
 var burgerMenu = document.getElementById("burger-menu");
 
 var overlay = document.getElementById("mobile_menu");
@@ -29,4 +26,3 @@ burgerMenu.addEventListener("click", function () {
         document.documentElement.style.overflow = "hidden";
     }
 });
-
