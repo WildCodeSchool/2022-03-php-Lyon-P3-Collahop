@@ -1,0 +1,25 @@
+@mixin homepage-buttons {
+    padding: 5px;
+    border-radius: 25px;
+    width: 190px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+@mixin rectangle-text {
+        font-size: 0.9em;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        text-align: $text-align;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        word-wrap: break-word;
+}
+
+@mixin text-shadow {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
