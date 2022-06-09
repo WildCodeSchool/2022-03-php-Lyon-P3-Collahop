@@ -4,15 +4,36 @@
 .ebook {
   font-family: 'League Spartan';
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/teamwork.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100vh; 
+}
+
+.download-frame {
+  font-family: 'League Spartan' !important;
+  font-size: 30px !important;
+  background-color: $color-logo;
+  color: white;
+  border-radius: 15px;
+  width: 42%;
+  height: 20%;
+}
+
+#logo-download {
+  width: 23px;
+}
+
+.download-frame > div > a{
+  font-family: 'League Spartan' !important;
+  font-size: 20px !important;
+  color: $color-slogan;
 }
 
 .ebook-title {
   @include text-shadow;
-  font-size: 40px;
+  font-size: 38px;
 }
 
 .title-fill-form {
@@ -67,7 +88,9 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
+
+
+@media screen and (max-width: 1200px) and (orientation: portrait) {
   .ebook-header-frame {
     width: 60%;
     height: 20vh;
@@ -80,9 +103,10 @@
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) and (orientation: portrait) {
     .ebook {
       background-image: none;
+      height: 85vh;
     }
 
     .ebook-header-frame {
@@ -104,12 +128,12 @@
     }
 
     .ebook-input {
-      margin-bottom: 10%;
+      margin-bottom: 5%;
       width: 90%;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) and (orientation: portrait) {
     .ebook-title {
       font-size: 30px;
       width: 98%;
@@ -121,7 +145,7 @@
 
     .ebook-header-frame {
       width: 100%;
-      height: 20vh;
+      height: 24vh;
     }
 
     .ebook-form-frame {
