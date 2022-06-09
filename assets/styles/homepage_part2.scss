@@ -14,7 +14,7 @@ $text-align: justify;
 }
 
 .homepage_part2_title {
-    font-size: 50px;
+    font-size: 38px;
 }
 
 .transparent_weight_part2 {
@@ -25,7 +25,7 @@ $text-align: justify;
 }
 
 .growth_word_part2 {
-    font-size: 40px;
+    font-size: 38px;
     color: $color-logo;
     @include text-shadow;
 }
@@ -41,6 +41,7 @@ $text-align: justify;
 
 .summary_section {
     text-align : $text-align;
+    font-size: 22px;
 }
 
 .punchline1 {
@@ -97,16 +98,16 @@ $text-align: justify;
 @media only screen and (max-width: 768px) {
     /* tablettes et ordinateurs */
     .diagnostic {
-        font-size: 26px;
+        font-size: 24px;
     }
     .homepage_part2_title {
-        font-size: 36px;
+        font-size: 32px;
     }
     .transparent_weight_part2 {
-        font-size: 38px;
+        font-size: 36px;
     }
     .growth_word_part2 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .get_one_hour {
         font-size: 28px;
