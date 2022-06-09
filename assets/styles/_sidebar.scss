@@ -21,9 +21,10 @@ $z-fixed: 100;
       color: $white-color;
       transition: .3s;
   
-      i {
+      .icon_twitter, .icon_facebook, .icon_instagram, .icon_youtube {
         font-size: 1.6rem;
         color: $white-color;
+        width: 30px;
             &:hover {
             color: rgb(245, 245, 245);
             transition: all 1s ease;
