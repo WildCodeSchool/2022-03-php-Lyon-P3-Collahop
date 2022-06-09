@@ -1,0 +1,7 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        ebook:
+            uri_prefix: '%app.path.ebook%'
+            upload_destination: '%kernel.project_dir%/public%app.path.ebook%'
