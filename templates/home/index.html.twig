@@ -1,9 +1,79 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}Accueil
+{% endblock %}
+
 
 {% block body %}
 
-{% include "home/partials/_sidebar_user.html.twig" %}
+    {% include "home/partials/_sidebar_user.html.twig" %}
 
-{% endblock %}
+    <div class="container-fluid bg_image_home"> 
+        <section class="row homepage_first_section">
+    
+            <div class="col-sm-1  p-0">
+                <div class="semi_circle_left mt-4"></div>
+            </div>
+            
+            <div class="col-sm-10 p-0">
+                <div class="body_text_container py-5 ">
+                    <div class="col-lg-11">
+                        <h2 class="share_economy py-3">Économie du partage</h2>
+                        <h1 class="col-lg-8 col-sm-12 py-2"> <span class="transparent_weight">Vous êtes une entreprise </span> en quête de
+                            <span class="growth_word">croissance</span> ?
+                        </h1>
+
+                        <p class="col-lg-6 py-4"> Collahop vous accompagne pour identifier les opportunités à saisir. Nous
+                            avons
+                            développé un marché de partage entre entreprises pour développer une économie plus
+                            circulaire et
+                            plus durable.</p>
+                    </div>
+
+                    <div class="buttons col-lg-4 fs-5">
+                        <button type="button" class="contact_btn">Contacts</button>
+                        <button type="button" class="services_btn">Services</button>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center align-items-end rectangle_group p-0 m-0 mt-3">
+                    <div class=" row col-lg-4 m-0 rectangle_1  ">
+                        <div class="col-lg-4 rectangle_img py-2">
+                            <img src="{{ asset('build/images/homepage_img/rectangle_1_home.png') }}" class="img-fluid" alt="Social medias picture">
+                        </div>
+                        <div class="col-lg-8 encart_body_1">
+                            <h4 class="pt-4">Digital Marketing</h4>
+                            <p class="rectangle_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.
+                        </div>
+                    </div>
+                    <div class=" row col-lg-4 rectangle_2 m-0">
+                        <div class="col-lg-4 rectangle_img py-1">
+                            <img src="{{ asset('build/images/homepage_img/rectangle_2_home.png') }}" class="img-fluid" alt="Talking icone picture">
+                        </div>
+                        <div class="col-lg-8 pt-4">
+                            <h4 class="">Beyond consulting
+                            </h4>
+                            <p class="rectangle_text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur. </p>
+                        </div>
+                    </div>
+                    <div class=" row col-lg-4 rectangle_3 m-0">
+                        <div class="col-lg-4 rectangle_img py-2">
+                            <img src="{{ asset('build/images/homepage_img/rectangle_3_home.png') }}" class="img-fluid" alt="Pen and nodes">
+                        </div>
+                        <div class="col-lg-8 pt-4">
+                            <h4>Graphic design</h4>
+                            <p class="rectangle_text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 d-flex justify-content-end align-items-center p-0">
+                <div class="semi_circle_right d-flex"></div>
+            </div>
+
+        </section>
+    </div>
+	
+
+	{% endblock %}
