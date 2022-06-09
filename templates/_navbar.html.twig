@@ -4,7 +4,7 @@
 			<div id="line"></div>
 			<img
 			class="desktop logo" src="{{ asset('build/images/logo_collahop_blanc.png') }}" alt="Logo Collahop">
-			
+
 			{# Accueil #}
 			<a class="desktop accueil" href="/index.php">Accueil</a>
 			<div class="indicator" id="indicator_accueil"></div>
@@ -30,20 +30,35 @@
 		</div>
 	</nav>
 
-	<input type="checkbox" id="hamburger-input" class="burger-shower"/>
-	<label id="hamburger-menu" for="hamburger-input">
-		<nav id="sidebar-menu">
-			<div class="mobile_line"></div>
-			<input type="search" id="mobile_search" name="q" placeholder="Rechercher">
-			<ul>
-				<li><a href="/index.php">Accueil</a></li>
-				<li><a href="#">Nos services</a></li>
-				<li><a href="#">Qui sommes-nous ?</a></li>
-				<li><a href="#">Nous contacter</a></li>
-				<li><a href="#">Blog</a></li>
-			</ul>
-		</nav>
-	</label>
+	{# MENU MOBILE #}
+	<nav>
+		<div id="burger-menu">
+			<span></span>
+		</div>
+		<div class="mobile_line"></div>
+		<div id="mobile_menu">
+			<div class="frame">
+				<ul>
+					<li>
+						<a class="desktop accueil" href="/index.php">Accueil</a>
+					</li>
+					<li>
+						<a class="desktop services" href="#">Nos services</a>
+					</li>
+					<li>
+						<a class="desktop qui_sommes_nous" href="#">Qui sommes-nous ?</a>
+					</li>
+					<li>
+						<a class="desktop contact" href="#">Nous contacter</a>
+					</li>
+					<li>
+						<a class="desktop blog" href="#">Blog</a>
+					</li>
+				</ul>
+				<input type="search" id="mobile_search" name="q" placeholder="Rechercher">
+			</div>
+		</div>
+	</nav>
 
-	<div class="overlay"></div>
+
 {% endblock %}

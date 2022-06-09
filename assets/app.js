@@ -5,8 +5,22 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-import './styles/app.scss';
-require('bootstrap');
+import "./styles/app.scss";
+require("bootstrap");
 
 // start the Stimulus application
-import './bootstrap';
+import "./bootstrap";
+
+var burgerMenu = document.getElementById("burger-menu");
+
+var overlay = document.getElementById("mobile_menu");
+
+burgerMenu.addEventListener("click", function () {
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+    if (document.documentElement.style.overflow === "hidden") {
+        document.documentElement.style.overflow = "initial";
+    } else {
+        document.documentElement.style.overflow = "hidden";
+    }
+});
