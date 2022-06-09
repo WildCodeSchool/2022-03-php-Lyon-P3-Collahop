@@ -155,6 +155,14 @@ nav input::placeholder {
     color: #ffffff;
     opacity: 0.6;
 }
+nav input{    
+    background: url("../images/navbar/recherches.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    height:30px;
+    padding-left:30px;   
+    }
+
 @media screen and (max-width: 1220px) {
     nav .qui_sommes_nous {
         font-size: 0.9em;
