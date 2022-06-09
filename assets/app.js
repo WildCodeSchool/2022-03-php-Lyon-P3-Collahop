@@ -6,6 +6,8 @@
  */
 
 import "./styles/app.scss";
+import './styles/ebook.scss';
+import "./styles/navbar.scss";
 require("bootstrap");
 
 // start the Stimulus application
@@ -24,3 +26,4 @@ burgerMenu.addEventListener("click", function () {
         document.documentElement.style.overflow = "hidden";
     }
 });
+
