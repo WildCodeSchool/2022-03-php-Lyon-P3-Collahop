@@ -37,7 +37,9 @@ section :is(p) {
 body {
     background-color: #141726;
     background-image: linear-gradient(rgba(34, 29, 56, 0.7), rgba(0, 0, 0, 0.7)),url(../images/homepage_img/homepage_background.jpg);
-    background-position: fixed;
+    background-attachment: fixed;
+    background-size: 100vw;
+
 }
 
 /* ===== Homepage semi-circles sesctions ===== */
