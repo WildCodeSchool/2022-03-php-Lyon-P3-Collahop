@@ -139,10 +139,29 @@ section {
     }
 }
 
+@media screen and (max-width: 1447px)
+{
+    .body_text_container {
+        .share_economy {
+            font-size: 1.8em!important;
+            letter-spacing: 0.2em!important;
+        }
+        h1 {
+            font-size: 64px!important;
+            line-height: 1em!important;
+        }
+        p {
+            font-size: 1.2em!important;
+        }
+      }
+    }
+
 @media screen and (max-width: 720px)
 {
     h1 {
         font-size: 14em;
     }
 }
+
+
 
