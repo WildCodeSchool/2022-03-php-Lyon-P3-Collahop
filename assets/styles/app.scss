@@ -1,15 +1,4 @@
 //start coding by removing this file and adding yours ;)
-@import "~bootstrap/scss/bootstrap";
-@import "sidebar";
-@import "homepage";
-@import "homepage_part2";
-@import "mixins";
-
-@import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 $color-typography: #287878;
 $color-logo: #10dddd;
@@ -33,3 +22,15 @@ $font-family-base: 'League Spartan';
     padding: 0;
     box-sizing: border-box;
 }
+
+@import "~bootstrap/scss/bootstrap";
+@import "sidebar";
+@import "homepage";
+@import "homepage_part2";
+@import "mixins";
+@import "ebook";
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
