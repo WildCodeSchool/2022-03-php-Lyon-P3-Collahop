@@ -38,8 +38,12 @@ body {
     background-color: #141726;
     background-image: linear-gradient(rgba(34, 29, 56, 0.7), rgba(0, 0, 0, 0.7)),url(../images/homepage_img/homepage_background.jpg);
     background-attachment: fixed;
+    background-position: 60%;
     background-size: 100vw;
+}
 
+section {
+    margin-top: 115px !important;
 }
 
 /* ===== Homepage semi-circles sesctions ===== */
