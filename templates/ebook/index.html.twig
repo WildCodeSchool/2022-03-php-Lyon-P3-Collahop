@@ -3,26 +3,27 @@
 {% block title %}Obtenez votre ebook{% endblock %}
 
 {% block body %}
-<div class="ebook d-flex flex-column align-items-center p-5">
-    <div class="ebook-form-frame bg-primary mt-5 d-flex flex-column align-items-center">
+<div class="ebook d-flex flex-column align-items-center p-md-5">
+    <div class="ebook-header-frame bg-primary mt-md-5 d-flex flex-column align-items-center">
         <h1 class="mt-3 text-center text-white ebook-title"> Obtenez votre e-book </h1>
-        <p  class="mb-3 text-center ebook-text px-3">Vous souhaitez en savoir plus sur le marché de l'économie collaborative et les avantages financiers que
+        <p  class="mb-md-3 text-center ebook-text px-3">Vous souhaitez en savoir plus sur le marché de l'économie collaborative et les avantages financiers que
         cela peut avoir sur votre entreprise. Découvrez les chiffres clés et l'évolution de cette économie révolutionnaire.</p>
     </div>
-    <div class="ebook-form-frame d-flex flex-column justify-content-center bg-white mb-3">
-        <h1 class="mt-3 text-center title-fill-form">Remplissez ce formulaire</h1>
-        <div class="d-flex justify-content-center">
-        {{ form_start(form) }}
-            <p class="mb-3">{{ form_widget(form.lastname) }}</p>
-            <p class="mb-3">{{ form_errors(form.lastname) }}</p>
-            <p class="mb-3">{{ form_widget(form.firstname) }}</p>
-            <p class="mb-3">{{ form_errors(form.firstname) }}</p>
-            <p class="mb-3">{{ form_widget(form.company) }}</p>
-            <p class="mb-3">{{ form_errors(form.company) }}</p>
-            <p class="mb-3">{{ form_widget(form.email) }}</p>
-            <p class="mb-3">{{ form_errors(form.email) }}</p>
-        </div>
-        <button class="ebook-btn align-self-center mb-3 px-3 pt-1">{{ button_label|default('RECEVOIR') }}</button>
+    <div class="ebook-form-frame d-flex flex-column justify-content-evenly align-items-evenly bg-white mb-3">
+        <h1 class="my-3 text-center title-fill-form">Remplissez ce formulaire</h1>
+
+        {{ form_start(form, { 'attr': {'class': 'ebook-form'} }) }}
+            {{ form_widget(form.lastname) }}
+            {{ form_errors(form.lastname, { 'attr': {'class': ''} }) }}
+            {{ form_widget(form.firstname) }}
+            {{ form_errors(form.firstname, { 'attr': {'class': ''} }) }}
+            {{ form_widget(form.company) }}
+            {{ form_errors(form.company, { 'attr': {'class': ''} }) }}
+            {{ form_widget(form.email) }}
+            {{ form_errors(form.email, { 'attr': {'class': ''} }) }}
+
+        <button class="ebook-btn align-self-center mb-3 px-3 pt-1">
+        {{ button_label|default('RECEVOIR') }}</button>
         {{ form_end(form) }}
     </div>
 </div>
