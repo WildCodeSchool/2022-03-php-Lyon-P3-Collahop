@@ -3,7 +3,7 @@
 
 $text-align: justify;
 $secondary-homepage-color: #7b7b7b;
-$white-color: white;
+$white: white;
 $color-logo: #10dddd;
 $font-size : 5.8em;
 
@@ -34,15 +34,13 @@ section :is(p) {
 
 /* ===== Background image section ===== */
 
-.container-fluid {
+body {
     background-color: #141726;
     background-image: linear-gradient(rgba(34, 29, 56, 0.7), rgba(0, 0, 0, 0.7)),url(../images/homepage_img/homepage_background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60% 60%;
-} 
+    background-attachment: fixed;
+    background-size: 100vw;
 
-
+}
 
 /* ===== Homepage semi-circles sesctions ===== */
 

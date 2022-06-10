@@ -6,12 +6,12 @@ $z-fixed: 100;
 
 .sidebar_body {
     position: fixed;
-    height: 12.2em;
+    height: 12.5em;
     padding: 1rem 1rem 0rem 0rem;
     transition: 0.5s;
     border-radius: 0 20px 20px 0;
     background-color: $color-logo;
-    top: 55%;
+    top: 45%;
     z-index: $z-fixed;
 
     a {
@@ -21,17 +21,13 @@ $z-fixed: 100;
       color: $white-color;
       transition: .3s;
   
-      i {
-        font-size: 1.6rem;
-        color: $white-color;
+      .icon_twitter, .icon_facebook, .icon_instagram, .icon_youtube {
+        width: 30px;
             &:hover {
             color: rgb(245, 245, 245);
             transition: all 1s ease;
             transform: scale(1.2);
             transition-duration: 500ms;
-            &:visited {
-              color: rgb(129, 129, 129);
-              }
             }
           }
         }
