@@ -18,6 +18,13 @@ class ContactsController extends AbstractController
         $contacts = new Contact();
 
         $form = $this->createForm(ContactsType::class, $contacts);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $contactRepository->add($contacts, true);
+
+            return $this->redirectToRoute('app_home');
+        }
 
         return $this->renderForm('contacts/index.html.twig', [
             'form' => $form,

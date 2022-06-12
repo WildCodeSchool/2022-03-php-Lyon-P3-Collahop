@@ -1,13 +1,61 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Contacts
+{% block title %}
+	Contacts
 {% endblock %}
 
 {% block body %}
-     {{ form_start(form) }}
-            
-        
-        <button class="ebook-btn align-self-center mb-3 px-3 pt-1">{{ button_label|default('RECEVOIR') }}</button>
-    {{ form_end(form) }}
+
+	<div class="contact-form-frame container">
+
+		<div class=" form-body row">
+			<h1 class="contact-form-title">Formulaire de contact</h1>
+		{{ form_start(form) }}
+			{{ form_row(form.firstname, {
+                    'label':false,
+                    'attr': {
+                        'placeholder' : 'Prénom',
+                        'class' : 'contact_form_input'
+                        }
+                    }) 
+                }}
+
+			{{ form_row(form.lastname, {
+                    'label':false,
+                    'attr': {
+                        'placeholder' : 'Nom',
+                        'class' : 'contact_form_input'
+                        }
+                    }) 
+                }}
+
+			{{ form_row(form.email, {
+                    'label':false,
+                    'attr': {
+                        'placeholder' : 'Adresse e-mail',
+                        'class' : 'contact_form_input contact_form_mail'
+                        }
+                    }) 
+                }}
+
+			{{ form_row(form.company, {
+                    'label':false,
+                    'attr': {
+                        'placeholder' : 'Société',
+                        'class' : 'contact_form_input'
+                        }
+                    }) 
+                }}
+
+			{{ form_row(form.message, {
+                    'label':false,
+                    'attr': {
+                        'placeholder' : 'Votre message',
+                        'class' : 'contact_form_input'
+                        }
+                    }) 
+                }}
+
+		{{ form_end(form) }}
 
 {% endblock %}
