@@ -1,11 +1,6 @@
 .ebook {
-  font-family: 'League Spartan';
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/teamwork.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; 
+  @include form-pages-generals;
 }
 
 .download-frame {

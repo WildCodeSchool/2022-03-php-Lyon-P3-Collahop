@@ -1,3 +1,12 @@
+@mixin form-pages-generals {
+    font-family: 'League Spartan';
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
 @mixin homepage-buttons {
     padding: 5px;
     border-radius: 25px;

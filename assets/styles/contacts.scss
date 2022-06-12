@@ -1,12 +1,17 @@
 @import "app";
 @import "mixins";
 
+.contacts {
+    @include form-pages-generals;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/teamwork.jpg");
+}
+
 .form-body {
     color: white;
     margin-top: 3.8em !important;
     background-color: $color-slogan;
     .contact-form-title {
-        @include text-shadow;
+        font-size:34px;
     }
 
     input {
