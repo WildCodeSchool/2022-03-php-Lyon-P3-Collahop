@@ -6,30 +6,32 @@
 
 {% block body %}
 
-	<div class="contact-form-frame container">
-
-		<div class=" form-body row">
-			<h1 class="contact-form-title">Formulaire de contact</h1>
-		{{ form_start(form) }}
-			{{ form_row(form.firstname, {
+	<div class="mt-5 contacts container-fluid border">
+		<div class="row">
+            <div class="contact_img col-xl-7  border">
+            </div>
+			<div class="form-body form-group col-xl-5 p-xl-3">
+				<h1 class="contact-form-title d-flex justify-content-center fs-xs-5 fs-xl-1 mb-xl-4 ">Formulaire de contact</h1>
+				{{ form_start(form) }}
+				{{ form_row(form.firstname, {
                     'label':false,
                     'attr': {
                         'placeholder' : 'Prénom',
-                        'class' : 'contact_form_input'
+                        'class' : 'contact_form_input',
                         }
                     }) 
                 }}
 
-			{{ form_row(form.lastname, {
+				{{ form_row(form.lastname, {
                     'label':false,
                     'attr': {
                         'placeholder' : 'Nom',
-                        'class' : 'contact_form_input'
+                        'class' : 'contact_form_input mb-xl-2'
                         }
                     }) 
                 }}
 
-			{{ form_row(form.email, {
+				{{ form_row(form.email, {
                     'label':false,
                     'attr': {
                         'placeholder' : 'Adresse e-mail',
@@ -38,7 +40,7 @@
                     }) 
                 }}
 
-			{{ form_row(form.company, {
+				{{ form_row(form.company, {
                     'label':false,
                     'attr': {
                         'placeholder' : 'Société',
@@ -47,15 +49,25 @@
                     }) 
                 }}
 
-			{{ form_row(form.message, {
+				{{ form_row(form.message, {
                     'label':false,
                     'attr': {
                         'placeholder' : 'Votre message',
-                        'class' : 'contact_form_input'
+                        'class' : 'contact_form_area', 
+                        'rows' : 8
                         }
                     }) 
                 }}
 
-		{{ form_end(form) }}
-
+				{{ form_row(form.send, {
+                    'label' : 'Envoyer',
+                    'attr': {
+                        'class' : 'contact_form_btn btn btn-primary', 
+                        }
+                    }) 
+                }}
+				{{ form_end(form) }}
+			</div>
+		</div>
+	</div>
 {% endblock %}

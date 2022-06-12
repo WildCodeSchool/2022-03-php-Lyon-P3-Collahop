@@ -1,0 +1,45 @@
+@import "app";
+@import "mixins";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    background-color: $color-slogan;
+}
+
+.form-body {
+    color: white;
+    background-color: $color-slogan;
+    .contact-form-title {
+        @include text-shadow;
+    }
+
+    input {
+        border: 1px solid white;
+        height: 60px;
+        background-color: $color-slogan;
+        color: white;
+
+        &:hover {
+            @include dynamic-border;
+        }
+
+    }
+
+    ::placeholder {
+        color: white !important;
+      }
+
+    .contact_form_area {
+        background-color: $color-slogan;
+        color: white;
+
+        &:hover {
+            @include dynamic-border;
+        }
+    }
+}
+

@@ -23,3 +23,10 @@
 @mixin text-shadow {
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
+
+@mixin dynamic-border {
+    border-left: 10px solid aqua;
+    transition : 0.35s ease-in-out;
+    background-color: $color-slogan;
+    color: white;
+}
