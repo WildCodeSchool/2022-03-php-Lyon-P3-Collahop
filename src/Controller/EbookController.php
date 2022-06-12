@@ -22,7 +22,7 @@ class EbookController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $contactRepository->add($contact, true);
 
-            return $this->redirectToRoute('app_home');
+            return $this->render('/ebook/download.html.twig');
         }
 
         return $this->renderForm('/ebook/index.html.twig', [

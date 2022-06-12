@@ -37,7 +37,13 @@ section :is(p) {
 body {
     background-color: #141726;
     background-image: linear-gradient(rgba(34, 29, 56, 0.7), rgba(0, 0, 0, 0.7)),url(../images/homepage_img/homepage_background.jpg);
-    background-position: fixed;
+    background-attachment: fixed;
+    background-position: 60%;
+    background-size: 100vw;
+}
+
+section {
+    margin-top: 115px !important;
 }
 
 /* ===== Homepage semi-circles sesctions ===== */
@@ -133,10 +139,29 @@ body {
     }
 }
 
+@media screen and (max-width: 1447px)
+{
+    .body_text_container {
+        .share_economy {
+            font-size: 1.8em!important;
+            letter-spacing: 0.2em!important;
+        }
+        h1 {
+            font-size: 64px!important;
+            line-height: 1em!important;
+        }
+        p {
+            font-size: 1.2em!important;
+        }
+      }
+    }
+
 @media screen and (max-width: 720px)
 {
     h1 {
         font-size: 14em;
     }
 }
+
+
 
