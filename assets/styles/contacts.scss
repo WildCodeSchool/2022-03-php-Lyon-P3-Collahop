@@ -1,17 +1,9 @@
 @import "app";
 @import "mixins";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.grid {
-    background-color: $color-slogan;
-}
 
 .form-body {
     color: white;
+    margin-top: 3.8em !important;
     background-color: $color-slogan;
     .contact-form-title {
         @include text-shadow;
@@ -40,6 +32,15 @@
         &:hover {
             @include dynamic-border;
         }
+    }
+
+    .contact_form_btn {
+        padding: 5px;
+        border-radius: 5px;
+        width: 190px;
+        background-color: #10dddd;
+        color: white;
+        font-weight: bold;
     }
 }
 
