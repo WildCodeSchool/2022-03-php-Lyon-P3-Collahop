@@ -15,13 +15,13 @@ class EbookType extends AbstractType
     {
         $builder
             ->add('firstname', TextType::class, ['attr' => ['placeholder' => 'Prénom',
-             'class' => 'row mx-0 my-2 ebook-input']])
+             'class' => 'row mx-0 my-3 my-md-2 ebook-input']])
             ->add('lastname', TextType::class, ['attr' => ['placeholder' => 'Nom',
-             'class' => 'row mx-0 my-2 ebook-input']])
+             'class' => 'row mx-0 my-3 my-md-2 ebook-input']])
             ->add('company', TextType::class, ['attr' => ['placeholder' => 'Société',
-             'class' => 'row mx-0 my-2 ebook-input']])
+             'class' => 'row mx-0 my-3 my-md-2 ebook-input']])
             ->add('email', EmailType::class, ['attr' => ['placeholder' => 'Email',
-             'class' => 'row mx-0 my-2 ebook-input']])
+             'class' => 'row mx-0 my-3 my-md-2 ebook-input']])
         ;
     }
 

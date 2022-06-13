@@ -10,13 +10,11 @@
 
 .ebook-title {
   @include text-shadow;
-  font-size: 38px;
 }
 
 .title-fill-form {
   color: #A2A2D4;
   font-weight: 300 !important;
-  font-size: 35px;
 }
 
 .ebook-input {
@@ -31,7 +29,6 @@
   width: max-content;
   color: white;
   font-weight: 600;
-  font-size: 17px;
   box-shadow: 3px 3px 2px gray;
   border-radius: 5px;
 }
@@ -41,19 +38,17 @@
   text-align: justify !important;
   line-height: 1rem;
   font-weight: 200;
-  font-size: 14.5px;
   color: $color-slogan;
 }
 
 .ebook-header-frame {
    width: 100%;
-   margin-left: 6px;
    margin-right: 0;
+   margin-top: 55px;
 }
 
 .ebook-form-frame {
   width: 100%;
-  margin-left: 6px;
   margin-right: 0;
 }
 
@@ -81,23 +76,34 @@
   color: $color-slogan;
 }
 
-@media screen and (max-width: 1200px) and (orientation: portrait) {
+@media screen and (max-width: 1200px) {
 
   .ebook-form {
     width: 90%;
 }
+  .ebook-header-frame {
+    margin-top: 70px;
+  }
 }
 
-@media screen and (max-width: 576px) and (orientation: portrait) {
+@media screen and (max-width: 576px) {
     .ebook {
       background-image: none;
+      background-color: $color-slogan;
       margin: 0;
       width: 100%;
       padding: 0;
     }
 
     .ebook-header-frame {
-      margin: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-top: 70px;
+    }
+
+    .ebook-form-frame {
+      margin-left: 0;
     }
 
     .ebook-text {
@@ -105,11 +111,18 @@
     }
 
     .ebook-form {
-      width: 100%;
+      width: 80%;
     }
 
     .ebook-frame {
       padding: 0;
       margin: 0;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+  .ebook-form {
+    width: 90%;
+  }
 }

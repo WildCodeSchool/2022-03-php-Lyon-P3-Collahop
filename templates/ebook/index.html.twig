@@ -6,15 +6,15 @@
 <header class="bg-dark">
     {% include ('_navbar.html.twig') %}
     </header>
-<div class="ebook container-md-fluid row align-items-center justify-content-center">
+<div class="ebook container-md-fluid row align-items-start justify-content-center">
     <div class="ebook-frame col-12 col-sm-9 col-md-7 col-xl-5 mt-xl-5">
         <div class="ebook-header-frame bg-primary row justify-content-center">
-            <h1 class="mt-3 text-center text-white ebook-title"> Obtenez votre e-book </h1>
-            <p  class="mb-md-3 text-center ebook-text">Vous souhaitez en savoir plus sur le marché de l'économie collaborative et les avantages financiers que
+            <h1 class="mt-3 text-center text-white ebook-title fs-1"> Obtenez votre e-book </h1>
+            <p  class="mb-md-3 text-center ebook-text fs-6">Vous souhaitez en savoir plus sur le marché de l'économie collaborative et les avantages financiers que
             cela peut avoir sur votre entreprise. Découvrez les chiffres clés et l'évolution de cette économie révolutionnaire.</p>
         </div>
         <div class="ebook-form-frame bg-white row justify-content-center">
-            <h1 class="mt-2 text-center title-fill-form">Remplissez ce formulaire</h1>
+            <h1 class="mt-2 text-center title-fill-form fs-2">Remplissez ce formulaire</h1>
 
             {{ form_start(form, { 'attr': {'class': 'ebook-form row justify-content-center'} }) }}
                 {{ form_widget(form.lastname) }}
@@ -26,7 +26,7 @@
                 {{ form_widget(form.email) }}
                 {{ form_errors(form.email, { 'attr': {'class': ''} }) }}
 
-            <button class="ebook-btn col-4 my-3 px-3 pt-1">
+            <button class="ebook-btn col-4 my-3 px-3 pt-1 fs-5">
             {{ button_label|default('RECEVOIR') }}</button>
             {{ form_end(form) }}
         </div>
