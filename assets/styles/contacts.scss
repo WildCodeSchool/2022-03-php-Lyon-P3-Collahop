@@ -6,16 +6,26 @@
     background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/contacts_img/contacts_form_bg.jpg");
 } */
 
+
+/* ===== Global positionnement ====== */ 
+
 .contacts {
     background-color: $color-slogan;
 }
 
+
+.global_form_container {
+    margin-top: 8.5em!important;
+}
+
+/* ===== Contact form section ===== */ 
+
 .form-body {
     color: white;
-    margin-top: 10.5em !important;
     background-color: $color-slogan;
     .contact-form-title {
-        font-size:72px;
+        font-size: calc(23px + 1.7vw);
+        
     }
 
     input {
@@ -41,8 +51,8 @@
         &:hover {
             @include dynamic-border;
         }
-    }
 
+    }
 
     .contact_form_btn {
         padding: 5px;
@@ -52,16 +62,30 @@
         color: white;
         font-weight: bold;
         transition: all .2s;
+        display: flex!important;
+        flex-direction: row;
+        justify-content: center!important; 
 
         &:hover {
-                transform: translateY(2px);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                width: 170px;
+               
         }
 
         &:active {
-                transform: translateY(-1px);
+                transform: translateY(-2px);
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
     }
 }
 
+@media screen and (max-width: 950px) {
+    .global_form_container {
+        margin-top: 5em!important;
+    }
+
+    .mb-3 {
+        display: flex;
+        justify-content: center; 
+    }
+}

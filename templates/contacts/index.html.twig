@@ -7,17 +7,17 @@
 {% block body %}
 
 	<div class=" contacts container-fluid">
-		<div class="row">
-            <div class="contact_img col-xl-7">
-                <img
-			    class="contacts_img img-fluid m-0 p-0" src="{{ asset('build/images/contacts_img/contacts_form_bg.jpg') }}" alt="Réunion de travail">
+		<div class="row global_form_container">
+            <div class="contact_img d-none d-lg-block p-0 m-0 col-xl-7 col-lg-6 ">
+                <img class="contacts_img img-fluid img-responsive w-100 h-100" src="{{ asset('build/images/contacts_img/contacts_form_bg.jpg') }}" alt="Réunion de travail">
             </div>
-			<div class="form-body form-group col-xl-5 p-xl-3">
-				<h1 class="contact-form-title d-flex justify-content-center fs-xs-5 mt-3 py-2 fs-xl-1 mb-xl-4 ">Formulaire de contact</h1>
+
+			<div class="form-body form-group col-xl-5 col-lg-6 px-3 px-lg-5">
+				<h1 class="contact-form-title mb-4 mb-xl-5 d-flex justify-content-center justify-content-md-start">Formulaire de contact</h1>
                 <div class ="row">
 				{{ form_start(form,  {
                     'attr' : {
-                        'class' : 'inputs_groups px-5'
+                        'class' : 'inputs_groups'
                     }
                 }) 
                 }}
@@ -26,7 +26,7 @@
                     'label':false,
                     'attr': {
                         'placeholder' : 'Prénom',
-                        'class' : 'contact_form_input py-3',
+                        'class' : 'contact_form_input',
                         }
                     }) 
                 }}
@@ -35,7 +35,7 @@
                     'label':false,
                     'attr': {
                         'placeholder' : 'Nom',
-                        'class' : 'contact_form_input mb-xl-2'
+                        'class' : 'contact_form_input'
                         }
                     }) 
                 }}
@@ -63,7 +63,7 @@
                     'attr': {
                         'placeholder' : 'Votre message',
                         'class' : 'contact_form_area', 
-                        'rows' : 8
+                        'rows' : 10
                         }
                     }) 
                 }}
@@ -71,7 +71,7 @@
 				{{ form_row(form.send, {
                     'label' : 'Envoyer',
                     'attr': {
-                        'class' : 'contact_form_btn btn fs-4 mt-3', 
+                        'class' : 'contact_form_btn btn button button-2 fs-4 mt-5', 
                         }
                     }) 
                 }}
