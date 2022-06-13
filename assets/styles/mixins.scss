@@ -31,3 +31,9 @@
     background-color: $color-slogan;
     color: white;
 }
+
+@mixin img_truncated {
+    opacity: 0.9;
+    object-fit: cover; 
+    overflow: hidden;
+}

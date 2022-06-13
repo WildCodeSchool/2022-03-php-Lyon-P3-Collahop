@@ -10,6 +10,11 @@
 .global_form_container {
     margin-top: 8.5em !important;
 }
+/* ===== Image section ===== */
+
+.contacts_img {
+    @include img_truncated;
+}
 
 /* ===== Contact form section ===== */
 
@@ -54,7 +59,6 @@
         transition: all 0.2s;
 
         &:hover {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             width: 170px;
         }
 
