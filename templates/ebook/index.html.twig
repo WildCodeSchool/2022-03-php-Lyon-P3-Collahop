@@ -11,7 +11,6 @@
     </div>
     <div class="ebook-form-frame d-flex flex-column justify-content-evenly align-items-evenly bg-white mb-3">
         <h1 class="my-3 text-center title-fill-form">Remplissez ce formulaire</h1>
-
         {{ form_start(form, { 'attr': {'class': 'ebook-form'} }) }}
             {{ form_widget(form.lastname) }}
             {{ form_errors(form.lastname, { 'attr': {'class': ''} }) }}
