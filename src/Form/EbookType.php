@@ -14,10 +14,14 @@ class EbookType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('firstname', TextType::class, ['attr' => ['placeholder' => 'Prénom', 'class' => 'ebook-input']])
-            ->add('lastname', TextType::class, ['attr' => ['placeholder' => 'Nom', 'class' => 'ebook-input']])
-            ->add('company', TextType::class, ['attr' => ['placeholder' => 'Société', 'class' => 'ebook-input']])
-            ->add('email', EmailType::class, ['attr' => ['placeholder' => 'Email', 'class' => 'ebook-input']])
+            ->add('firstname', TextType::class, ['attr' => ['placeholder' => 'Prénom',
+             'class' => 'row mx-0 my-2 ebook-input']])
+            ->add('lastname', TextType::class, ['attr' => ['placeholder' => 'Nom',
+             'class' => 'row mx-0 my-2 ebook-input']])
+            ->add('company', TextType::class, ['attr' => ['placeholder' => 'Société',
+             'class' => 'row mx-0 my-2 ebook-input']])
+            ->add('email', EmailType::class, ['attr' => ['placeholder' => 'Email',
+             'class' => 'row mx-0 my-2 ebook-input']])
         ;
     }
 
