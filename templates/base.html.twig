@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>
-            {% block title %}Collahop{% endblock %}
-        </title>
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
-        
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}
-        <div class="footer-basic">
-            <footer>
-                <div class="social"><a href="https://www.instagram.com/collahop/"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/Collahop"><i class="icon ion-social-facebook"></i></a><a href="https://www.youtube.com/channel/UCeWRGqTcwEjVBAVsg9CD-Rw"><i class="icon ion-social-youtube"></i></a></div>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="">Acceuil</a></li>
-                    <li class="list-inline-item"><a href="">F.A.Q</a></li>
-                    <li class="list-inline-item"><a href="">Télécharger l'E-book</a></li>
-                    <li class="list-inline-item"><a href="">Contact</a></li>
-                </ul>
-                <p class="copyright">Collahop © 2022</p>
-            </footer>
-        </div>
-        {% endblock %}
-    </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" type="image/png" href="{{ asset('build/images/favicon.png') }}"/>
+		<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+		<title>
+			{% block title %}Collahop
+			{% endblock %}
+		</title>
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+		{% block body %}
+			<div class="footer-basic">
+				<footer>
+					<div class="social">
+						<a href="https://www.instagram.com/collahop/">
+							<i class="icon ion-social-instagram"></i>
+						</a>
+						<a href="#">
+							<i class="icon ion-social-twitter"></i>
+						</a>
+						<a href="https://www.facebook.com/Collahop">
+							<i class="icon ion-social-facebook"></i>
+						</a>
+						<a href="https://www.youtube.com/channel/UCeWRGqTcwEjVBAVsg9CD-Rw">
+							<i class="icon ion-social-youtube"></i>
+						</a>
+					</div>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="">Acceuil</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="">F.A.Q</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="">Télécharger l'E-book</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="">Contact</a>
+						</li>
+					</ul>
+					<p class="copyright">Collahop © 2022</p>
+				</footer>
+			</div>
+		{% endblock %}
+	</body>
 </html>
