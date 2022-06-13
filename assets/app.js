@@ -27,3 +27,10 @@ burgerMenu.addEventListener("click", function () {
         document.documentElement.style.overflow = "hidden";
     }
 });
+
+
+window.onload = function() {
+    setTimeout(function() {
+      document.querySelector('.alert').style.display = 'block';
+    }, 10000);
+  }
