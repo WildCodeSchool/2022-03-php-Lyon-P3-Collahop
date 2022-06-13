@@ -8,6 +8,14 @@
 	<div class="container-fluid bg_image_home mt-5">
 		<section class="row homepage_first_section">
 
+		{% for success, messages in app.flashes %}
+    		{% for message in messages %}
+				<div class="flash_success alert alert-{{ success }}">
+					{{ message }}
+				</div>
+    		{% endfor %}
+		{% endfor %}
+
 			<div class="col-sm-1  p-0">
 				<div class="semi_circle_left mt-4"></div>
 			</div>
@@ -111,4 +119,5 @@
             </div>
         </section>
     </div>
+
 {% endblock %}

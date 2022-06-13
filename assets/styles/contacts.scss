@@ -1,31 +1,23 @@
 @import "app";
 @import "mixins";
 
-/*.contacts {
-    @include form-pages-generals;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/contacts_img/contacts_form_bg.jpg");
-} */
-
-
-/* ===== Global positionnement ====== */ 
+/* ===== Global positionnement ====== */
 
 .contacts {
     background-color: $color-slogan;
 }
 
-
 .global_form_container {
-    margin-top: 8.5em!important;
+    margin-top: 8.5em !important;
 }
 
-/* ===== Contact form section ===== */ 
+/* ===== Contact form section ===== */
 
 .form-body {
     color: white;
     background-color: $color-slogan;
     .contact-form-title {
         font-size: calc(23px + 1.7vw);
-        
     }
 
     input {
@@ -37,12 +29,11 @@
         &:hover {
             @include dynamic-border;
         }
-
     }
 
     ::placeholder {
         color: white !important;
-      }
+    }
 
     .contact_form_area {
         background-color: $color-slogan;
@@ -51,7 +42,6 @@
         &:hover {
             @include dynamic-border;
         }
-
     }
 
     .contact_form_btn {
@@ -61,20 +51,15 @@
         background-color: #10dddd;
         color: white;
         font-weight: bold;
-        transition: all .2s;
-        display: flex!important;
-        flex-direction: row;
-        justify-content: center!important; 
+        transition: all 0.2s;
 
         &:hover {
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-                width: 170px;
-               
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 170px;
         }
 
         &:active {
-                transform: translateY(-2px);
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(0.92) translateY(-2px);
         }
     }
 }
@@ -86,6 +71,6 @@
 
     .mb-3 {
         display: flex;
-        justify-content: center; 
+        justify-content: center;
     }
 }

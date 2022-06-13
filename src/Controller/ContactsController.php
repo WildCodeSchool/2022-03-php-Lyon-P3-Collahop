@@ -23,6 +23,8 @@ class ContactsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $contactRepository->add($contacts, true);
 
+            $this->addFlash('success', 'Votre message a été envoyé avec succès !');
+
             return $this->redirectToRoute('app_home');
         }
 
