@@ -5,13 +5,23 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-// any CSS you import will output into a single css file (app.css in this case)
+
 import './styles/app.scss';
 import './styles/homepage.scss';
 import './styles/mixins.scss';
-import './styles/ebook.scss';
-require('bootstrap');
+import "./styles/navbar.scss";
+require("bootstrap");
 
-// start the Stimulus application
-import './bootstrap';
+var burgerMenu = document.getElementById("burger-menu");
 
+var overlay = document.getElementById("mobile_menu");
+
+burgerMenu.addEventListener("click", function () {
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+    if (document.documentElement.style.overflow === "hidden") {
+        document.documentElement.style.overflow = "initial";
+    } else {
+        document.documentElement.style.overflow = "hidden";
+    }
+});

@@ -13,14 +13,8 @@ $text-align: justify;
     font-family: ("League Spartan");
 }
 
-.container-fluid-part2 {
-    background-image: linear-gradient(rgba(34, 29, 56, 0.7), rgba(0, 0, 0, 0.7)),url(../images/homepage_img/homepage_part2_background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .homepage_part2_title {
-    font-size: 50px;
+    font-size: 38px;
 }
 
 .transparent_weight_part2 {
@@ -31,7 +25,7 @@ $text-align: justify;
 }
 
 .growth_word_part2 {
-    font-size: 40px;
+    font-size: 38px;
     color: $color-logo;
     @include text-shadow;
 }
@@ -47,30 +41,35 @@ $text-align: justify;
 
 .summary_section {
     text-align : $text-align;
+    font-size: 22px;
 }
 
 .punchline1 {
     border: white 1px solid;
     border-radius: 30px;
     background-color: #26d2d2;
+    min-width: 250px;
 }
 
 .punchline2 {
     border: white 1px solid;
     border-radius: 30px;
     background-color: #18aeae;
+    min-width: 250px;
 }
 
 .punchline3 {
     border: white 1px solid;
     border-radius: 30px;
     background-color: #118989;
+    min-width: 250px;
 }
 
 .punchline4 {
     border: white 1px solid;
     border-radius: 30px;
     background-color: #066666;
+    min-width: 250px;
 }
 
 .punchline_text {
@@ -99,36 +98,18 @@ $text-align: justify;
 @media only screen and (max-width: 768px) {
     /* tablettes et ordinateurs */
     .diagnostic {
-        font-size: 28px;
+        font-size: 24px;
     }
     .homepage_part2_title {
-        font-size: 38px;
-    }
-    .transparent_weight_part2 {
-        font-size: 40px;
-    }
-    .growth_word_part2 {
-        font-size: 30px;
-    }
-    .get_one_hour {
-        font-size: 30px;
-    }
-}
-@media only screen and (max-width: 767px) {
-    /* smartphone */
-    .diagnostic {
-        font-size: 22px;
-    }
-    .homepage_part2_title {
-        font-size: 33px;
+        font-size: 32px;
     }
     .transparent_weight_part2 {
         font-size: 36px;
     }
     .growth_word_part2 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .get_one_hour {
-        font-size: 25px;
+        font-size: 28px;
     }
 }

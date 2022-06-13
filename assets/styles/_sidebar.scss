@@ -11,7 +11,7 @@ $z-fixed: 100;
     transition: 0.5s;
     border-radius: 0 20px 20px 0;
     background-color: $color-logo;
-    top: 45%;
+    top: 52%;
     z-index: $z-fixed;
 
     a {
@@ -21,17 +21,13 @@ $z-fixed: 100;
       color: $white-color;
       transition: .3s;
   
-      i {
-        font-size: 1.6rem;
-        color: $white-color;
+      .icon_twitter, .icon_facebook, .icon_instagram, .icon_youtube {
+        width: 30px;
             &:hover {
             color: rgb(245, 245, 245);
             transition: all 1s ease;
             transform: scale(1.2);
             transition-duration: 500ms;
-            &:visited {
-              color: rgb(129, 129, 129);
-              }
             }
           }
         }
