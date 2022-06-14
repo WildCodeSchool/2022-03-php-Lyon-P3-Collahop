@@ -1,16 +1,18 @@
 .faq_page{
-  margin-top: 130px;
   background-color: rgb(0, 0, 27);
-  padding-top: 25px;
+  padding-top: 150px;
+  min-height: 100vh;
+  max-height: 1000vh;
 }
+
 .faq_h1{
   color: #ffffff;
   font-size: 5em;
 }
+
 .faq_img{
   display: flex;
   justify-content: center;
-
 }
 
 .left_line, .right_line {
@@ -66,7 +68,7 @@
   margin: 10px;
 }
 .sentence{
-  margin-left: 30px;
+  text-align: left;
 }
 
 .square{
@@ -89,6 +91,16 @@
   box-shadow: none;
 }
 
+.div_square{
+  width: 30px;
+  align-self: center;
+}
+
+.response1, .response2, .response3, .response4, .response5, .response6, .response7, .response8{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 @media screen and (max-width: 1530px) {
   .frame_h2{
   width: 40vw;
@@ -105,8 +117,17 @@
   .frame_h2{
   width: 50vw;
   }
+
   .faq_h1{
     font-size: 4em;
+  }
+
+  .fifth_sentence{
+    margin-top: 0;
+  }
+
+  #collapse4{
+    margin-bottom: 10px;
   }
 }
 
@@ -114,8 +135,14 @@
   .frame_h2{
   width: 55vw;
   }
+
   .img_faq{
     width: 30vw;
+  }
+
+  .left_line, .right_line {
+    width: 38vw;
+    margin-top: 23.5vw;
   }
 }
 
@@ -123,6 +150,7 @@
   .faq_page{
     margin-top: 0;
   }
+
   .frame_h2{
   width: 60vw;
   }
@@ -132,9 +160,11 @@
   .frame_h2{
   width: 65vw;
   }
+
   .faq_h1{
     font-size: 3em;
   }
+
   .faq_h2{
     font-size: 1.5em;
   }
@@ -146,12 +176,18 @@
   }
 }
 
-@media screen and (max-width: 650x) {
+@media screen and (max-width: 650px) {
   .frame_h2{
   width: 75vw;
   }
+
   .img_faq{
     width: 50vw;
+  }
+
+  .left_line, .right_line {
+    width: 30vw;
+    margin-top: 39.5vw;
   }
 }
 
@@ -178,6 +214,7 @@
   .frame_h2{
   width: 90vw;
   }
+  
   .faq_h1{
     font-size: 2.5em;
   }
