@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     background-size: 100vw; 
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .global_form_container {
@@ -73,10 +73,17 @@
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1573px) {
     .global_form_container {
         margin-top: 5em!important;
     }
+
+    .mb-3 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
 
     .mb-3 {
         display: flex;
