@@ -4,6 +4,9 @@
 {% endblock %}
 
 {% block body %}
+	<header>
+		{% include ('_navbar.html.twig') %}
+	</header>
 	{% include "home/partials/_sidebar_user.html.twig" %}
 	<div class="container-fluid bg_image_home mt-5">
 		<section class="row homepage_first_section">
@@ -21,12 +24,15 @@
 							<span class="growth_word">croissance</span>
 							?
 						</h1>
-						<p class="col-lg-6 py-4">
-							Collahop vous accompagne pour identifier les opportunités à saisir. Nous avons développé un marché de partage entre entreprises pour développer une économie plus circulaire et plus durable. Vous souhaitez développer vos connaissances sur l'économie collaborative ? Contactez-nous ou téléchargez notre livre blanc ci-dessous !</p>
+						<p class="col-lg-6 py-4">Collahop vous accompagne pour identifier les opportunités à saisir. Nous avons développé un marché de partage entre entreprises pour développer une économie plus circulaire et plus durable. Vous souhaitez développer vos connaissances sur l'économie collaborative ? Contactez-nous ou téléchargez notre livre blanc ci-dessous !</p>
 					</div>
 					<div class="buttons col-lg-4 fs-5">
-						<button type="button" class="contact_btn">Contacts</button>
-						<a class="dowload_ebook" href="{{ path('ebook_form') }}"><button type="button" class="services_btn">Livre Blanc</button></a>
+						<a class="contact_form_btn" href="{{ path('contacts') }}">
+							<button type="button" class="contact_btn">Contacts</button>
+						</a>
+						<a class="dowload_ebook_btn" href="{{ path('ebook_form') }}">
+							<button type="button" class="ebook_btn">Livre Blanc</button>
+						</a>
 					</div>
 				</div>
 				<div class="row justify-content-md-center align-items-end rectangle_group p-0 m-0 mt-3">
