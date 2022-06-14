@@ -5,6 +5,11 @@
 
 .contacts {
     background-color: $color-slogan;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: 100vw; 
+    padding-top: 20px;
 }
 
 .global_form_container {
