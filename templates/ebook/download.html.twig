@@ -3,13 +3,16 @@
 {% block title %}Téléchargez votre ebook{% endblock %}
 
 {% block body %}
-<div class="ebook d-flex justify-content-center align-items-center">
-    <div class="download-frame py-5 d-flex flex-column justify-content-evenly align-items-center">
-        <p class="text-center font-family-base">Découvrez nos services !</p>
-        <div>
-            <img id="logo-download" src="{{ asset('build/images/interlock.png') }}">
-            <a class="text-decoration-none" href="{{ asset('build/files/test.fb105e69.pdf') }}" target="blank">Télécharger le livret blanc</a>
-            <img id="logo-download" src="{{ asset('build/images/interlock.png') }}">
+<header class="bg-dark">
+    {% include ('_navbar.html.twig') %}
+</header>
+<div class="ebook row justify-content-center align-items-start align-items-md-center">
+    <div class="download-frame py-5 col-12 col-md-8 col-lg-6 justify-content-evenly align-items-evenly md-rounded">
+        <p class="justify-content-center font-family-base fs-3 row">Découvrez nos services !</p>
+        <div clas="row justify-content-center d-flex">
+            <img id="logo-download" class="d-none md-block" src="{{ asset('build/images/interlock.png') }}">
+            <a class="text-center text-decoration-none d-block fs-4" href="{{ asset('build/files/test.fb105e69.pdf') }}" target="blank">Télécharger le livret blanc</a>
+            <img id="logo-download" class="d-none md-block" src="{{ asset('build/images/interlock.png') }}">
         </div>   
     </div>
 </div>
