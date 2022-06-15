@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CarrouselController!{% endblock %}
+
+{% block body %}
+    <header>
+		{% include ('_navbar.html.twig') %}
+	</header>
+
+    <div class="container-fluid carrousel_bg_2>
+        <div class="row container_carrosel_part_2">
+            <div class="container img_container col-5 p-0">
+                <img src="reunion_carrousel_2.jpeg" class="img-fluid img_caroussel_2 h-100" alt="" srcset="">
+            </div>
+
+            <div class="container col-7">
+                <div class="number_img d-flex justify-content-end">
+                    <img src="reunion_carrousel_2.jpeg" class="number_carrousel_img " alt="" srcset="">
+                </div>
+
+                <div class="text_carrousel_part_2 border row">
+                    <div class="title_carrousel_2">
+                        <h2 class="fs-1 px-4"> Une belle histoire, la nôtre </h2>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="row fs-4 py-5 px-5 mx-5 border col-10">
+                                <span> <strong>Collahop</strong> est né de l'idée que les entreprises
+                                    pouvaient être plus rentables si elles utilisaient toutes leurs ressources actives.
+                                    Parce que nous pensons que le succès de <strong>l'économie du partage</strong>
+                                    commence par
+                                    la
+                                    collaboration.
+                                    Notre mission est de rendre possible la croissance économique de votre entreprise
+                                    afin
+                                    d'être
+                                    compatible avec la protection
+                                    de l'environnement et du climat. Nous sommes convaincus que l'économie verte est un
+                                    moteur
+                                    de
+                                    croissance
+                                    et d'innovation. </span>
+                                <span>Nous avons conçu Collahop de manière à ce qu'il puisse répondre à trois besoins
+                                    fondamentaux : </span>
+
+                                <span> Limiter l'immobilisation du capital et générer de nouveaux revenus </span>
+
+                                <span> Réduire les délais de maintenances </span>
+                                <span> Donner à vos produits/services une chance d'être utilisés. </span>
+
+                                <span> Parce que nous sommes des stratèges,
+                                    Parce que nous sommes des solutionnistes et que nous avons construit notre
+                                    entreprise en
+                                    tant
+                                    qu'organisation de réseau. </span>
+
+                                <span> Parce que nous sommes, votre prochaine belle histoire.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
