@@ -1,3 +1,4 @@
+
 @mixin homepage-buttons {
     padding: 5px;
     border-radius: 25px;
@@ -22,4 +23,17 @@
 
 @mixin text-shadow {
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+@mixin dynamic-border {
+    border-left: 10px solid aqua;
+    transition : 0.35s ease-in-out;
+    background-color: $color-slogan;
+    color: white;
+}
+
+@mixin img_truncated {
+    opacity: 0.9;
+    object-fit: cover; 
+    overflow: hidden;
 }

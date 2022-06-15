@@ -9,6 +9,7 @@
 import './styles/app.scss';
 import './styles/homepage.scss';
 import './styles/mixins.scss';
+import './styles/contacts.scss';
 import "./styles/navbar.scss";
 require("bootstrap");
 
