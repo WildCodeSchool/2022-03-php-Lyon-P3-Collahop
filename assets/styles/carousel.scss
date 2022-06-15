@@ -1,0 +1,65 @@
+
+
+/* sinon effet nul ! */
+
+span:before , span:after {
+    content:'';
+    display:block;
+    height:0.3em;
+    }
+/* ===== general and image settings ===== */
+
+.container_carousel_part_2 {
+    margin-top: 8.5em!important;
+
+    .img_container {
+        background-color: #10dddd;
+
+        .img_carousel_2  {
+            opacity: 0.6;
+            object-fit: cover; 
+            overflow: hidden;
+        }
+    }
+}
+
+.semi_circle_left {
+    height: 9em;
+    width: 5em;
+    background: white;
+    border-radius: 0 100px 100px 0;
+    border: 4px solid white;
+    transition: 1000ms ease-out;
+}
+
+
+
+
+
+
+.transparent_number {
+    font-size: 6em;
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 2px rgb(195, 195, 195);
+}
+
+.title_carousel_2{
+    color: #7b7b7b;
+    
+}
+h2 {
+    text-transform: uppercase;
+}
+
+.semi_circle_right {
+    height: 16em;
+    width: 8em;
+    background-color: aqua;
+    border-radius: 130px 0px 0px 130px;
+    shape-outside: circle(50%);
+}
+
+.carousel_bg_2 {
+    background-color: #141728;
+}
