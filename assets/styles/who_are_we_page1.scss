@@ -20,8 +20,15 @@ $font-size : 5.8em;
     font-family: ("League Spartan");
 }
 
-.main_container {
-    margin-top: 5rem;
+.who_are_we_page-bg {
+    background-color: #141726;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: 100vw;
+}
+.title {
+    margin-top: 6rem;
 }
 
 .member_img {
