@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog
+{% endblock %}
+
+{% block body %}
+	<header>
+		{% include ('_navbar.html.twig') %}
+	</header>
+	{% include "home/partials/_sidebar_user.html.twig" %}
+	<div class="blog_page">
+        <div class="first_part">
+            <p>BLOG</p>
+            <div>
+                <h1 class="blog_h1">
+                    <p class="transparent_weight mb-0">Nos articles</p>
+                    <p>sur l'économie collaborative
+                        <span class="growth_word">btop</span>
+                    </p>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="lines">
+		<div class="first_border_articles"></div>
+		<div class="second_border_articles"></div>
+
+	</div>
+	<div class="articles">
+		<div class="acrticles_text text-center fw-bold">
+			<p class="blog_h2 mt-4">Retrouvez tous nos articles de blog ici</br>et suivez toutes les tendances du marché de l'économie du partage.</br>Vous serez un vrai PRO !</p>
+        </div>
+        <a href="#">
+            <div class="container">
+                <div class="row">
+                    {% for article in articles %}
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 p-3">
+                        <div class="article p-3 mb-3">
+                            <div class="article_img mb-3">
+                                <div class="img" style="background-image: url({{ article.image }});"></div>
+                            </div>
+                            <h2>{{ article.title }}</h2>
+                            <div class="article_sumary mb-2">{{ article.articleSumary }}</div>
+                            <div class="date_div">
+                                <div class="date">{{ article.date|date('d/m/Y') }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </a>
+    </div>
+{% endblock %}
