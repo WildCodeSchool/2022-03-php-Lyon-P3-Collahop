@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Contacts
+{% endblock %}
+
+{% block body %}
+	<header>
+		{% include ('_navbar.html.twig') %}
+	</header>
+
+	<div class=" contacts container-fluid pb-5 pb-xl-4">
+		<div class="row global_form_container">
+            <div class="contact_img d-none d-lg-block p-0 m-0 col-xl-7 col-lg-6 ">
+                <img class="contacts_img img-fluid img-responsive w-100 h-100" src="{{ asset('build/images/contacts_img/contacts_form_bg.jpg') }}" alt="Réunion de travail">
+            </div>
+
+			<div class="form-body form-group col-xl-5 col-lg-6 px-3 px-lg-5">
+				<h1 class="contact-form-title mb-4 mb-xl-5 d-flex justify-content-center justify-content-md-start">Formulaire de contact</h1>
+                <div class ="row">
+                    {{ form_start(form)}}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+                </div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
