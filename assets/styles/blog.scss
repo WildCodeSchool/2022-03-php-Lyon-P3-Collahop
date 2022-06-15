@@ -11,106 +11,125 @@
 }
 
 body{
-    background-color: rgb(5, 0, 29);
+    background-color: $color-slogan;
 }
+
 .blog_page{
     padding-top: 50px;
     background-image:
         linear-gradient(
-            rgba(8, 0, 43, 0.65),
-            rgba(8, 0, 43, 0.65)),
+            rgba(20, 23, 40, 0.65),
+            rgba(20, 23, 40, 0.65)),
             url("../images/blog/pexels-fauxels-3184291.jpg");
-
     background-size: 100vw;
     background-position: center;
 }
+
 .first_part{
     margin-left: 10vw;
     margin-right: 10vw;
 }
+
 .transparent_weight {
     color: transparent;
     font-weight: 700;
     -webkit-text-stroke: 2px rgb(195, 195, 195);
 }
+
 .growth_word {
     color: $color-logo;
     @include text-shadow;
 }
+
 .blog_h1 {
     font-size: 5.5vw;
     margin: 0;
 }
+
 .blog_h1 > p{
     margin: 0;
 }
+
 .first_border_articles, .second_border_articles{
     margin: 0;
     padding: 0;
     width: 100%;
 }
+
 .first_border_articles{
     height: 3px;
-    background-color: #10dddd;
+    background-color: $color-logo;
 }
+
 .second_border_articles{
     height: 1px;
-    background-color: white; 
+    background-color: $white; 
 }
+
 .second_border_articles{
     height: 1px;
-    background-color: white; 
+    background-color: $white; 
 }
+
 .blog_h2 {
     font-size: 4vw;
 }
+
 a {
     text-decoration: none;
     color: none;
 }
+
 .articles{
     margin-top: 0;
     margin-left: 10vw;
     margin-right: 10vw;
 }
+
 .article{
-    border: 2px solid #10dddd;
+    border: 2px solid $color-logo;
     border-radius: 20px;
-    box-shadow: 0 0 1em #10dddd;
+    box-shadow: 0 0 1em $color-logo;
 }
+
 .article_img{
     height: 25vh;
     border-radius: 20px;
     overflow: hidden;
 }
+
 .img{
     background-size: cover;
     background-position: center;
     height: 100%;
 }
+
 .article_sumary{
     text-align: justify;
 }
+
 .date_div{
     display: flex;
     justify-content: flex-end;
 }
+
 .date{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #10dddd;
+    background-color: $color-logo;
     height: 30px;
     width: 100px;
     border-radius: 20px;
     padding-top: 1%;
-    color: rgb(8, 0, 43)
+    color: $color-slogan;
 }
 
 @media screen and (min-width: 450px) {
     .blog_h1 {
         font-size: 4.5vw;
     }
+
     .blog_h2 {
         font-size: 3vw;
     }
@@ -121,6 +140,7 @@ a {
         font-size: 2vw;
     }
 }
+
 @media screen and (min-width: 950px) {
     .blog_page{
         padding-top: 130px;
