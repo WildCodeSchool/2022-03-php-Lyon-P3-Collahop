@@ -45,7 +45,10 @@ class Contact
     private string $email;
 
     #[ORM\Column(type: 'text', nullable: true)]
+    #[Assert\NotBlank(message: 'Veuillez compléter ce champ')]
     #[Assert\Type('string')]
+    #[Assert\Length(min: 10, minMessage: 'Votre message doit contenir au moins 10 caractères', max:1000, maxMessage :
+    'Votre message est trop long ; il ne doit pas dépasser 1000 caractères')]
     private string $message;
 
     public function getId(): ?int
