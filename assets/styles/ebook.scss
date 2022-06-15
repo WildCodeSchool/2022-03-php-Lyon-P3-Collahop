@@ -8,6 +8,54 @@
   height: 100vh; 
 }
 
+.ebook-title {
+  @include text-shadow;
+}
+
+.title-fill-form {
+  color: #A2A2D4;
+  font-weight: 300 !important;
+}
+
+.ebook-input {
+  background-color: #E6E6F9;
+  color: $color-slogan;
+  padding-left: 50px;
+  border-radius: 25px;
+}
+
+.ebook-btn {
+  background-color: #7F7EC2;
+  width: max-content;
+  color: white;
+  font-weight: 600;
+  box-shadow: 3px 3px 2px gray;
+  border-radius: 5px;
+}
+
+.ebook-text {
+  width: 70%;
+  text-align: justify !important;
+  line-height: 1rem;
+  font-weight: 200;
+  color: $color-slogan;
+}
+
+.ebook-header-frame {
+   width: 100%;
+   margin-right: 0;
+   margin-top: 55px;
+}
+
+.ebook-form-frame {
+  width: 100%;
+  margin-right: 0;
+}
+
+.ebook-form {
+  width: 67%
+}
+
 .download-frame {
   font-family: 'League Spartan' !important;
   font-size: 30px !important;
@@ -28,125 +76,53 @@
   color: $color-slogan;
 }
 
-.ebook-title {
-  @include text-shadow;
-  font-size: 38px;
+@media screen and (max-width: 1200px) {
+
+  .ebook-form {
+    width: 90%;
 }
-
-.title-fill-form {
-  color: #A2A2D4;
-  font-weight: 300 !important;
-  font-size: 35px;
-}
-
-.ebook-input {
-  background-color: #E6E6F9;
-  color: $color-slogan;
-  padding-left: 50px;
-  border-radius: 25px;
-  width: 70%;
-
-}
-
-.ebook-btn {
-  background-color: #7F7EC2;
-  width: max-content;
-  color: white;
-  font-weight: 600;
-  font-size: 17px;
-  box-shadow: 3px 3px 2px gray;
-  border-radius: 5px;
-}
-
-.ebook-text {
-  width: 75%;
-  text-align: justify !important;
-  line-height: 1rem;
-  font-weight: 200;
-  font-size: 14.5px;
-  color: $color-slogan;
-}
-
-.ebook-header-frame {
-  width: 40%;
-  height: 30vh;
-}
-
-.ebook-form-frame {
-  width: 40%;
-  height: 55vh;
-}
-
-.ebook-form {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-@media screen and (max-width: 1200px) and (orientation: portrait) {
   .ebook-header-frame {
-    width: 60%;
-    height: 20vh;
+    margin-top: 70px;
   }
-  
-  .ebook-form-frame {
-    width: 60%;
-    height: 40vh;
-  }
-
 }
 
-@media screen and (max-width: 576px) and (orientation: portrait) {
+@media screen and (max-width: 576px) {
     .ebook {
       background-image: none;
-      height: 85vh;
+      background-color: $color-slogan;
+      margin: 0;
+      width: 100%;
+      padding: 0;
     }
 
     .ebook-header-frame {
-      width: 100%;
-      height: 25vh;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-top: 70px;
     }
 
     .ebook-form-frame {
-      width: 100%;
-      height: 60vh;
-    }
-
-    .ebook-title {
-      width: 98%;
+      margin-left: 0;
     }
 
     .ebook-text {
       width: 95%;
     }
 
-    .ebook-input {
-      margin-bottom: 5%;
-      width: 90%;
+    .ebook-form {
+      width: 80%;
+    }
+
+    .ebook-frame {
+      padding: 0;
+      margin: 0;
     }
 }
 
-@media screen and (max-width: 430px) and (orientation: portrait) {
-    .ebook-title {
-      font-size: 30px;
-      width: 98%;
-    }
+@media screen and (max-width: 400px) {
 
-    .title-fill-form {
-      font-size: 28px;
-    }
-
-    .ebook-header-frame {
-      width: 100%;
-      height: 24vh;
-    }
-
-    .ebook-form-frame {
-      width: 100%;
-      height: 50vh;
-    }
+  .ebook-form {
+    width: 90%;
+  }
 }
