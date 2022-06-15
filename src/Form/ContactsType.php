@@ -30,14 +30,14 @@ class ContactsType extends AbstractType
                     'class' => 'contact_form_input'
                 )))
 
-            ->add('email', EmailType::class , array (
+            ->add('email', EmailType::class, array (
                 'label' => false,
                 'attr' => array(
                     'placeholder' => 'Adresse e-mail',
                     'class' => 'contact_form_input'
                 )))
 
-            ->add('company', TextType::class , array (
+            ->add('company', TextType::class, array (
                 'label' => false,
                 'attr' => array(
                     'placeholder' => 'Société',
@@ -51,11 +51,11 @@ class ContactsType extends AbstractType
                     'class' => 'contact_form_area',
                     'rows' => 10
                 )))
-                
+
             ->add('send', SubmitType::class, array (
                 'label' => 'Envoyer',
                 'attr' => array(
-                    'class' => 'contact_form_btn btn button button-2 fs-4 mt-4', 
+                    'class' => 'contact_form_btn btn button button-2 fs-4 mt-4',
                 )));
     }
 
