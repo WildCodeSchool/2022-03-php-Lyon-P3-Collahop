@@ -38,7 +38,7 @@ body{
     @include text-shadow;
 }
 .blog_h1 {
-    font-size: 4.5vw;
+    font-size: 5.5vw;
     margin: 0;
 }
 .blog_h1 > p{
@@ -107,13 +107,10 @@ a {
     color: rgb(8, 0, 43)
 }
 
-@media screen and (min-width: 950px) {
-    .blog_page{
-        padding-top: 130px;
-    }
-}
-
 @media screen and (min-width: 450px) {
+    .blog_h1 {
+        font-size: 4.5vw;
+    }
     .blog_h2 {
         font-size: 3vw;
     }
@@ -124,6 +121,12 @@ a {
         font-size: 2vw;
     }
 }
+@media screen and (min-width: 950px) {
+    .blog_page{
+        padding-top: 130px;
+    }
+}
+
 @media screen and (min-width: 1100px) {
     .blog_h2 {
         font-size: 1.5vw;
