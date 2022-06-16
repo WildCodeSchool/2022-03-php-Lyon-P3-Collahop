@@ -1,0 +1,170 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}F.A.Q.
+{% endblock %}
+
+{% block body %}
+	<header>
+    {% include ('_navbar.html.twig') %}
+    </header>
+	{% include "home/partials/_sidebar_user.html.twig" %}
+	<div class="faq_page">
+		<p>
+			<h1 class="faq_h1 text-center">Besoin d'aide ?</h1>
+		</p>
+		<div class="faq_img">
+			<div class="left_line"></div>
+			<img src="{{ asset('build/images/faq/FAQ.png') }}" class="img_faq mb-5" alt="Image F.A.Q.">
+			<div class="right_line"></div>
+		</div>
+		<div class="container_h2">
+			<div class="frame_h2">
+				<h2 class="faq_h2 text-center ">Trouvez les réponses a vos questions</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="sentences_block row">
+				<div class="sentences_block_first col-xxl-5 col-xl-6 ms-xl-0 col-lg-8 ps-lg-5 col-md-10 col-sm-12 col-xs-12 ps-xs-0 ms-xs-0">
+					<button class="btn first_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">Pourquoi l’économie collaborative ?</div>
+					</button>
+					<div class="collapse" id="collapse1">
+						<div class="response1">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+					<button class="btn second_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">Comment mettre en place l’économie de partage ?</div>
+					</button>
+					<div class="collapse" id="collapse2">
+						<div class="response2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+					<button class="btn third_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">Comment trouver un partenaire ?</div>
+					</button>
+					<div class="collapse" id="collapse3">
+						<div class="response3">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+					<button class="btn fourth_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">En quoi est-ce écologique d’utiliser ce business modèle ?</div>
+					</button>
+					<div class="collapse" id="collapse4">
+						<div class="response4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+
+				</div>
+				<div class="sentences_block_second col-xxl-5 col-xl-6 ms-xl-0 col-lg-8 ps-lg-5 col-md-10 col-sm-12 col-xs-12 ps-xs-0 ms-xs-0">
+					<button class="btn fifth_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">Quels sont les facteurs favorisant l’économie collaborative ?</div>
+					</button>
+					<div class="collapse" id="collapse5">
+						<div class="response5">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+					<button class="btn sixth_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">Comment mettre en place l’économie de partage ?</div>
+					</button>
+					<div class="collapse" id="collapse6">
+						<div class="response6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+					<button class="btn seventh_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">Pourquoi formaliser un partenariat ?</div>
+					</button>
+					<div class="collapse" id="collapse7">
+						<div class="response7">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+					<button class="btn eighth_sentence" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+						<div class="div_square">
+							<div class="square"></div>
+						</div>
+						<div class="sentence">Comment se déroule l’accompagnement sur le long terme ?</div>
+					</button>
+					<div class="collapse" id="collapse8">
+						<div class="response8">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna orci, 
+							suscipit nec libero quis, fermentum viverra erat. Morbi laoreet erat a 
+							lobortis tincidunt. Etiam dui est, hendrerit consectetur ultrices vel, 
+							iaculis eget ante. Duis convallis laoreet varius. Aenean tincidunt, 
+							nunc sed blandit accumsan, libero enim finibus libero, vitae egestas 
+							metus est nec urna. Suspendisse potenti. Nullam aliquet ipsum quis orci 
+							rhoncus, sit amet mollis urna rutrum.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
