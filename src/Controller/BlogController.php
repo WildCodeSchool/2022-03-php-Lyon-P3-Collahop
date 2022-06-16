@@ -18,4 +18,20 @@ class BlogController extends AbstractController
             'articles' => $articles
         ]);
     }
-}
+
+    #[Route('/blog/{id<^[0-9]+$>}', name: 'show')]
+    public function show(int $id, ArticlesRepository $articlesRepository):Response
+    {
+        $article = $articlesRepository->findOneBy(['id' => $id]);
+        // same as $program = $programRepository->find($id);
+
+        if (!$article) {
+            throw $this->createNotFoundException(
+                'No article with id : '.$id.' found in articles table.'
+            );
+        }
+        return $this->render('blog/show.html.twig', [
+            'article' => $article,
+        ]);
+    }
+    }

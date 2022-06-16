@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog - Article
+{% endblock %}
+
+{% block body %}
+	<header>
+		{% include ('_navbar.html.twig') %}
+	</header>
+	{% include "home/partials/_sidebar_user.html.twig" %}
+	<pre>
+        {{ dump(article) }}
+    </pre>
+{% endblock %}
