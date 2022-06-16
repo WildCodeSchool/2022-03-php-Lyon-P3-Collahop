@@ -30,6 +30,12 @@ body{
     margin-right: 10vw;
 }
 
+.category{
+    font-size: 3.5vw;
+    color: $secondary-homepage-color;
+    font-weight: bold;
+}
+
 .transparent_weight {
     color: transparent;
     font-weight: 700;
@@ -133,11 +139,19 @@ a {
     .blog_h2 {
         font-size: 3vw;
     }
+
+    .category{
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (min-width: 700px) {
     .blog_h2 {
         font-size: 2vw;
+    }
+
+    .category{
+        font-size: 1.5vw;
     }
 }
 
