@@ -13,4 +13,10 @@ class HomeController extends AbstractController
     {
         return $this->render('home/index.html.twig');
     }
+
+    #[Route('/qsn', name: 'qsn')]
+    public function presentation(): Response
+    {
+        return $this->render('qsn/carousel.html.twig', ['msg' => 'Hello']);
+    }
 }

@@ -41,11 +41,12 @@ section :is(p) {
     background-size: cover;
     background-position: center;
     background-size: 100vw; 
+        section {
+            margin-top: -105px !important;
+        }
     }
 
-section {
-   margin-top: 50px !important;
-}
+
 
 /* ===== Homepage semi-circles sesctions ===== */
 
