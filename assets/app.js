@@ -11,6 +11,8 @@ import './styles/homepage.scss';
 import './styles/mixins.scss';
 import './styles/contacts.scss';
 import "./styles/navbar.scss";
+import "./styles/who_are_we_page1.scss";
+import "./styles/faq.scss";
 require("bootstrap");
 
 var burgerMenu = document.getElementById("burger-menu");
