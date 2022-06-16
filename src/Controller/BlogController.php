@@ -23,8 +23,6 @@ class BlogController extends AbstractController
     public function show(int $id, ArticlesRepository $articlesRepository): Response
     {
         $article = $articlesRepository->findOneBy(['id' => $id]);
-        // same as $program = $programRepository->find($id);
-
         if (!$article) {
             throw $this->createNotFoundException(
                 'No article with id : ' . $id . ' found in articles table.'
