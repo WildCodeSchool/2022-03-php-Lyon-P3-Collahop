@@ -27,7 +27,7 @@ class Articles
     private string $article_sumary;
 
     #[ORM\Column(type: 'date')]
-    private mixed $date;
+    private DateTime $date;
 
     public function getId(): ?int
     {
