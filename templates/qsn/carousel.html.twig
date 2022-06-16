@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+	<body class="bg-qsn">
+		{% include ('_navbar.html.twig') %}
+		<div id="carousel-presentation" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carousel-presentation" data-bs-slide-to="0" class="active carousel-indicators-btn" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carousel-presentation" data-bs-slide-to="1" class="carousel-indicators-btn" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carousel-presentation" data-bs-slide-to="2" class="carousel-indicators-btn" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				{% include ("qsn/part1.html.twig") %}
+				{% include ("qsn/part2.html.twig") %}
+                {% include ("qsn/part3.html.twig") %}
+				
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel-presentation" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel-presentation" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</body>
+{% endblock %}
