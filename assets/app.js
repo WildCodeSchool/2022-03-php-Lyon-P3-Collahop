@@ -1,6 +1,4 @@
 import './styles/app.scss';
-
-
 require("bootstrap");
 
 var burgerMenu = document.getElementById("burger-menu");
