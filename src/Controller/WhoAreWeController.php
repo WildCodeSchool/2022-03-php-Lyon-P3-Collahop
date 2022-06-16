@@ -11,8 +11,6 @@ class WhoAreWeController extends AbstractController
     #[Route('/who/are/we', name: 'app_who_are_we')]
     public function index(): Response
     {
-        return $this->render('who_are_we/index.html.twig', [
-            'controller_name' => 'WhoAreWeController',
-        ]);
+        return $this->render('who_are_we/index.html.twig');
     }
 }
