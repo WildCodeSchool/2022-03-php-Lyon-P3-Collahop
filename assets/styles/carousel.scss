@@ -3,12 +3,10 @@
 
 .carousel_page_2_bg {
     background-color: $color-slogan;
-    min-height: 100vh;
 }
 
 .container_carousel_part_2 {
-    margin-top: 8.5em!important;
-
+    
     .img_container {
         background-color: $color-logo;
 
@@ -37,12 +35,27 @@
         font-size: calc(18px + 1.2vw);
         color: $secondary-homepage-color;
     }
-    p {
-        font-size: 21px;
 
+    p {
+        font-size: 20.5px;
+        text-align: justify;
+        
+        span {
+            color: rgb(216, 216, 216)!important;
+        }
+        
         strong {
             font-weight:normal;
+            color: rgb(194, 194, 194)!important;
           }
+
+        .white_font_carousel {
+            color: white!important; 
+        }
+
+        .punchline_carousel_2 {
+            font-size: 23px;
+        }
     }
 
     span:before , span:after {
@@ -78,11 +91,11 @@
 
 @media screen and (max-width: 950px) {
 
-    .container_carousel_part_2 {
-        margin-top: 3em!important;
-    }
-
     p {
         text-align: justify;
+    }
+
+    .container_carousel_part_2 {
+        margin-top : -4em;
     }
 }

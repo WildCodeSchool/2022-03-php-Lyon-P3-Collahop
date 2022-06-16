@@ -3,11 +3,11 @@
 {% block title %}Hello CarrouselController!{% endblock %}
 
 {% block body %}
-    <header>
+<body class="carousel_page_2_bg">
 		{% include ('_navbar.html.twig') %}
-	</header>
+
     
-    <div class="container-fluid border carousel_page_2_bg">
+    <div class="container-fluid carousel_page_2_bg">
         <div class="row container_carousel_part_2">
             <div class="img_container col-5 p-0 d-none d-lg-block">
             <div class="semi_circle_left d-none d-lg-block"></div>
@@ -21,7 +21,7 @@
 
                 <div class="text_carrousel_part_2  row">
                     <div class="title_carousel_2">
-                        <h2 class="px-lg-4 d-flex justify-content-center justify-content-lg-start"> Une belle histoire, la nôtre </h2>
+                        <h2 class="px-lg-3 d-flex justify-content-center justify-content-lg-start"> Une belle histoire, la nôtre </h2>
                     </div>
 
                     <div class="container">
@@ -35,13 +35,13 @@
                                     moteur de croissance et d'innovation. </span>
                                 <span>Nous avons conçu Collahop de manière à ce qu'il puisse répondre à trois besoins
                                     fondamentaux : </span>
-                                <span> Limiter l'immobilisation du capital et générer de nouveaux revenus </span>
-                                <span> Réduire les délais de maintenances </span>
-                                <span> Donner à vos produits/services une chance d'être utilisés. </span>
+                                <span class="white_font_carousel"> Limiter l'immobilisation du capital et générer de nouveaux revenus </span>
+                                <span class⁼"white_font_carousel"> Réduire les délais de maintenances </span>
+                                <span class="white_font_carousel"> Donner à vos produits/services une chance d'être utilisés. </span>
                                 <span> Parce que nous sommes des stratèges,<br>
                                     Parce que nous sommes des solutionnistes et que nous avons construit notre
                                     entreprise en tant qu'organisation de réseau. </span>
-                                <span> Parce que nous sommes, votre prochaine belle histoire.</span>
+                                <span class="punchline_carousel_2 white_font_carousel"> Parce que nous sommes, votre prochaine belle histoire.</span>
                             </p>
                             <div class="semi_circle_right d-none d-lg-block"></div>
                         </div>
@@ -50,4 +50,5 @@
             </div>
         </div>
     </div>
+</body>
 {% endblock %}
