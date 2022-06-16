@@ -18,8 +18,8 @@ body{
     padding-top: 50px;
     background-image:
         linear-gradient(
-            rgba(20, 23, 40, 0.65),
-            rgba(20, 23, 40, 0.65)),
+            rgba($color-slogan, 0.80),
+            rgba($color-slogan, 0.80)),
             url("../images/blog/pexels-fauxels-3184291.jpg");
     background-size: 100vw;
     background-position: center;
@@ -62,14 +62,9 @@ body{
     width: 100%;
 }
 
-.first_border_articles{
+.border_articles{
     height: 3px;
     background-color: $color-logo;
-}
-
-.second_border_articles{
-    height: 1px;
-    background-color: $white; 
 }
 
 .second_border_articles{
