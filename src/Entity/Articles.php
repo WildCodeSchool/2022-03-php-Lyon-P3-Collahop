@@ -20,10 +20,10 @@ class Articles
     private string $image;
 
     #[ORM\Column(type: 'text')]
-    private string $article_content;
+    private string $articleContent;
 
     #[ORM\Column(type: 'text')]
-    private string $article_sumary;
+    private string $articleSumary;
 
     #[ORM\Column(type: 'date')]
     private \DateTimeInterface $date;
@@ -59,24 +59,24 @@ class Articles
 
     public function getArticleContent(): ?string
     {
-        return $this->article_content;
+        return $this->articleContent;
     }
 
-    public function setArticleContent(string $article_content): self
+    public function setArticleContent(string $articleContent): self
     {
-        $this->article_content = $article_content;
+        $this->articleContent = $articleContent;
 
         return $this;
     }
 
     public function getArticleSumary(): ?string
     {
-        return $this->article_sumary;
+        return $this->articleSumary;
     }
 
-    public function setArticleSumary(string $article_sumary): self
+    public function setArticleSumary(string $articleSumary): self
     {
-        $this->article_sumary = $article_sumary;
+        $this->articleSumary = $articleSumary;
 
         return $this;
     }
