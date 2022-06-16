@@ -1,0 +1,92 @@
+
+@import "mixins";
+
+/* ===== Global positionnement ====== */
+
+.contacts {
+    background-color: $color-slogan;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: 100vw; 
+    padding-top: 15px;
+}
+
+.global_form_container {
+    margin-top: 8.5em !important;
+}
+/* ===== Image section ===== */
+
+.contacts_img {
+    @include img_truncated;
+}
+
+/* ===== Contact form section ===== */
+
+.form-body {
+    color: white;
+    background-color: $color-slogan;
+    .contact-form-title {
+        font-size: calc(23px + 1.7vw);
+    }
+
+    input {
+        border: 1px solid white;
+        height: 60px;
+        background-color: $color-slogan;
+        color: white;
+
+        &:hover {
+            @include dynamic-border;
+        }
+    }
+
+    ::placeholder {
+        color: white !important;
+    }
+
+    .contact_form_area {
+        background-color: $color-slogan;
+        color: white;
+
+        &:hover {
+            @include dynamic-border;
+        }
+    }
+
+    .contact_form_btn {
+        padding: 5px;
+        border-radius: 5px;
+        width: 190px;
+        background-color: #10dddd;
+        color: white;
+        font-weight: bold;
+        transition: all 0.2s;
+
+        &:hover {
+            width: 170px;
+        }
+
+        &:active {
+            transform: scale(0.92) translateY(-2px);
+        }
+    }
+}
+
+@media screen and (max-width: 1573px) {
+    .global_form_container {
+        margin-top: 5em!important;
+    }
+
+    .mb-3 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .mb-3 {
+        display: flex;
+        justify-content: center;
+    }
+}
