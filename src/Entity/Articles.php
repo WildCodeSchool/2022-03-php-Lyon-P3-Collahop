@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use App\Repository\ArticlesRepository;
-use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ArticlesRepository::class)]
@@ -27,7 +26,7 @@ class Articles
     private string $article_sumary;
 
     #[ORM\Column(type: 'date')]
-    private DateTime $date;
+    private \DateTimeInterface $date;
 
     public function getId(): ?int
     {
