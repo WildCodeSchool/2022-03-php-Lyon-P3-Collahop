@@ -1,18 +1,6 @@
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
-
-
 import './styles/app.scss';
-import './styles/homepage.scss';
-import './styles/mixins.scss';
-import './styles/contacts.scss';
-import "./styles/navbar.scss";
-import "./styles/who_are_we_page1.scss";
-import "./styles/faq.scss";
+
+
 require("bootstrap");
 
 var burgerMenu = document.getElementById("burger-menu");

@@ -24,12 +24,16 @@ $font-family-base: 'League Spartan';
 }
 
 @import "~bootstrap/scss/bootstrap";
+@import "contacts";
+@import "navbar";
 @import "sidebar";
 @import "homepage";
 @import "homepage_part2";
 @import "mixins";
 @import "ebook";
 @import "faq";
+
+@import "who_are_we_page1.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
