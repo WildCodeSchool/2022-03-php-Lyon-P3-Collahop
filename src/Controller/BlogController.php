@@ -25,7 +25,7 @@ class BlogController extends AbstractController
         $article = $articlesRepository->findOneBy(['id' => $id]);
         if (!$article) {
             throw $this->createNotFoundException(
-                'No article with id : ' . $id . ' found in articles table.'
+                'L\'article que vous recherchez n\'éxiste pas.'
             );
         }
         return $this->render('blog/show.html.twig', [
