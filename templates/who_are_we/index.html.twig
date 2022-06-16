@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Who are we ?
+{% endblock %}
+
+{% block body %}
+	<header>
+		{% include ('_navbar.html.twig') %}
+	</header>
+	<div class="who_are_we_page_bg p-3">
+		<div class="title py-2">
+			<p>
+				<span class="who">Qui sommes-</span>
+				<span class="us">nous ?</span>
+			</p>
+		</div>
+		<div class="team py-2">
+			<h2 class="our_team">NOTRE EQUIPE</h2>
+		</div>
+
+		<div class="row row-cols-2">
+			<div class="first_member_details">
+				<div class="first_member_title row row-cols-2 align-items-center my-4">
+					<img class="member_img" src="{{ asset('build/images/who_are_we/alain.png') }}">
+					<h3 class="row">ALAIN WIGISHOFF
+						<span>Fondateur</span>
+					</h3>
+				</div>
+				<div class="text">
+					<p class="presentation">Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur. Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur. Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur. Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur.</p>
+				</div>
+				<div class="skills col-xl-10">
+					<p class="skill">Compétence 1</p>
+					<div class="skill_barre">
+						<p class="first_member_notation1"></p>
+					</div>
+					<p class="skill">Compétence 2</p>
+					<div class="skill_barre">
+						<p class="first_member_notation2"></p>
+					</div>
+					<p class="skill">Compétence 3</p>
+					<div class="skill_barre">
+						<p class="first_member_notation3"></p>
+					</div>
+				</div>
+			</div>
+			<div class="second_member_details">
+				<div class="second_member_title row row-cols-2 align-items-center my-4">
+					<img class="member_img" src="{{ asset('build/images/who_are_we/oceane.png') }}">
+					<h3 class="row">OCEANE PARRAVANO
+						<span>Digital brand manager</span>
+					</h3>
+				</div>
+				<div class="text">
+					<p class="presentation">Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur. Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur. Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur. Chef d'entreprise, expert en assemblage mécanique, intégrateur de l'économie collaborative dans l'industrie, Innovateur.</p>
+				</div>
+				<div class="skills col-xl-10">
+					<p class="skill">Compétence 1</p>
+					<div class="skill_barre">
+						<p class="scd_member_notation1"></p>
+					</div>
+					<p class="skill">Compétence 2</p>
+					<div class="skill_barre">
+						<p class="scd_member_notation2"></p>
+					</div>
+					<p class="skill">Compétence 3</p>
+					<div class="skill_barre">
+						<p class="scd_member_notation3"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
