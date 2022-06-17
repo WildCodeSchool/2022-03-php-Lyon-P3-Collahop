@@ -49,7 +49,7 @@ class ContactsType extends AbstractType
                 'attr' => array(
                     'placeholder' => 'Votre message',
                     'class' => 'contact_form_area',
-                    'rows' => 10
+                    'rows' => 9
                 )))
 
             ->add('send', SubmitType::class, array (

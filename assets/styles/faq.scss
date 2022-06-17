@@ -1,12 +1,16 @@
+.faq_body {
+  background-color: $color-slogan;
+}
+
 .faq_page{
-  background-color: rgb(0, 0, 27);
+  background-color: $color-slogan;
   padding-top: 150px;
   min-height: 100vh;
   max-height: 1000vh;
 }
 
 .faq_h1{
-  color: #ffffff;
+  color: $white;
   font-size: 5em;
 }
 
@@ -42,12 +46,12 @@
 
 .frame_h2{
   width: 35vw;
-  background-color: #10dddd;
+  background-color: $color-logo;
   border-radius: 200px;
 }
 
 .faq_h2{
-  color: #ffffff;
+  color: $white;
   vertical-align: center;
   align-items: center;
   margin: 5px;
@@ -74,7 +78,7 @@
 .square{
   height: 15px;
   width: 15px;
-  background: aqua;
+  background: $color-logo;
   -ms-transform: rotate(45deg); /* Internet Explorer */
   -moz-transform: rotate(45deg); /* Firefox */
   -webkit-transform: rotate(45deg); /* Safari et Chrome */

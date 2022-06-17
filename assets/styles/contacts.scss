@@ -1,6 +1,3 @@
-@import "app";
-@import "mixins";
-
 /* ===== Global positionnement ====== */
 
 .contacts {
@@ -9,11 +6,10 @@
     background-size: cover;
     background-position: center;
     background-size: 100vw; 
-    padding-top: 15px;
 }
 
 .global_form_container {
-    margin-top: 8.5em !important;
+    background-color: $color-slogan;
 }
 /* ===== Image section ===== */
 
@@ -75,17 +71,17 @@
 
 @media screen and (max-width: 1573px) {
     .global_form_container {
-        margin-top: 5em!important;
+        margin-top: -2em!important;
     }
 
-    .mb-3 {
+    .contacts > .mb-3 {
         margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 950px) {
 
-    .mb-3 {
+    .contacts > .mb-3 {
         display: flex;
         justify-content: center;
     }

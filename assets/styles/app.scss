@@ -1,5 +1,3 @@
-//start coding by removing this file and adding yours ;)
-
 $color-typography: #287878;
 $color-logo: #10dddd;
 $color-image: #78a0a0;
@@ -24,13 +22,19 @@ $font-family-base: 'League Spartan';
 }
 
 @import "~bootstrap/scss/bootstrap";
+@import "mixins";
 @import "sidebar";
 @import "homepage";
 @import "homepage_part2";
-@import "mixins";
 @import "ebook";
-@import "_footer";
+@import "who_are_we_page1";
+@import "qsnPart3";
+@import "carousel";
 @import "faq";
+@import "contacts";
+@import "navbar";
+@import "blog";
+@import "_footer";
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");

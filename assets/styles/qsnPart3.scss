@@ -1,0 +1,133 @@
+$bg-qsn-1:#98C9C7;
+$bg-qsn-2: #78C8C8;
+$bg-qsn-3: #50A0A0;
+$bg-qsn-4: #007B78;
+
+
+.bg-qsn {
+    background-color: $color-slogan;
+}
+
+#carousel-presentation {
+    height: 5vh;
+}
+
+.carousel-indicators .active {
+    background-color: $color-logo;
+}
+
+.carousel-indicators {
+    margin: 0;
+}
+
+.carousel-indicators-btn {
+    height: 0.3em !important;
+    width: 26% !important;
+}
+
+.slide-number {
+    height: 8em;
+}
+
+.transparent_number {
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 2px rgb(195, 195, 195);
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-caption {
+    position: static;
+}
+
+.carousel-inner {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.carousel-rect {
+    width: 100%;
+    height: 100vh;
+    fill: $color-slogan;
+}
+
+.carousel-content {
+    height: 100vh;
+    width: 100vw;
+    right: 0%;
+    left: 0%;
+    background-color: $color-slogan;
+    justify-content: center;
+    text-align: justify;
+}
+
+.undertakings-div {
+    margin-left: 10%;
+}
+.undertakings {
+    color: $color-image;
+    font-family: 'Poppins';
+    justify-self: start;
+}
+
+.undertakings-subtitle {
+    width: 80%
+}
+
+
+.undertakings-title {
+    @include text-shadow;
+}
+
+.undertakings-text {
+    font-size: 1.25rem;
+    color: $color-slogan;   
+    line-height: 1;
+}
+
+.undertakings-img {
+    height: 14rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-introduction {
+    width: 80%;
+    font-size: 1.25rem;
+}
+.opportunities {
+    background-color: $bg-qsn-1;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0%;
+}
+
+.economy {
+    background-color: $bg-qsn-2;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: -5%;
+    margin-right: 0
+}
+
+.environment {
+    background-color: $bg-qsn-3;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0
+}
+
+.social {
+    background-color: $bg-qsn-4;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: -5%;
+    margin-right: 0
+}

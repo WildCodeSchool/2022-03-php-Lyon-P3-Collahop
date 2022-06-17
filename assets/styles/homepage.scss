@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
-@import "mixins";
 
 $text-align: justify;
 $secondary-homepage-color: #7b7b7b;
@@ -13,11 +12,7 @@ $font-size : 5.8em;
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     color: $white;
-    font-family: ("League Spartan");
 }
 
 body :is(h1, h2, h3, h4) {
@@ -40,16 +35,14 @@ section :is(p) {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100vw; 
+        section {
+            margin-top: -105px !important;
+        }
     }
 
-section {
-   margin-top: 50px !important;
-}
-
 /* ===== Homepage semi-circles sesctions ===== */
-
-/* Background color = white */
 
 .semi_circle_left {
     height: 9em;
@@ -67,7 +60,7 @@ section {
     border-radius: 130px 0px 0px 130px;
 }
 
-/* ===== Text container for the homepage ***** */
+/* ===== Text container for the homepage ===== */
 
 .body_text_container {
     .share_economy {
@@ -83,9 +76,7 @@ section {
     }
 
     .transparent_weight {
-        color: transparent;
-        font-weight: 700;
-        -webkit-text-stroke: 2px rgb(195, 195, 195);
+        @include transparent-weight;
     }
 
     .growth_word {
@@ -105,6 +96,9 @@ section {
     border: 2px solid grey;
     background-color: transparent;
     border: 1px solid white;
+    &:active {
+        transform: scale(0.92) translateY(-2px);
+    }
 }
 
 .services_btn {
@@ -112,6 +106,9 @@ section {
     margin-left: 20px;
     background-color: #10dddd;
     border: 2px solid #10dddd;
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
 /* ===== Rectangle group homepage section ===== */
@@ -155,14 +152,6 @@ section {
             font-size: 1.2em!important;
         }
       }
-    }
-
-
-@media screen and (max-width: 720px)
-{
-    h1 {
-        font-size: 14em;
-    }
 }
 
 

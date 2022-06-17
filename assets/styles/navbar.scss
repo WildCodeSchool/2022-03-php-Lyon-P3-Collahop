@@ -1,3 +1,7 @@
+nav {
+  margin-bottom: 150px;
+}
+
 #desktop_menu {
     display: none;
 }
@@ -119,13 +123,13 @@ nav .frame{
   height: auto;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
   border-radius: 5px;
 }
 
 
 .mobile_line {
-    border-top: 3px solid rgb(255, 255, 255);
+    border-top: 3px solid $white;
     position: fixed;
     right: 5vw;
     top: 15px;
@@ -145,11 +149,11 @@ nav .frame{
     max-width: 300px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid $white;
+    color: $white;
 }
 nav input::placeholder {
-    color: #ffffff;
+    color: $white;
     opacity: 0.6;
 }
 nav input{    
@@ -239,13 +243,13 @@ nav input{
         left: 80%;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0);
-        border: 1px solid #ffffff;
-        color: #ffffff;
+        border: 1px solid $white;
+        color: $white;
       }
 
       nav .desktop{
       text-decoration: none;
-      color: #ffffff;
+      color: $white;
       font-weight: bold;
       transition: 0.2s ease color;
       align-self: center;
@@ -255,7 +259,7 @@ nav input{
       nav #line {
         grid-column: 3;
         grid-row: 1;
-        border-top: 3px solid rgb(255, 255, 255);
+        border-top: 3px solid $white;
         position: absolute;
         right: 0%;
         top: 10px;
@@ -297,7 +301,7 @@ nav input{
     }
 
     nav a:hover + .indicator{
-      background-color: aqua;
+      background-color: $color-logo;
     }
 
     }
