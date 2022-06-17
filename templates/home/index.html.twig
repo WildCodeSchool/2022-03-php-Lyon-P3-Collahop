@@ -7,7 +7,6 @@
 	<body class="homepage-bg">
     {% include ('_navbar.html.twig') %}
 	{% include "home/partials/_sidebar_user.html.twig" %}
-	<div>
 		<div class="container-fluid pt-5">
 			<section class="row homepage_first_section">
 				{% for success, messages in app.flashes %}
@@ -37,7 +36,9 @@
 							</p>
 						</div>
 						<div class="buttons col-lg-4 fs-5">
-							<button type="button" class="contact_btn">Contacts</button>
+						 	<a class="text-decoration-none" href="{{ path('app_contacts')}}">
+								<button type="button" class="contact_btn">Contacts</button>
+							</a>
 							<a class="dowload_ebook" href="{{ path('ebook_form') }}">
 								<button type="button" class="services_btn">Livre Blanc</button>
 							</a>
@@ -84,7 +85,7 @@
 				</div>
 			</section>
 		</div>
-		<div class="container-fluid-part2 col-xl-12 col-lg-12 d-flex justify-content-center mt-4">
+		<div class="container-fluid-part2 col-xl-12 col-lg-12 d-flex justify-content-center mt-5">
 			<div class="row homepage_second_section col-xl-11 col-lg-11 p-5">
 				<div class="col-xl-3 col-lg-11">
 					<div class="body_part2 p-4">
@@ -121,11 +122,10 @@
 						<p class="get_one_hour d-flex text-center">Vous avez une heure devant vous ?</p>
 					</div>
 					<div class="d-flex justify-content-center">
-						<p class="diagnostic d-flex align-items-center px-2">Diagnostic offert</p>
+						<p class="diagnostic d-flex align-items-center px-4">Diagnostic offert</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</body>
 {% endblock %}

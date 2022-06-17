@@ -1,26 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
-@import "mixins";
-
-$text-align: justify;
-
-*,
-::before,
-::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $white;
-    font-family: ("League Spartan");
-}
 
 .homepage_part2_title {
     font-size: 38px;
 }
 
 .transparent_weight_part2 {
-    color: transparent;
-    font-weight: 700;
-    -webkit-text-stroke: 2px rgb(195, 195, 195);
+    @include transparent-weight;
     font-size: 60px;
 }
 
@@ -45,31 +29,23 @@ $text-align: justify;
 }
 
 .punchline1 {
-    border: white 1px solid;
-    border-radius: 30px;
+    @include punchline;
     background-color: #26d2d2;
-    min-width: 250px;
 }
 
 .punchline2 {
-    border: white 1px solid;
-    border-radius: 30px;
+    @include punchline;
     background-color: #18aeae;
-    min-width: 250px;
 }
 
 .punchline3 {
-    border: white 1px solid;
-    border-radius: 30px;
+    @include punchline;
     background-color: #118989;
-    min-width: 250px;
 }
 
 .punchline4 {
-    border: white 1px solid;
-    border-radius: 30px;
+    @include punchline;
     background-color: #066666;
-    min-width: 250px;
 }
 
 .punchline_text {
