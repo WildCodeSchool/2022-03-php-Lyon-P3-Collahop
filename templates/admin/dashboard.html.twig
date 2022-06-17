@@ -1,7 +1,72 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Tableau de bord{% endblock %}
+{% block title %}Tableau de bord
+{% endblock %}
 
 {% block body %}
-        <h1> Tableau de bord administrateur </h1>
+	<body class="sidebar_bg">
+	   <div class="sidebar_admin">
+                <div class="user_admin_pic">
+                    <div class="user_pic">
+                        <img src="" alt="Photo de profil">
+                    </div>
+                    <p class="user_name"> Océane </p>
+                </div>
+
+                <div class="sidebar_admin_header">
+                    <div class="dashboard_title">
+                        <div class="dashboard_title_name">Dashboard</div>
+                    </div>
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <ul class="side_admin_list">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-book"></i>
+                            <span class="side_links_name">Blog</span>
+                        </a>
+                        <span class="tooltip">Blog</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span class="side_links_name">FAQ</span>
+                        </a>
+                        <span class="tooltip">FAQ</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-newspaper"></i>
+                            <span class="side_links_name">Newsletter</span>
+                        </a>
+                        <span class="tooltip">Newsletter</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="side_links_name">Analyses</span>
+                        </a>
+                            <span class="tooltip">Analyses</span> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-message"></i>
+                            <span class="side_links_name">Messages</span>
+                        </a>
+                        <span class="tooltip">Messages</span>
+                   </li>
+                </ul>
+
+                <i class="fa-solid fa-power-off" id="log_out"></i>
+           </div>
+
+           <div class="home_content">
+                <div class="text">Test</div>
+                    <p>Nullam vulputate ultrices tellus et bibendum. Integer iaculis pharetra ligula, eget condimentum nunc malesuada nec. Nullam eu lorem sed tellus condimentum aliquam in in eros. Maecenas sagittis, justo quis blandit aliquet, sem felis interdum elit, ac dictum purus mauris nec mauris. In hac habitasse platea dictumst. Morbi placerat nec lorem in feugiat. In tristique laoreet diam, vel vulputate mi placerat id. Vivamus at quam rutrum, finibus tortor laoreet, venenatis sem. Nam vitae libero ultrices, tristique ligula non, sagittis elit. Vestibulum sed turpis nec eros convallis viverra. Maecenas nunc arcu, pharetra bibendum feugiat ut, consequat quis massa. Vivamus aliquet eros a efficitur fringilla. Aenean auctor ut mi ut vestibulum. Suspendisse a turpis id nisi faucibus efficitur. Sed ipsum urna, ultricies eget justo vitae, hendrerit malesuada mauris. Donec a turpis malesuada, euismod massa id, ultrices ex.
+                    </p>
+                </div>
+           </div>
+	</body>
 {% endblock %}
