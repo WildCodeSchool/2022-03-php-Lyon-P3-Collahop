@@ -21,9 +21,7 @@
 
 .transparent_number {
     font-size: 6em;
-    color: transparent;
-    font-weight: 700;
-    -webkit-text-stroke: 2px rgb(195, 195, 195);
+    @include transparent-weight;
 }
 
 /* ===== text section ===== */
@@ -66,7 +64,7 @@
 }
 
 
-.semi_circle_left {
+.semi_circle_left_2 {
     position: absolute;
     top: 20%;
     height: 9em;
@@ -78,7 +76,7 @@
 }
 
 
-.semi_circle_right {
+.semi_circle_right_2 {
     position: absolute;
     right: 0%; 
     top: 60%;
@@ -86,12 +84,4 @@
     width: 9em;
     background-color: $color-logo;
     border-radius: 140px 0px 0px 140px;
-    
-}
-
-@media screen and (max-width: 950px) {
-
-    p {
-        text-align: justify;
-    }
 }
