@@ -13,11 +13,7 @@ $font-size : 5.8em;
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     color: $white;
-    font-family: ("League Spartan");
 }
 
 body :is(h1, h2, h3, h4) {
@@ -40,13 +36,12 @@ section :is(p) {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100vw; 
         section {
             margin-top: -105px !important;
         }
     }
-
-
 
 /* ===== Homepage semi-circles sesctions ===== */
 
@@ -158,14 +153,6 @@ section :is(p) {
             font-size: 1.2em!important;
         }
       }
-    }
-
-
-@media screen and (max-width: 720px)
-{
-    h1 {
-        font-size: 14em;
-    }
 }
 
 
