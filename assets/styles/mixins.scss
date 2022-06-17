@@ -7,6 +7,12 @@
     font-size: larger;
 }
 
+@mixin transparent-weight {
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 2px rgb(195, 195, 195);
+}
+
 @mixin rectangle-text {
         font-size: 0.9em;
         padding-right: 30px;
@@ -36,4 +42,10 @@
     opacity: 0.9;
     object-fit: cover; 
     overflow: hidden;
+}
+
+@mixin punchline {
+    border: white 1px solid;
+    border-radius: 30px;
+    min-width: 250px;
 }
