@@ -106,6 +106,9 @@ section :is(p) {
     border: 2px solid grey;
     background-color: transparent;
     border: 1px solid white;
+    &:active {
+        transform: scale(0.92) translateY(-2px);
+    }
 }
 
 .services_btn {
@@ -113,6 +116,9 @@ section :is(p) {
     margin-left: 20px;
     background-color: #10dddd;
     border: 2px solid #10dddd;
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
 /* ===== Rectangle group homepage section ===== */
