@@ -8,7 +8,6 @@
     background-size: cover;
     background-position: center;
     background-size: 100vw; 
-    padding-top: 15px;
 }
 
 .global_form_container {
@@ -74,7 +73,7 @@
 
 @media screen and (max-width: 1573px) {
     .global_form_container {
-        margin-top: 5em!important;
+        margin-top: -2em!important;
     }
 
     .mb-3 {
