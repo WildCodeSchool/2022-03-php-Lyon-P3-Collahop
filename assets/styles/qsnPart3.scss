@@ -36,8 +36,17 @@ $bg-qsn-4: #007B78;
     -webkit-text-stroke: 2px rgb(195, 195, 195);
 }
 
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-caption {
+    position: static;
+}
+
 .carousel-inner {
-    overflow: visible;
+    overflow-y: visible;
+    overflow-x: hidden;
 }
 
 .carousel-rect {
