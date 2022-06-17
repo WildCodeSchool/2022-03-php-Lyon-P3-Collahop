@@ -1,3 +1,5 @@
+/* ===== Buttons sections ===== */
+
 @mixin homepage-buttons {
     padding: 5px;
     border-radius: 25px;
@@ -5,6 +7,28 @@
     font-weight: 600;
     font-size: larger;
 }
+
+/* ===== font section ===== */
+
+@mixin transparent-weight {
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 2px rgb(195, 195, 195);
+}
+
+@mixin text-shadow {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== image section ===== */
+
+@mixin img_truncated {
+    opacity: 0.9;
+    object-fit: cover; 
+    overflow: hidden;
+}
+
+/* ===== cards elements section ===== */
 
 @mixin rectangle-text {
         font-size: 0.9em;
@@ -20,9 +44,13 @@
         word-wrap: break-word;
 }
 
-@mixin text-shadow {
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+@mixin punchline {
+    border: white 1px solid;
+    border-radius: 30px;
+    min-width: 250px;
 }
+
+/* ===== Effects sections ===== */ 
 
 @mixin dynamic-border {
     border-left: 10px solid aqua;
@@ -31,8 +59,4 @@
     color: white;
 }
 
-@mixin img_truncated {
-    opacity: 0.9;
-    object-fit: cover; 
-    overflow: hidden;
-}
+
