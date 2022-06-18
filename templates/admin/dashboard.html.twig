@@ -8,9 +8,9 @@
 	   <div class="sidebar_admin">
                 <div class="user_admin_pic">
                     <div class="user_pic">
-                        <img src="" alt="Photo de profil">
+                        <img src="{{ asset('build/images/admin/oceane.jpeg') }}" class="user_pic_admin" alt="Photo de profil">
                     </div>
-                    <p class="user_name"> Océane </p>
+                    <p class="user_name">Océane</p>
                 </div>
 
                 <div class="sidebar_admin_header">
@@ -59,7 +59,13 @@
                    </li>
                 </ul>
 
-                <i class="fa-solid fa-power-off" id="log_out"></i>
+
+             <div class="logout">
+                <a href="#">
+                    <i class="fa-solid fa-power-off" id="log_out"></i>
+                    <span class="side_links_name">Déconnexion</span>
+                </a>
+             </div>
            </div>
 
            <div class="home_content">
