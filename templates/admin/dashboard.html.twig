@@ -11,56 +11,53 @@
                <i class="fa-solid fa-bars menu_sidebar"></i>
                <i class="fa-solid fa-xmark xmark"></i>
             </span>
-	    <div class="user_pic_container">
+	    <div class="user_pic_container active">
 		<img src="{{ asset('build/images/admin/oceane.jpeg') }}" class="user_pic_admin" alt="Photo de profil">
                 <p class="user_name"> Océane Parravano </p>
 	    </div>
+             <div class="dashboard_text"> Dashboard </div>
 	</div>
 
-         <div class="dashboard_text"> Dashboard </div>
-
-        <ul class="side_admin_menu">
-            <li class="nav-item active">
+        <ul class="side_admin_menu p-0 m-0">
+            <li class="side_item no_hover active">
                 <a href="#">
                     <i class="fa-solid fa-book icone"></i>
                     <span> Blog </span>
-                    <i class="fas fa-caret-down arrow"></i>
+                    <i class="fa-solid fa-angle-right arrow"></i>
                 </a>
                 <ul class="sub_menu">
-                    <li><a href="#">Ajouter un article</a></li>
-                    <li><a href="#">Supprimer un article</a></li>
+                    <li class=""><a href="#">Ajouter un article</a></li>
+                    <li><a href="#">Modifier un article</a></li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li class="side_item">
                 <a href="#">
                     <i class="fa-solid fa-circle-question icone"></i>
                     <span> FAQ </span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="side_item">
                 <a href="#">
                     <i class="fa-solid fa-newspaper icone"></i>
                     <span> Newsletters </span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="side_item">
                 <a href="#">
                     <i class="fa-solid fa-chart-line icone"></i>
                     <span> Analyses </span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="side_item">
                 <a href="#">
                     <i class="fa-solid fa-message icone"></i>
                     <span> Messages </span>
                 </a>
             </li>
-        </ul>
-        <ul class="log">
-            <li class="nav-item">
+            <li class="side_item log-out">
                 <a href="#">
-                    <i class="fa-solid fa-power-off"></i>
-                    <span> Se déconnecter </span>
+                    <i class="fa-solid fa-power-off icone"></i>
+                    <span> Déconnexion </span>
                 </a>
             </li>
         </ul>
@@ -71,7 +68,8 @@
 
                 let aside = document.querySelector('.sidebar_admin');
                 let icon = aside.querySelector('.menu_icon');
-                let li = aside.getElementsByClassName('nav-item');
+                let li = aside.querySelectorAll('.side_item');
+                let userContainer = document.querySelector('.user_pic_container');
 
                 icon.onclick = () => {
                         aside.classList.toggle('expand');

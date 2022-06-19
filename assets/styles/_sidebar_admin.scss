@@ -1,6 +1,6 @@
-.sidebar_admin_bg {
+.sidebar_admin {
     color: white;
-    background: white;
+    background: $aside-main-color;
 }
 
 aside {
@@ -9,8 +9,8 @@ aside {
     left: 0;
     height: 100%;
     background: $aside-main-color;
-    left: -30px;
-    padding: 10px;
+    left: -90px;
+
 
     a {
         text-decoration: none;
@@ -19,39 +19,18 @@ aside {
         align-items: center;
     }
 
-    .sub_menu {
-        width: 80%;
-        margin : 0 0 0 25px;
-        overflow: hidden;
-        max-height: 0;
-        transition: 0.5s;
-        li {
-            height: 25px;
-            padding: 5px 10px;
-            margin: 4px auto;
-            font-size: 15px;
-            font-weight: 200;
-       
-            a {
-                position: initial;
-                height: 100%;
-                display: initial;
-            }
-        }
-    }
-
     .sidebar_admin_header {
 
         .menu_icon {
             position: absolute;
             right: -50px;
-            top: 0;
+            top: 10px;
             width: 30px;
             height: 30px;
             border-radius: 30px;
             font-size: 20px;
             padding: 1px;
-            background: $color-slogan;
+            background: $user-bg-color;
             cursor: pointer;
             text-align: center;
             .xmark {
@@ -64,30 +43,33 @@ aside {
             flex-direction: column;
             justify-content: center;
             background: $user-bg-color;
+            padding-top: 10px;
 
             .user_pic_admin {
                 display: flex;
                 align-self: center;
                 width: 8em;
                 border-radius: 50%;
-                padding: 1.5em;
+                padding: 0.9em;
             }
 
             .user_name {
-                font-size: 0.9em;
+                font-size: 1.1em;
                 display: flex;
                 justify-content: center;
-            }
+            }      
         }
-    }
 
-    .dashboard_text {
-        color: darken(white, 25%);
-        font-size: 2em;
-        padding-left: 15px;
-        font-weight: 600;
-        line-height: 65px;
-        letter-spacing: 2px;
+        .dashboard_text {
+            color: darken(white, 25%);
+            font-size: 2em;
+            padding-top: 10px;
+            padding-left: 15px;
+            font-weight: 600;
+            line-height: 65px;
+            letter-spacing: 2px;
+            overflow: hidden;
+        }  
     }
 
     .side_admin_menu {
@@ -95,16 +77,16 @@ aside {
             list-style: none;
             overflow: hidden;
             border-radius: 10px;
-            padding: 5px;
-            margin: 20px auto;
-            text-transform: capitalize;
+            padding: 10px;
+            margin: 20px 0px;
             transition: 0.5s;
+            letter-spacing: 1px;
             &:hover {
-                background: #00F0C8;
+                background: $hover-admin;
             }
             a {
                 position: relative;
-                height: 30px;
+                height: 40px;
 
                 .icone {
                     margin-right: 20px;
@@ -116,40 +98,57 @@ aside {
                 .arrow {
                     position: absolute;
                     right: 0;
-                    /* width: 0*/
                     transition: .5s;
                     overflow:hidden;
+                    padding-right: 10px;
                 }
 
                 span {
                     width: 105px;
-                    overflow: hidden;
                     height: 25px;
                     transition: .5s;
                     font-size: 20px;
                 }
             }
         }
-    }
 
-    .log {
-        margin: 0 0 0 50px;
-        a {
-            text-decoration: none;
+        .sub_menu {
+            width: 100%;
+            max-height: 0;
+            transition: 0.5s;
+            
+            li {
+                height: 60px;
+                margin: -5px;
+                padding-left: -25px;
+                font-size: 15px;
+                font-weight: 200;
+                list-style: inside;
+                &::marker{
+                    color: white;
+                    font-size: 2.5em;
+                    border: 1px solid white;
+                }
+                a {
+                    position: initial;
+                    display: initial;
+                    &:hover {
+                        color: $user-bg-color;
+                    }
+                }
+            }
         }
     }
 }
 
 li.active {
-    background: #00F0C8;
-}
+    .sub_menu {
+        max-height: 130px;
+    }
 
-li.active .sub_menu {
-    max-height: 300px;
-}
-
-li.active a>.arrow {
-    transform: rotate(90deg);
+    a>.arrow {
+        transform: rotate(90deg);
+    }
 }
 
 aside.expand {
@@ -158,6 +157,7 @@ aside.expand {
     .menu_icon>.xmark {
         display: initial;
     }
+
     .menu_icon>.menu_sidebar {
         display: none;
     }
