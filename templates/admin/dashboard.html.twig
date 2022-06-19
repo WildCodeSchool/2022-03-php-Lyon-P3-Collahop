@@ -8,7 +8,7 @@
     <aside class="sidebar_admin p-0">
     	<div class="sidebar_admin_header">
             <span class="menu_icon">
-               <i class="fa-solid fa-bars"></i>
+               <i class="fa-solid fa-bars menu_sidebar"></i>
                <i class="fa-solid fa-xmark xmark"></i>
             </span>
 	    <div class="user_pic_container">
@@ -65,13 +65,29 @@
             </li>
         </ul>
     </aside>
-    
-
-    <section>
-        <h1> Test </h1>
-    </section>
 
 
+        <script>
+
+                let aside = document.querySelector('.sidebar_admin');
+                let icon = aside.querySelector('.menu_icon');
+                let li = aside.getElementsByClassName('nav-item');
+
+                icon.onclick = () => {
+                        aside.classList.toggle('expand');
+                }
+
+                for(let i of li) {
+                        i.onclick = activeLi;
+                }
+
+                function activeLi() {
+                        const list = Array.from(li);
+                        list.forEach(e=>e.classList.remove('active'));
+                        this.classList.add('active');
+                }
+        
+         </script>
 </body>
 
 {% endblock %}

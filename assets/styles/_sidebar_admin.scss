@@ -3,13 +3,13 @@
     background: white;
 }
 
-.sidebar_admin {
+aside {
     position: fixed;
-    width: 250px;
+    width: 80px;
     left: 0;
     height: 100%;
-    background: $color-slogan;
-    /* left: -50px */
+    background: $aside-main-color;
+    left: -30px;
     padding: 10px;
 
     a {
@@ -63,6 +63,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            background: $user-bg-color;
 
             .user_pic_admin {
                 display: flex;
@@ -99,7 +100,7 @@
             text-transform: capitalize;
             transition: 0.5s;
             &:hover {
-                background: cyan;
+                background: #00F0C8;
             }
             a {
                 position: relative;
@@ -139,67 +140,25 @@
     }
 }
 
-section {
-    width: calc(100% - 400px);
-    margin: 5px 300px;
-    transition: .5s;
-    color: black;
-}
-
 li.active {
-    background: cyan;
+    background: #00F0C8;
 }
 
-li.active .sub-menu {
+li.active .sub_menu {
     max-height: 300px;
 }
-/*nav ul {
-    background: #0F162F;
-    height: 70%;
-    width: 100%;
-    list-style: none;
-    padding: 0px 15px;
-       li {
-            line-height: 60px;
-            &:hover {
-                background: $color-logo;
-            }
-            a {
-                position : relative;
-                color: white;
-                font-size: 18px;
-                font-weight: 600;
-            }
-        }
+
+li.active a>.arrow {
+    transform: rotate(90deg);
 }
 
-nav ul ul {
-    position: static;
-    display: none;
-    li {
-        line-height: 42px;
-        a {
-            font-size: 16px;
-            padding-left: 40px;
-        } 
-        
-        &:hover {
-            background: none;
-            border-left: 3px solid cyan;
-        }
+aside.expand {
+    width: 250px;
+    left: 0;
+    .menu_icon>.xmark {
+        display: initial;
+    }
+    .menu_icon>.menu_sidebar {
+        display: none;
     }
 }
-
-nav ul li a .test {
-        position: absolute;
-        font-size: 22px;
-        left: 200px;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: transform 0.1s;
-}
-
-nav ul li a:active .test {
-    transform: translateY(-50%) rotate(-180deg);
-}
-*/
