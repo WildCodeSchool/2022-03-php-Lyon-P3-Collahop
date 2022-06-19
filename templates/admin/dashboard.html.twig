@@ -5,11 +5,11 @@
 
 {% block body %}
 <body class="sidebar_admin_bg">
-    <aside class="sidebar_admin">
+    <aside class="sidebar_admin p-0">
     	<div class="sidebar_admin_header">
             <span class="menu_icon">
                <i class="fa-solid fa-bars"></i>
-               <i class="fa-solid fa-xmark"></i>
+               <i class="fa-solid fa-xmark xmark"></i>
             </span>
 	    <div class="user_pic_container">
 		<img src="{{ asset('build/images/admin/oceane.jpeg') }}" class="user_pic_admin" alt="Photo de profil">
@@ -20,38 +20,38 @@
          <div class="dashboard_text"> Dashboard </div>
 
         <ul class="side_admin_menu">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a href="#">
-                    <i class="fa-solid fa-book"></i>
+                    <i class="fa-solid fa-book icone"></i>
                     <span> Blog </span>
-                    <i class="fas fa-caret-down"></i>
+                    <i class="fas fa-caret-down arrow"></i>
                 </a>
-                <ul class="sub-menu">
+                <ul class="sub_menu">
                     <li><a href="#">Ajouter un article</a></li>
                     <li><a href="#">Supprimer un article</a></li>
                 </ul>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="fa-solid fa-circle-question"></i>
+                    <i class="fa-solid fa-circle-question icone"></i>
                     <span> FAQ </span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="fa-solid fa-newspaper"></i>
+                    <i class="fa-solid fa-newspaper icone"></i>
                     <span> Newsletters </span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="fa-solid fa-chart-line"></i>
+                    <i class="fa-solid fa-chart-line icone"></i>
                     <span> Analyses </span>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#">
-                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-message icone"></i>
                     <span> Messages </span>
                 </a>
             </li>
@@ -70,6 +70,8 @@
     <section>
         <h1> Test </h1>
     </section>
+
+
 </body>
 
 {% endblock %}
