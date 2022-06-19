@@ -1,12 +1,40 @@
-* {
-    color: black;
+
+.sidebar_admin_bg {
+    color: white;
+    background: white;
 }
 
-.bx {
-    color: black;
-}
+.sidebar_admin {
 
-.sidebar_bg {
-    background-color: white;
-    color: black!important;
+position: fixed;
+width: 250px; 
+left: 0;
+background: $color-slogan;
+height: 100%;
+
+.sidebar_admin_header {
+    .user_pic_container {
+
+        .user_pic_admin {
+            display: flex;
+            align-self: center;
+            width: 8em;
+            border-radius: 50%;
+            padding: 1.5em;
+        }
+
+        .user_name {
+            font-size: 0.9em;
+        }
+    }
+  }
+
+  .dashboard_text {
+    color: darken(white,25%);
+    font-size: 2em;
+    padding-left: 15px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 2px;
+    }
 }

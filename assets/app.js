@@ -17,3 +17,4 @@ burgerMenu.addEventListener("click", function () {
         document.documentElement.style.overflow = "hidden";
     }
 });
+
