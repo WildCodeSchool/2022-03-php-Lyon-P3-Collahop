@@ -14,6 +14,9 @@ height: 100%;
 
 .sidebar_admin_header {
     .user_pic_container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center; 
 
         .user_pic_admin {
             display: flex;
@@ -25,6 +28,8 @@ height: 100%;
 
         .user_name {
             font-size: 0.9em;
+            display: flex;
+            justify-content: center; 
         }
     }
   }
@@ -37,4 +42,18 @@ height: 100%;
     line-height: 65px;
     letter-spacing: 2px;
     }
+}
+
+
+nav ul {
+    background: rgb(43, 43, 112);
+    height: 70%;
+    width: 100%;
+    list-style: none;
+       li {
+            line-height: 60px;
+            a {
+                color: white;
+            }
+        }
 }
