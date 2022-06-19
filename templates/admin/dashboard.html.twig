@@ -5,45 +5,67 @@
 
 {% block body %}
 <body class="sidebar_admin_bg">
-    <nav class="sidebar_admin border">
-	<div class="sidebar_admin_header border">
-	    <div class="user_pic_container border">
+    <aside class="sidebar_admin">
+    	<div class="sidebar_admin_header">
+	    <div class="user_pic_container">
 		<img src="{{ asset('build/images/admin/oceane.jpeg') }}" class="user_pic_admin" alt="Photo de profil">
                 <p class="user_name"> Océane Parravano </p>
 	    </div>
 	</div>
 
-        <div class="dashboard_text"> Dashboard </div>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-            
-            <li>
-                <a href="#">Blog</a>
-                <ul>
-                    <li><a href="#"> Ajouter un article </a></li>
-                    <li><a href="#"> Modifier un article </a></li>
+         <div class="dashboard_text"> Dashboard </div>
+
+        <ul class="side_admin_menu">
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    <span> Blog </span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="#">Ajouter un article</a></li>
+                    <li><a href="#">Supprimer un article</a></li>
                 </ul>
             </li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Newsletters</a></li>
-            <li><a href="#">Analyses</a></li>
-            <li><a href="#">Messages</a></li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span> FAQ </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span> Newsletters </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span> Analyses </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fa-solid fa-message"></i>
+                    <span> Messages </span>
+                </a>
+            </li>
         </ul>
-        <div class="log out"> Déconnexion </div>
-    </nav>
+        <ul class="log">
+            <li class="nav-item">
+                <a href="#">
+                    <i class="fa-solid fa-power-off"></i>
+                    <span> Se déconnecter </span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    
 
-
-	
-<!-- <script> let btn = document.querySelector("#btn");
-	let sidebar = document.querySelector(".sidebar");
-	let searchBtn = document.querySelector(".bx-search");
-				
-	btn.onclick = function(){
-	 sidebar.classList.toggle("active");
-	}
-	searchBtn.onclick = function(){
-	 sidebar.classList.toggle("active");
-	} </script> -->
+    <section>
+        <h1> Test </h1>
+    </section>
 </body>
 
 {% endblock %}

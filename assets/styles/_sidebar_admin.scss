@@ -1,59 +1,96 @@
-
 .sidebar_admin_bg {
     color: white;
     background: white;
 }
 
 .sidebar_admin {
+    position: fixed;
+    width: 250px;
+    left: 0;
+    background: #101527;
+    height: 100%;
+    /* left: -50px */
+    padding: 10px;
 
-position: fixed;
-width: 250px; 
-left: 0;
-background: $color-slogan;
-height: 100%;
-
-.sidebar_admin_header {
-    .user_pic_container {
-        display: flex;
-        flex-direction: column;
-        justify-content:center; 
-
-        .user_pic_admin {
+    .sidebar_admin_header {
+        .user_pic_container {
             display: flex;
-            align-self: center;
-            width: 8em;
-            border-radius: 50%;
-            padding: 1.5em;
-        }
+            flex-direction: column;
+            justify-content: center;
 
-        .user_name {
-            font-size: 0.9em;
-            display: flex;
-            justify-content: center; 
+            .user_pic_admin {
+                display: flex;
+                align-self: center;
+                width: 8em;
+                border-radius: 50%;
+                padding: 1.5em;
+            }
+
+            .user_name {
+                font-size: 0.9em;
+                display: flex;
+                justify-content: center;
+            }
         }
     }
-  }
 
-  .dashboard_text {
-    color: darken(white,25%);
-    font-size: 2em;
-    padding-left: 15px;
-    font-weight: 600;
-    line-height: 65px;
-    letter-spacing: 2px;
+    .dashboard_text {
+        color: darken(white, 25%);
+        font-size: 2em;
+        padding-left: 15px;
+        font-weight: 600;
+        line-height: 65px;
+        letter-spacing: 2px;
     }
 }
 
-
-nav ul {
-    background: rgb(43, 43, 112);
+/*nav ul {
+    background: #0F162F;
     height: 70%;
     width: 100%;
     list-style: none;
+    padding: 0px 15px;
        li {
             line-height: 60px;
+            &:hover {
+                background: $color-logo;
+            }
             a {
+                position : relative;
                 color: white;
+                font-size: 18px;
+                font-weight: 600;
             }
         }
 }
+
+nav ul ul {
+    position: static;
+    display: none;
+    li {
+        line-height: 42px;
+        a {
+            font-size: 16px;
+            padding-left: 40px;
+        } 
+        
+        &:hover {
+            background: none;
+            border-left: 3px solid cyan;
+        }
+    }
+}
+
+nav ul li a .test {
+        position: absolute;
+        font-size: 22px;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s;
+}
+
+nav ul li a:active .test {
+    transform: translateY(-50%) rotate(-180deg);
+}
+*/
