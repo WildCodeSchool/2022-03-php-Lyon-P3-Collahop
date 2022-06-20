@@ -22,6 +22,7 @@
 .transparent_number {
     font-size: 6em;
     @include transparent-weight;
+    height: max-content;
 }
 
 /* ===== text section ===== */
@@ -66,7 +67,7 @@
 
 .semi_circle_left_2 {
     position: absolute;
-    top: 20%;
+    top: 28%;
     height: 9em;
     width: 5em;
     background: white;

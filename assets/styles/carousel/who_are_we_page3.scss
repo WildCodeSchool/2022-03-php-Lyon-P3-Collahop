@@ -26,7 +26,7 @@ $bg-qsn-4: #007B78;
 }
 
 .slide-number {
-    height: 5em;
+    height: max-content;
 }
 
 .transparent_number {
@@ -94,6 +94,9 @@ $bg-qsn-4: #007B78;
 
 .carousel-control-prev, .carousel-control-next {
     width: 5%;
+    top: 17em;
+    height: 2em;
+    position: fixed;
 }
 
 .carousel-introduction {
