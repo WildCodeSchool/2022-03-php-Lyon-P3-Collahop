@@ -29,19 +29,17 @@ $hover-admin : #00F0C8;
 
 @import "~bootstrap/scss/bootstrap";
 @import "mixins";
-@import "sidebar";
-@import "homepage";
-@import "homepage_part2";
+@import "partials/sidebar";
+@import "homepage/homepage_part1";
+@import "homepage/homepage_part2";
 @import "ebook";
-@import "who_are_we_page1";
-@import "qsnPart3";
-@import "carousel";
+@import "who_are_we_page";
 @import "faq";
 @import "contacts";
-@import "navbar";
+@import "partials/navbar.scss";
 @import "blog";
-@import "sidebar_admin";
-@import "_footer";
+@import "partials/sidebar_admin";
+@import "partials/footer";
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
