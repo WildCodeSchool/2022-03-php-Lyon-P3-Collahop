@@ -15,6 +15,12 @@ $z-fixed: 100;
 
 $font-family-base: 'League Spartan';
 
+/* ===== Admin part ===== */
+
+$user-bg-color : #101527;
+$aside-main-color: #0F162F;
+$hover-admin : #00F0C8;
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -34,6 +40,8 @@ $font-family-base: 'League Spartan';
 @import "contacts";
 @import "navbar";
 @import "blog";
+@import "sidebar_admin";
+@import "_footer";
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
