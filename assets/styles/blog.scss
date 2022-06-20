@@ -94,11 +94,10 @@
     margin: 15px 0px;
 }
 
-.article .img {
+.article_img .img {
     background-size: cover;
     background-position: center;
     height: 100%;
-
 }
 
 .article_sumary {
@@ -130,10 +129,12 @@
 
 .show_blog {
     margin: 5vw;
+    margin-top: 85px;
     border: 2px solid $color-logo;
     border-radius: 20px;
     box-shadow: 0 0 1em $color-logo;
 }
+
 .show_blog_article_image {
     margin-top: 5vw;
     margin-left: 5vw;
@@ -141,6 +142,12 @@
     height: 25vw;
     border-radius: 20px;
     overflow: hidden;
+}
+
+.show_blog_article_image .img {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
 .show_blog_article_title {
@@ -214,6 +221,11 @@
 
     .article_sumary {
         height: 240px;
+    }
+
+    .show_blog {
+
+        margin-top: 3vw;
     }
 }
 
