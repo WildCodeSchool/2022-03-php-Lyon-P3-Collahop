@@ -1,20 +1,127 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MessagesController!{% endblock %}
+{% block title %}Hello MessagesController!
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/cristini/Bureau/Projet_3_Collahop/2022-03-php-Lyon-P3-Collahop/src/Controller/MessagesController.php'|file_link(0) }}">src/Controller/MessagesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/cristini/Bureau/Projet_3_Collahop/2022-03-php-Lyon-P3-Collahop/templates/messages/index.html.twig'|file_link(0) }}">templates/messages/index.html.twig</a></code></li>
-    </ul>
-</div>
-{% endblock %}
+	<body class="message_admin_body">
+		{% include "admin/partials/_sidebar_admin.html.twig" %}
+
+
+		<section class="dashboard border">
+			<div class="dash-content border">
+				<div class="activity border">
+					<div class="title">
+						<i class="uil uil-clock-three"></i>
+						<span class="text">Vos messages</span>
+					</div>
+
+					{% for message in messages %}
+						<div class="activity-data">
+							<div class="data firstname">
+								<span class"data-firstname">
+									Prénom
+								</span>
+								<span class"data">
+									{{message.firstname}}</span>
+							</div>
+							<div class="data surnames">
+								<span class"data-name">
+									Nom
+								</span>
+								<span class="data">
+									{{message.lastname}}
+								</span>
+							</div>
+							<div class="data company">
+								<span class"data-title">
+									Compagnie
+								</span>
+								<span class"data">
+									{{message.company}}</span>
+							</div>
+							<div class="data email">
+								<span class"data-title">
+									Email
+								</span>
+								<span class="data">
+									{{message.email}}
+								</span>
+							</div>
+							<div class="data message">
+								<span class"data-title">
+									Messages
+								</span>
+								<span class="data-list">
+									{{message.message}}
+								</span>
+							</div>
+							<button>
+								<a href="/admin/messages/delete/{{message.id}}">
+									Supprimer
+								</a>
+							</button>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+
+
+	</body>
+
+
+<!--	{% include "admin/partials/_sidebar_admin.html.twig" %}
+	<div class="activity">
+		{% for message in messages %}
+			<div class="activity-data">
+				<div class="data firstname">
+					<span class"data-firstname">
+						Prénom
+					</span>
+					<span class"data">
+						{{message.firstname}}</span>
+				</div>
+				<div class="data surnames">
+					<span class"data-name">
+						Nom
+					</span>
+					<span class="data">
+						{{message.lastname}}
+					</span>
+				</div>
+				<div class="data company">
+					<span class"data-title">
+						Compagnie
+					</span>
+					<span class"data">
+						{{message.company}}</span>
+				</div>
+				<div class="data email">
+					<span class"data-title">
+						Email
+					</span>
+					<span class="data">
+						{{message.email}}
+					</span>
+				</div>
+				<div class="data message">
+					<span class"data-title">
+						Messages
+					</span>
+					<span class="data-list">
+						{{message.message}}
+					</span>
+				</div>
+				<button>
+					<a href="/admin/messages/delete/{{message.id}}">
+						Supprimer
+					</a>
+				</button>
+			</div>
+		{% endfor %}
+	</div> -->
+
+</body>{% endblock %}
