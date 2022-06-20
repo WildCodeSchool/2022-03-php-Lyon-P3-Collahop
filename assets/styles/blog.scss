@@ -10,31 +10,31 @@
     font-family: ("League Spartan");
 }
 
-body{
+body {
     background-color: $color-slogan;
 }
 
-.blog_body{
+.blog_body {
     margin-top: -150px;
 }
 
-.blog_page{
+.blog_page {
     padding-top: 50px;
-    background-image:
-        linear-gradient(
-            rgba($color-slogan, 0.80),
-            rgba($color-slogan, 0.80)),
-            url("../images/blog/pexels-fauxels-3184291.jpg");
+    background-image: linear-gradient(
+            rgba($color-slogan, 0.8),
+            rgba($color-slogan, 0.8)
+        ),
+        url("../images/blog/pexels-fauxels-3184291.jpg");
     background-size: 100vw;
     background-position: center;
 }
 
-.first_part{
+.first_part {
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-.category{
+.category {
     font-size: 3.5vw;
     color: $secondary-homepage-color;
     font-weight: bold;
@@ -56,69 +56,70 @@ body{
     margin: 0;
 }
 
-.blog_h1 > p{
+.blog_h1 > p {
     margin: 0;
 }
 
-.first_border_articles, .second_border_articles{
+.first_border_articles,
+.second_border_articles {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.border_articles{
+.border_articles {
     height: 3px;
     background-color: $color-logo;
 }
 
-.second_border_articles{
+.second_border_articles {
     height: 1px;
-    background-color: $white; 
+    background-color: $white;
 }
 
 .blog_h2 {
     font-size: 4vw;
 }
 
-a {
+.articles a {
     text-decoration: none;
     color: none;
 }
 
-.articles{
+.articles {
     margin-top: 0;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-.article{
+.article {
     border: 2px solid $color-logo;
     border-radius: 20px;
     box-shadow: 0 0 1em $color-logo;
 }
 
-.article_img{
+.article_img {
     height: 25vh;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.img{
+.img {
     background-size: cover;
     background-position: center;
     height: 100%;
 }
 
-.article_sumary{
+.article_sumary {
     text-align: justify;
 }
 
-.date_div{
+.date_div {
     display: flex;
     justify-content: flex-end;
 }
 
-.date{
+.date {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,18 +131,18 @@ a {
 }
 
 // Show_blog
-.show_blog_page{
+.show_blog_page {
     padding-top: 100px;
 }
 
-.show_blog{
+.show_blog {
     margin: 5vw;
     border: 2px solid $color-logo;
     border-radius: 20px;
     box-shadow: 0 0 1em $color-logo;
 }
-.show_blog_article_image{
-    margin-top: 5vh;
+.show_blog_article_image {
+    margin-top: 5vw;
     margin-left: 5vw;
     margin-right: 5vw;
     height: 25vw;
@@ -149,17 +150,16 @@ a {
     overflow: hidden;
 }
 
-.show_blog_article_title{
+.show_blog_article_title {
     font-size: 7vw;
     margin: 3vw;
 }
 
-.show_blog_article_content{
+.show_blog_article_content {
     text-align: justify;
     margin-left: 5vw;
     margin-right: 5vw;
 }
-
 
 @media screen and (min-width: 450px) {
     .blog_h1 {
@@ -170,11 +170,11 @@ a {
         font-size: 3vw;
     }
 
-    .category{
+    .category {
         font-size: 2.5vw;
     }
 
-    .show_blog_article_title{
+    .show_blog_article_title {
         font-size: 6vw;
     }
 }
@@ -184,23 +184,35 @@ a {
         font-size: 2vw;
     }
 
-    .category{
+    .category {
         font-size: 1.5vw;
     }
 
-    .show_blog_article_title{
+    .show_blog_article_title {
         font-size: 5vw;
         margin: 2vw;
     }
 }
 
+@media screen and (min-width: 768px) {
+    .articles a {
+        min-height: 595px;
+        width: 308px;
+    }
+}
+
 @media screen and (min-width: 950px) {
-    .blog_page{
+    .blog_page {
         padding-top: 130px;
     }
 
-    .show_blog_article_title{
+    .show_blog_article_title {
         font-size: 4vw;
+    }
+
+    .articles a {
+        min-height: 550px;
+        width: 360px;
     }
 }
 
@@ -209,8 +221,35 @@ a {
         font-size: 1.5vw;
     }
 
-    .show_blog_article_title{
+    .show_blog_article_title {
         font-size: 3vw;
         margin: 1vw;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .articles a {
+        min-height: 500px;
+        width: 425px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .articles a {
+        min-height: 455px;
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .articles a {
+        min-height: 505px;
+        width: 425px;
+    }
+}
+
+@media screen and (min-width: 1750px) {
+    .articles a {
+        width: 440px;
     }
 }
