@@ -20,15 +20,17 @@ $font-size : 5.8em;
     font-family: ("League Spartan");
 }
 
+.carousel-page1 {
+    width: 90% !important;
+    margin-left: 5%;
+}
+
 .who_are_we_page_bg {
     background-color: #141726;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-size: 100vw;
-}
-.title {
-    margin-top: 6rem;
 }
 
 .member_img {
@@ -131,4 +133,8 @@ $font-size : 5.8em;
     border-radius: 30px;
     border-collapse: collapse;
     color: rgb(169, 169, 237);
+}
+
+.brand-manager {
+    width: 55%;
 }
