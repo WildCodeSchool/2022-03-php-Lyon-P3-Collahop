@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+{% block title %}Blog - Article
+{% endblock %}
+
+{% block body %}
+	<body class="blog_body">
+	
+		<header>
+			{% include ('_navbar.html.twig') %}
+		</header>
+
+		{% include "home/partials/_sidebar_user.html.twig" %}
+
+		<div class="show_blog_page">
+			<div class="show_blog">
+				<div class="show_blog_article_image">
+					<div class="img" style="background-image: url({{ article.image }});"></div>
+				</div>
+				<div class="show_blog_article_title text-center">{{ article.title }}</div>
+				<div class="show_blog_article_content">{{ article.articleContent }}</div>
+				<div class="date_div m-3">
+					<div class="date">{{ article.date|date('d/m/Y') }}</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+{% endblock %}
