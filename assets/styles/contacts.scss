@@ -81,8 +81,10 @@
 
 @media screen and (max-width: 950px) {
 
-    .contacts > .mb-3 {
+    .contacts  {
+        .mb-3 {
         display: flex;
         justify-content: center;
+        }
     }
 }
