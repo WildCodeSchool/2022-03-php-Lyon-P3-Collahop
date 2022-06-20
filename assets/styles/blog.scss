@@ -69,6 +69,10 @@
 .articles a {
     text-decoration: none;
     color: none;
+    flex-direction: column;
+    border: 2px solid $color-logo;
+    border-radius: 20px;
+    box-shadow: 0 0 1em $color-logo;
 }
 
 .articles {
@@ -78,22 +82,23 @@
 }
 
 .article {
-    border: 2px solid $color-logo;
-    border-radius: 20px;
-    box-shadow: 0 0 1em $color-logo;
+
     width: 100%;
+    flex-direction: column;
 }
 
 .article_img {
     height: 200px;
     border-radius: 20px;
     overflow: hidden;
+    margin: 15px 0px;
 }
 
 .article .img {
     background-size: cover;
     background-position: center;
     height: 100%;
+
 }
 
 .article_sumary {
@@ -103,6 +108,7 @@
 .date_div {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .date {
@@ -114,6 +120,7 @@
     width: 100px;
     border-radius: 20px;
     color: $color-slogan;
+    margin-bottom: 10px;
 }
 
 // Show_blog
@@ -181,9 +188,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    .article {
-        height: 620px;
-        width: 275px;
+    .articles a {
+        height: 605px;
+        width: 280px;
+    }
+
+    .article_sumary {
+        height: 290px;
     }
 }
 
@@ -196,9 +207,13 @@
         font-size: 4vw;
     }
 
-    .article {
-        height: 575px;
-        width: 330px;
+    .articles a {
+        height: 560px;
+        width: 325px;
+    }
+
+    .article_sumary {
+        height: 240px;
     }
 }
 
@@ -214,30 +229,45 @@
 }
 
 @media screen and (min-width: 1150px) {
-    .article {
-        height: 505px;
+    .articles a {
+        height: 490px;
         width: 425px;
+    }
+
+    .article_sumary {
+        height: 170px;
     }
 }
 
 @media screen and (min-width: 1350px) {
-    .article {
+    .article a {
         height: 480px;
         width: 500px;
+    }
+
+    .article_sumary {
+        height: 170px;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .article {
-        height: 575px;
+    .articles a {
+        height: 540px;
         width: 340px;
+    }
+
+    .article_sumary {
+        height: 220px;
     }
 }
 
 @media screen and (min-width: 1600px) {
-    .article {
-        height: 530px;
+    .articles a {
+        height: 500px;
         width: 400px;
     }
-}
 
+    .article_sumary {
+        height: 175px;
+    }
+}
