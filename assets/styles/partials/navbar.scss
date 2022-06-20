@@ -157,7 +157,7 @@ nav input::placeholder {
     opacity: 0.6;
 }
 nav input{    
-    background: url("../images/navbar/recherches.png");
+    background: url("../../images/navbar/recherches.png");
     background-size: 30px 30px;
     background-repeat: no-repeat;
     height:30px;
@@ -175,6 +175,10 @@ nav input{
 @media screen and (max-width: 950px) {
     #burger-menu {
         display: inline;
+    }
+
+    nav {
+      margin-bottom: 0;
     }
 }
 
