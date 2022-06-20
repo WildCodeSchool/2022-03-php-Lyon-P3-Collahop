@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+
+
+$text-align: justify;
+$secondary-homepage-color: #7b7b7b;
+$white: white;
+$color-logo: #10dddd;
+$font-size : 5.8em;
+
+
+/* ===== general settings ===== */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white;
+    font-family: ("League Spartan");
+}
+
+/* ===== carousel page 1 ===== */
+.carousel-page1 {
+    width: 90% !important;
+    margin-left: 5%;
+}
+
+.who_are_we_page_bg {
+    background-color: #141726;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: 100vw;
+}
+
+.member_img {
+    max-height: 10rem;
+    width: auto;
+}
+
+.who {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.our_team {
+    font-size: 22px;
+    color: grey;
+}
+
+.us {
+    font-size: 60px;
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 2px rgb(195, 195, 195);
+}
+
+.skill {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.skill_barre {
+    border: 1px solid;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    margin:0%;
+    padding: 0%;
+}
+
+.first_member_notation1 {
+    background-color: rgb(169, 169, 237);
+    margin:0%;
+    padding: 0%;
+    max-width: 90%;
+    height: 40px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    color: rgb(169, 169, 237);
+}
+
+.first_member_notation2 {
+    background-color: rgb(169, 169, 237);
+    margin:0%;
+    padding: 0%;
+    max-width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    color: rgb(169, 169, 237);
+}
+
+.first_member_notation3 {
+    background-color: rgb(169, 169, 237);
+    margin:0%;
+    padding: 0%;
+    max-width: 85%;
+    height: 40px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    color: rgb(169, 169, 237);
+}
+
+.scd_member_notation1 {
+    background-color: rgb(169, 169, 237);
+    margin:0%;
+    padding: 0%;
+    max-width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    color: rgb(169, 169, 237);
+}
+
+.scd_member_notation2 {
+    background-color: rgb(169, 169, 237);
+    margin:0%;
+    padding: 0%;
+    max-width: 90%;
+    height: 40px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    color: rgb(169, 169, 237);
+}
+
+.scd_member_notation3 {
+    background-color: rgb(169, 169, 237);
+    margin:0%;
+    padding: 0%;
+    max-width: 80%;
+    height: 40px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    color: rgb(169, 169, 237);
+}
+
+.brand-manager {
+    width: 55%;
+}
+
+/* ===== carousel page 2 ===== */
+/* ===== general and image settings ===== */
+
+.carousel_page_2_bg {
+    background-color: $color-slogan;
+}
+
+.container_carousel_part_2 {
+    
+    .img_container {
+        background-color: $color-logo;
+
+        .img_carousel_2  {
+            opacity: 0.6;
+            object-fit: cover; 
+            overflow: hidden;
+        }
+    }
+}
+/*===== Number carousel page section =====*/
+
+.transparent_number {
+    font-size: 6em;
+    @include transparent-weight;
+    height: max-content;
+}
+
+/* ===== text section ===== */
+
+.text_carrousel_part_2 {
+
+    h2 {
+        text-transform: uppercase;
+        font-size: calc(18px + 1.2vw);
+        color: $secondary-homepage-color;
+    }
+
+    p {
+        font-size: 20.5px;
+        text-align: justify;
+        
+        span {
+            color: rgb(216, 216, 216)!important;
+        }
+        
+        strong {
+            font-weight:normal;
+            color: rgb(194, 194, 194)!important;
+          }
+
+        .white_font_carousel {
+            color: white!important; 
+        }
+
+        .punchline_carousel_2 {
+            font-size: 23px;
+        }
+    }
+
+    span:before , span:after {
+        content:'';
+        display:block;
+        height:0.3em;
+        }
+}
+
+
+.semi_circle_left_2 {
+    position: absolute;
+    top: 28%;
+    height: 9em;
+    width: 5em;
+    background: white;
+    border-radius: 0 100px 100px 0;
+    border: 4px solid white;
+    z-index:1;
+}
+
+
+.semi_circle_right_2 {
+    position: absolute;
+    right: 0%; 
+    top: 60%;
+    height: 18em;
+    width: 9em;
+    background-color: $color-logo;
+    border-radius: 140px 0px 0px 140px;
+}
+
+/* ===== carousel page 3 ===== */
+$bg-qsn-1:#98C9C7;
+$bg-qsn-2: #78C8C8;
+$bg-qsn-3: #50A0A0;
+$bg-qsn-4: #007B78;
+
+
+.bg-qsn {
+    background-color: $color-slogan;
+}
+
+#carousel-presentation {
+    height: 5vh;
+}
+
+.carousel-indicators .active {
+    background-color: $color-logo;
+}
+
+.carousel-indicators {
+    margin: 0;
+}
+
+.carousel-indicators-btn {
+    height: 0.3em !important;
+    width: 26% !important;
+}
+
+.slide-number {
+    height: max-content;
+}
+
+.transparent_number {
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 2px rgb(195, 195, 195);
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-caption {
+    position: static;
+}
+
+.carousel-inner {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.carousel-rect {
+    width: 100%;
+    height: 100vh;
+    fill: $color-slogan;
+}
+
+.carousel-content {
+    height: 100%;
+    width: 100vw;
+    right: 0%;
+    left: 0%;
+    background-color: $color-slogan;
+    justify-content: center;
+    text-align: justify;
+}
+
+.undertakings-div {
+    margin-left: 10%;
+}
+.undertakings {
+    color: $color-image;
+    font-family: 'Poppins';
+    justify-self: start;
+}
+
+.undertakings-subtitle {
+    width: 80%
+}
+
+
+.undertakings-title {
+    @include text-shadow;
+}
+
+.undertakings-text {
+    font-size: 1.25rem;
+    color: $color-slogan;   
+    line-height: 1;
+}
+
+.undertakings-img {
+    height: 14rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    top: 17em;
+    height: 2em;
+    position: fixed;
+}
+
+.carousel-introduction {
+    width: 80%;
+    font-size: 1.25rem;
+}
+.opportunities {
+    background-color: $bg-qsn-1;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0%;
+}
+
+.economy {
+    background-color: $bg-qsn-2;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: -5%;
+    margin-right: 0
+}
+
+.environment {
+    background-color: $bg-qsn-3;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0
+}
+
+.social {
+    background-color: $bg-qsn-4;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: -5%;
+    margin-right: 0
+}
