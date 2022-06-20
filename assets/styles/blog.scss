@@ -10,12 +10,9 @@
     font-family: ("League Spartan");
 }
 
-body {
-    background-color: $color-slogan;
-}
-
 .blog_body {
     margin-top: -150px;
+    background-color: $color-slogan;
 }
 
 .blog_page {
@@ -60,21 +57,9 @@ body {
     margin: 0;
 }
 
-.first_border_articles,
-.second_border_articles {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
 .border_articles {
     height: 3px;
     background-color: $color-logo;
-}
-
-.second_border_articles {
-    height: 1px;
-    background-color: $white;
 }
 
 .blog_h2 {
@@ -96,15 +81,16 @@ body {
     border: 2px solid $color-logo;
     border-radius: 20px;
     box-shadow: 0 0 1em $color-logo;
+    width: 100%;
 }
 
 .article_img {
-    height: 25vh;
+    height: 200px;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.img {
+.article .img {
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -195,9 +181,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .articles a {
-        min-height: 595px;
-        width: 308px;
+    .article {
+        height: 620px;
+        width: 275px;
     }
 }
 
@@ -210,9 +196,9 @@ body {
         font-size: 4vw;
     }
 
-    .articles a {
-        min-height: 550px;
-        width: 360px;
+    .article {
+        height: 575px;
+        width: 330px;
     }
 }
 
@@ -228,28 +214,30 @@ body {
 }
 
 @media screen and (min-width: 1150px) {
-    .articles a {
-        min-height: 500px;
+    .article {
+        height: 505px;
         width: 425px;
     }
 }
 
 @media screen and (min-width: 1350px) {
-    .articles a {
-        min-height: 455px;
-        width: 540px;
+    .article {
+        height: 480px;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .article {
+        height: 575px;
+        width: 340px;
     }
 }
 
 @media screen and (min-width: 1600px) {
-    .articles a {
-        min-height: 505px;
-        width: 425px;
+    .article {
+        height: 530px;
+        width: 400px;
     }
 }
 
-@media screen and (min-width: 1750px) {
-    .articles a {
-        width: 440px;
-    }
-}
