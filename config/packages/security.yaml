@@ -21,6 +21,7 @@ security:
                 login_path: login
                 check_path: login
                 enable_csrf: true
+                default_target_path: /admin
             logout:
                 path: logout
 
