@@ -1,35 +1,51 @@
-{# templates/login/index.html.twig #}
 {% extends 'base.html.twig' %}
 
-{# ... #}
-
 {% block body %}
-    {% if error %}
-        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-    {% endif %}
+	{% if error %}
+		<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+	{% endif %}
 
-    <body class="faq_body">
+	<body class="body_login">
 
-        <header>
-        {% include ('_navbar.html.twig') %}
-        </header>
+		<header>
+			{% include ('_navbar.html.twig') %}
+		</header>
 
-        {% include "home/partials/_sidebar_user.html.twig" %}
+		{% include "home/partials/_sidebar_user.html.twig" %}
 
-        <form action="{{ path('login') }}" method="post">
-            <label for="username">Email:</label>
-            <input type="text" id="username" name="_username" value="{{ last_username }}"/>
+		<section class="section_login">
+			<div class="container py-4">
+				<div class="row d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+						<div class="card bg-dark text-white" style="border-radius: 1rem;">
+							<div class="card-body p-5 text-center">
+								<form action="{{ path('login') }}" method="post" class="mb-md-4 mt-md-4">
+									<h2 class="fw-bold mb-5 text-uppercase">Connexion</h2>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="_password"/>
+									<div class="form-outline form-white mb-5">
+										<label class="form-label" for="username">Email</label>
+										<input type="email" id="username" class="form-control form-control-lg" name="_username" value="{{ last_username }}" placeholder="Email"/>
+									</div>
 
-            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+									<div class="form-outline form-white mb-5">
+										<label class="form-label" for="password">Password</label>
+										<input type="password" id="password" class="form-control form-control-lg" name="_password" placeholder="Mot de passe"/>
+									</div>
 
-            {# If you want to control the URL the user is redirected to on success
-            <input type="hidden" name="_target_path" value="/account"/> #}
+									<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
-            <button type="submit">login</button>
-        </form>
+									<button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    </body>
+		<footer>
+			{% include ('home/partials/_footer.html.twig') %}
+		</footer>
+
+	</body>
 {% endblock %}
