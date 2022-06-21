@@ -2,15 +2,25 @@
     background-color: $color-slogan;
 }
 
-.body_login input{
-    color: black;
+.card_login{
+    background-color: rgba($white, 0.05);
+    border: 2px solid $color-logo;
+    box-shadow: 0 0 1em $color-logo;
 }
 
-.form_login{
-    width: 90vw;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.body_login button{
+    background-color: $color-logo;
 }
+
+.body_login input {
+    &:hover {
+        @include dynamic-border;
+        background-color: rgb(255, 255, 255);
+        color: $color-slogan;
+    }
+}
+
+.body_login .form-control:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+} 
