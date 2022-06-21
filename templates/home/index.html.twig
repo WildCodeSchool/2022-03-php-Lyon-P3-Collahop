@@ -5,8 +5,8 @@
 
 {% block body %}
 	<body class="homepage-bg">
-    {% include ('_navbar.html.twig') %}
-	{% include "home/partials/_sidebar_user.html.twig" %}
+    	{% include ('_navbar.html.twig') %}
+		{% include "home/partials/_sidebar_user.html.twig" %}
 		<div class="container-fluid pt-5">
 			<section class="row homepage_first_section">
 				{% for success, messages in app.flashes %}
