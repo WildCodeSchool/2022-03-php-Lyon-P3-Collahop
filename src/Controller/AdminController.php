@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\ContactRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -22,8 +23,11 @@ class AdminController extends AbstractController
     }
 
     #[Route(path: "/contacts", name: "contacts")]
-    public function contacts(): Response
+    public function contacts(ContactRepository $contactRepository): Response
     {
-        return $this->render(('admin/contacts.html.twig'));
+        $contacts = $contactRepository->findAll();
+        return $this->render('/admin/contacts.html.twig', [
+            'contacts' => $contacts,
+        ]);
     }
 }

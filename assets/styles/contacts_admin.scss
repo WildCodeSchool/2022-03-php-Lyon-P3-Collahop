@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white;
+    font-family: ("League Spartan");
+}
+
+.contacts_admin_body {
+    background-color: $color-slogan;
+    margin-left: 270px;
+    color: $white;
+}

@@ -4,6 +4,32 @@
 {% endblock %}
 
 {% block body %}
-    {% include "admin/partials/_sidebar_admin.html.twig" %}
+	<body class="contacts_admin_body">
 
+		<header>
+			{% include "admin/partials/_sidebar_admin.html.twig" %}
+		</header>
+        <h1 class="text-center m-5"> Liste des contacts enregistré </h1>
+		<table class="table text-center mt-5">
+			<thead>
+				<tr>
+					<th scope="col">Nom</th>
+					<th scope="col">Prénom</th>
+					<th scope="col">Entreprise</th>
+					<th scope="col">Adresse email</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for contact in contacts %}
+					<tr>
+						<td scope="row">{{ contact.lastname }}</td>
+						<td>{{ contact.firstname }}</td>
+						<td>{{ contact.company }}</td>
+						<td>{{ contact.email }}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+	</body>
 {% endblock %}
