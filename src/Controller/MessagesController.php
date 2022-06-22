@@ -26,7 +26,7 @@ class MessagesController extends AbstractController
         $messageManager = $doctrine->getManager();
         $messageUserContact = $messageManager->getRepository(Contact::class)->find($id);
 
-        if($messageUserContact != null) {
+        if ($messageUserContact != null) {
             $messageManager->remove($messageUserContact);
             $messageManager->flush();
         }
