@@ -21,7 +21,7 @@ class MessagesController extends AbstractController
     }
 
     #[Route('/admin/messages/delete/{id}', methods: ['GET', 'DELETE'], name: 'delete_messages')]
-    public function delete(ManagerRegistry $doctrine, int $id): Response
+    public function delete(ManagerRegistry $doctrine, Contact $contact, int $id): Response
     {
         $messageManager = $doctrine->getManager();
         $messageUserContact = $messageManager->getRepository(Contact::class)->find($id);
@@ -36,7 +36,8 @@ class MessagesController extends AbstractController
     public function show(Contact $contact): Response
     {
         return $this->render('admin/messages/show.html.twig', [
-            'message' => $contact->getMessage()
+            'message' => $contact->getMessage(),
+            'contact' => $contact
         ]);
     }
 }
