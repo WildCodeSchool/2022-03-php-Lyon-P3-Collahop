@@ -1,0 +1,73 @@
+.our_services-bg {
+    background-color: #141726;
+    background-image: linear-gradient(rgba(34, 29, 56, 0.7), rgba(0, 0, 0, 0.7)),url(../images/our_services.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw; 
+    padding: 0%;
+    margin: 0%;
+        section {
+            margin-top: -105px !important;
+        }
+}
+
+.our_services_semi_circle_right {
+    background-color: $color-logo;
+    border-radius: 150px 0px 0px 150px;
+    border-top: 30rem;
+}
+
+.our_services_title {
+    font-size: 2.2em;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    color: #7b7b7b;
+    font-weight: bolder;
+}
+
+.our_services_title2 {
+    font-size: 70px;
+    font-weight: bolder;
+    @include text-shadow;
+}
+
+.our_services_dvpmt {
+    font-size: 70px;
+    color: $color-logo;
+    font-weight: bolder;
+    @include text-shadow;
+}
+
+.our_services_text {
+    background-color: rgb(6, 101, 112);
+}
+
+.cards_img {
+    background-image: url(../images/our_services.jpeg);
+    background-size: cover;
+    height: 15rem;
+    font-size: 6em;
+    height: max-content;
+    color: $color-logo;
+    font-weight: bolder;
+}
+
+.cards_text {
+    background-color: rgb(6, 101, 112);
+    height: 15rem;
+    font-size: 25px;
+
+}
+
+.contact_us_btn {
+    @include homepage-buttons;
+    font-size: 25px;
+    margin-left: 20px;
+    background-color: #10dddd;
+    border: 2px solid #10dddd;
+    &:active {
+        transform: scale(0.95);
+    }
+}

@@ -16,7 +16,7 @@
 					<h1 class="blog_h1">
 						<p class="transparent_weight mb-0">Nos articles</p>
 						<p>sur l'économie collaborative
-							<span class="growth_word">btop</span>
+							<span class="growth_word">btob</span>
 						</p>
 					</h1>
 				</div>
@@ -29,21 +29,20 @@
 			<div class="text-center fw-bold">
 				<p class="blog_h2 mt-4">Retrouvez tous nos articles de blog ici<br/>et suivez toutes les tendances du marché de l'économie du partage.<br/>Vous serez un vrai PRO !</p>
 			</div>
-			<div class="container">
-				<div class="row">
+			<div class="container d-flex">
+				<div class="row d-flex justify-content-center">
 					{% for article in articles %}
-						<a href="blog/{{ article.id }}" class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 p-3">
-							<div class="">
-								<div class="article p-3 mb-3">
-									<div class="article_img mb-3">
-										<div class="img" style="background-image: url({{ article.image }});"></div>
-									</div>
-									<h2>{{ article.title }}</h2>
-									<div class="article_sumary mb-2">{{ article.articleSumary }}</div>
-									<div class="date_div">
-										<div class="date">{{ article.date|date('d/m/Y') }}</div>
-									</div>
+						<a href="blog/{{ article.id }}" class="d-flex col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 m-3">
+
+							<div class="article d-flex">
+								<div class="article_img">
+									<div class="img" style="background-image: url({{ article.image }});"></div>
 								</div>
+								<h2>{{ article.title }}</h2>
+								<div class="article_sumary">{{ article.articleSumary }}</div>
+							</div>
+							<div class="date_div">
+								<div class="date">{{ article.date|date('d/m/Y') }}</div>
 							</div>
 						</a>
 					{% endfor %}
@@ -54,6 +53,6 @@
 		<footer>
 			{% include ('home/partials/_footer.html.twig') %}
 		</footer>
-		
+
 	</body>
 {% endblock %}
