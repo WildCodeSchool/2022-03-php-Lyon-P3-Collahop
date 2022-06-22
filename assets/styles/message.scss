@@ -46,15 +46,19 @@
                     display: flex;
                     flex-direction: column;
                     margin: 0 15px;
+                    color: black;
+                    
                     .data_list{
+                        text-decoration: none;
                         font-size: 18px;
                         font-weight: 400;
                         margin-top: 20px;
                         white-space: nowrap;
                         color: black;
-                        .test{
-                            background-color: black!important;
-                        }
+                    }
+
+                    .delete_btn_icn { 
+                       background-color: black;
                     }
                 }
 
@@ -67,7 +71,25 @@
         }
     
         span {
-            color: black;
+            
+
+            .show_messages_btn {
+                background: $color-logo; 
+                text-decoration: none; 
+                padding: 5px 25px; 
+                border-radius: 15px; 
+                border: none;
+                
+                &:active {
+                    transform: scale(0.92) translateY(-2px);
+                }   
+            }
         }
+
+        .button {
+            text-decoration: none;
+        }
+
+
 }
 

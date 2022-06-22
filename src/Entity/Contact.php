@@ -129,7 +129,7 @@ class Contact
 
     public function setCreatedAt(): self
     {
-        $this->createdAt = new \Datetime('now');
+        $this->createdAt = new Datetime('now');
 
         return $this;
     }
