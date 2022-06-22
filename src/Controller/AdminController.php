@@ -20,4 +20,10 @@ class AdminController extends AbstractController
     {
         return $this->render(('admin/dashboard.html.twig'));
     }
+
+    #[Route(path: "/contacts", name: "contacts")]
+    public function contacts(): Response
+    {
+        return $this->render(('admin/contacts.html.twig'));
+    }
 }
