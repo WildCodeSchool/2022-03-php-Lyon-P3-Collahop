@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use DateTimeInterface;
+use Doctrine\ORM\Mapping as ORM;
 use App\Repository\ContactRepository;
 use Symfony\Component\Validator\Constraints as Assert;
-use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use DateTime;
 
 #[ORM\Entity(repositoryClass: ContactRepository::class)]
 #[UniqueEntity('email', message: 'Cette adresse email existe déjà')]
@@ -47,9 +49,13 @@ class Contact
     #[ORM\Column(type: 'text', nullable: true)]
     #[Assert\NotBlank(message: 'Veuillez compléter ce champ')]
     #[Assert\Type('string')]
-    #[Assert\Length(min: 10, minMessage: 'Votre message doit contenir au moins 10 caractères', max:1000, maxMessage :
-    'Votre message est trop long ; il ne doit pas dépasser 1000 caractères')]
+    #[Assert\Length(min: 10, minMessage: 'Votre message doit contenir au moins 
+    10 caractères', max: 1000, maxMessage: 'Votre message est trop long ; il ne doit pas dépasser 1000 caractères')]
+
     private string $message;
+
+    #[ORM\Column(type: 'datetime')]
+    private DateTimeInterface $createdAt;
 
     public function getId(): ?int
     {
@@ -112,6 +118,18 @@ class Contact
     public function setMessage(string $message = ''): self
     {
         $this->message = $message;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(): self
+    {
+        $this->createdAt = new Datetime('now');
 
         return $this;
     }

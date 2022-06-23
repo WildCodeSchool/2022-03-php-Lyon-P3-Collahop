@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Our services
+{% endblock %}
+
+{% block body %}
+	<body class="our_services-bg">
+		{% include ('_navbar.html.twig') %}
+		{% include "home/partials/_sidebar_user.html.twig" %}
+		<div class="our_services_main_container row d-flex justify-content-center col-lg-12">
+			<div class="container row d-flex col-lg-11">
+				<p class="our_services_title mx-5">Nos services</p>
+				<p class="our_services_title2 mx-5">Nous accompagnons les entreprises dans leur
+					<span class="our_services_dvpmt">développement</span>
+				</p>
+			</div>
+			<div class="our_services_semi_circle_right col-lg-1"></div>
+			<div class="our_services_summary row d-flex justify-content-center col-lg-12">
+				<div class="container row d-flex justify-content-center col-lg-11">
+					<h1 class="py-4">Toutes les entreprises possèdent des richesses :</h1>
+					<div class="col-lg-12">
+						<div class="row row-cols-2">
+							<h3>
+								<i class="fa-solid fa-square-check"></i>
+								des compétences uniques
+							</h3>
+							<h3>
+								<i class="fa-solid fa-square-check"></i>
+								un stock conséquent
+							</h3>
+							<h3>
+								<i class="fa-solid fa-square-check"></i>
+								un savoir faire de qualité
+							</h3>
+							<h3>
+								<i class="fa-solid fa-square-check"></i>
+								une force de vente
+							</h3>
+							<h3>
+								<i class="fa-solid fa-square-check"></i>
+								des brevets qui garantissent une innovation
+							</h3>
+							<h3>
+								<i class="fa-solid fa-square-check"></i>
+								...
+							</h3>
+						</div>
+					</div>
+					<h1 class="py-4">Mais ne les utilisent pas dans leur entièreté</h1>
+				</div>
+			</div>
+			<div class="our_services_text row col-lg-11">
+				<h4 class="col-lg-12 py-4">Pourtant, le partage d'actifs révolutionne les modes de consommation et de production en établissant des normes durables pour les années à venir. Conscient que l'économie circulaire est devenue un éléments de base dans notre société, Collahop fournit une plateforme de collaboration et déchanges aux entreprises partenaires pour développer leur business. Que vous soyez dirigenat d'une PME ou entrepreneur, la croissance constitue probablement l'une de vos précoccupations principale. D'ailleurs on dit souvent qu'une entreprise doit se développer et croître si elle ne veut pas disparaître. Mais est-ce vrai ? Et bien oui, car l'absence de croissance traduit l'impossibilité pour l'entreprise d'innover et démontre son incapacité à augmenter son portefeuille client et de facto son CA, ce qui l'entraîne inévitablement vers le déclin. On doit alors saisir les opportunités de croissance qui s'offrent à nous (ou les provoquer !). Il existe de multiples manières de croître. Vous les connaissez déjà sûrement. Mais toutes vous coûterons de l'argent et du temps. Et toutes les entreprises ne peuvent pas prendre un risque qui ne sera jamais sûr d'être rentabilisé. C'est pourquoi Collahop propose un accompagnement inédit autour de 6 piliers pour développer votre entreprise avec l'économie collaborative.</h4>
+			</div>
+			<div class="our_services_cards row d-flex justify-content-center col-lg-12">
+				<div class="row d-flex justify-content-around col-lg-11 py-5">
+					<div class="container row col-lg-4 px-3">
+						<div class="cards_img row justify-content-start">01</div>
+						<p class="cards_text row text-center">
+							<span>DIAGNOSTIC DE COMPATIBILITÉ</span>Nous identifions les opportunités de développement pour votre entreprise que vous n'oseriezpas. Nous détectons les développements de nouveaux produits/services que vous pouuriez proposer à vos clients</p>
+						<div class="cards_img row justify-content-start">04</div>
+						<p class="cards_text row text-center">
+							<span>ÉLABORATION DU CONTRAT</span>Nous vous accompagnons dans l'élaboration et les clauses indispensables à avoir dans le contrat de partenariat. Nous garantissons un contrat sur-mesure et adapté à votre relation commerciale.</p>
+					</div>
+					<div class="container row col-lg-4 px-3">
+						<div class="cards_img row justify-content-start">02</div>
+						<p class="cards_text row text-center">
+							<span>RECHERCHE DE PARTENAIRE</span>Votre projet et vos critères ont été établis. Il est désormais nécessaire de trouver des partenaires compatibles avec votre activité. Nous évaluons les possibilités d'entreprises afin de créer un partenariat.</p>
+						<div class="cards_img row justify-content-start">05</div>
+						<p class="cards_text row text-center">
+							<span>FORMATION & ACCOMPAGNEMENT</span>Une formation des collaborateurs sera nécessaire pour assurer la connaissance technique de la nouvelle gamme proposée. Un accompagnement régulier est prévu pour obtenir une organisation optimale.</p>
+					</div>
+					<div class="container row col-lg-4 px-3">
+						<div class="cards_img row justify-content-start">03</div>
+						<p class="cards_text row text-center">
+							<span>PRÉSENTATION DE SOLUTIONS</span>Nous vous remettons des fiches de cadrage présentant chacune des entreprises retenues avec toutes les informations dont vous aurez besoin pour faire votre choix.</p>
+						<div class="cards_img row justify-content-start">06</div>
+						<p class="cards_text row text-center">
+							<span>OPTIONS COMPLÉMENTAIRES</span>Nous vous aidons à intégrer ce partenariat dans toutes vos ressources. Qu'il s'agisse d'un raccordement informatique, d'une nouvelle rubrique sur votre site internet, toutes les options serons étudiées.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container row d-flex justify-content-center col-lg-12 py-4">
+				<a class="container row d-flex justify-content-center col-lg-12" href="{{ path('app_contacts') }}">
+					<button type="button" class="contact_us_btn">Nous contacter</button>
+				</a>
+			</div>
+		</div>
+	</body>
+	<footer>
+		{% include ('home/partials/_footer.html.twig') %}
+	</footer>
+{% endblock %}

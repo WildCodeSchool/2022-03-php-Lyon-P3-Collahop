@@ -1,16 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Téléchargez votre ebook{% endblock %}
+{% block title %}Téléchargez votre ebook
+{% endblock %}
 
 {% block body %}
-<div class="ebook d-flex justify-content-center align-items-center">
-    <div class="download-frame py-5 d-flex flex-column justify-content-evenly align-items-center">
-        <p class="text-center font-family-base">Découvrez nos services !</p>
-        <div>
-            <img id="logo-download" src="{{ asset('build/images/interlock.png') }}">
-            <a class="text-decoration-none" href="{{ asset('build/files/test.fb105e69.pdf') }}" target="blank">Télécharger le livret blanc</a>
-            <img id="logo-download" src="{{ asset('build/images/interlock.png') }}">
-        </div>   
-    </div>
-</div>
+	<body class="bg-dark">
+		<div class="ebook d-flex justify-content-center align-items-center">
+			<div class="download-frame py-5 d-flex flex-column justify-content-evenly align-items-center">
+				<p class="text-center font-family-base">Découvrez nos services !</p>
+				<div>
+					<img id="logo-download" src="{{ asset('build/images/interlock.png') }}">
+					<a class="text-decoration-none" href="{{ asset('build/files/test.pdf') }}" target="blank">Télécharger le livret blanc</a>
+					<img id="logo-download" src="{{ asset('build/images/interlock.png') }}">
+				</div>
+			</div>
+		</div>
+	</body>
 {% endblock %}

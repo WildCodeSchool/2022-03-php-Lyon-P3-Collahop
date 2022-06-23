@@ -1,3 +1,7 @@
+.bg-ebook {
+  background-color: $color-slogan;
+}
+
 .ebook {
   font-family: 'League Spartan';
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/teamwork.jpg");
@@ -5,7 +9,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; 
 }
 
 .ebook-title {
@@ -44,7 +47,6 @@
 .ebook-header-frame {
    width: 100%;
    margin-right: 0;
-   margin-top: 55px;
 }
 
 .ebook-form-frame {
