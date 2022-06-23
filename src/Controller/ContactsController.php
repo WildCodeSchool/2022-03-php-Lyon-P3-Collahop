@@ -15,13 +15,14 @@ class ContactsController extends AbstractController
     #[Route('/contacts', name: 'app_contacts')]
     public function new(Request $request, ContactRepository $contactRepository): Response
     {
-        $contacts = new Contact();
+        $contact = new Contact();
+        $contact->setCreatedAt();
 
-        $form = $this->createForm(ContactsType::class, $contacts);
+        $form = $this->createForm(ContactsType::class, $contact);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $contactRepository->add($contacts, true);
+            $contactRepository->add($contact, true);
 
             $this->addFlash('success', 'Votre message a été envoyé avec succès !');
 
@@ -30,7 +31,7 @@ class ContactsController extends AbstractController
 
         return $this->renderForm('contacts/index.html.twig', [
             'form' => $form,
-            'contacts' => $contacts
+            'contact' => $contact
         ]);
     }
 }
