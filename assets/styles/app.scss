@@ -38,8 +38,10 @@ $hover-admin : #00F0C8;
 @import "contacts";
 @import "partials/navbar.scss";
 @import "blog";
+@import "message";
 @import "partials/sidebar_admin";
 @import "partials/footer";
+@import "login";
 @import "our_services";
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
