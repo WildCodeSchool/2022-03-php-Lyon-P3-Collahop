@@ -20,7 +20,7 @@ class ArticlesType extends AbstractType
                 'attr' => array(
                     'class' => 'article-input-summary'
                 )))
-            ->add('articleContent', TextType::class,array (
+            ->add('articleContent', TextType::class, array (
                 'label' => 'Contenu',
                 'attr' => array(
                     'class' => 'article-input-content'
