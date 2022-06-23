@@ -1,20 +1,90 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MessagesController!{% endblock %}
+{% block title %}Hello MessagesController!
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/cristini/Bureau/Projet_3_Collahop/2022-03-php-Lyon-P3-Collahop/src/Controller/MessagesController.php'|file_link(0) }}">src/Controller/MessagesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/cristini/Bureau/Projet_3_Collahop/2022-03-php-Lyon-P3-Collahop/templates/messages/index.html.twig'|file_link(0) }}">templates/messages/index.html.twig</a></code></li>
-    </ul>
-</div>
+	<body class="message_admin_body">
+		{% include "admin/partials/_sidebar_admin.html.twig" %}
+
+    <section class="dashboard_messages">
+        <div class="dash_content_messages">
+            <div class="activity_messages">
+                <div class="title_messages">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Vos messages</span>
+                </div>
+
+                <div class="activity_data">
+                    <div class="data names">
+                        <span class="data_title">Prénom</span>
+                            {% for message in messages %}
+								<span class="data_list">
+									{{message.firstname}}
+                                </span>
+                            {% endfor %}
+                    </div>
+                    <div class="data email">
+                        <span class="data_title">Nom</span>
+                            {% for message in messages %}
+								<span class="data_list">
+									{{message.lastname}}
+                                </span>
+                            {% endfor %}
+                    </div>
+                    <div class="data joined">
+                        <span class="data_title">Email</span>
+                            {% for message in messages %}
+								<span class="data_list">
+									{{message.email}}
+                                </span>
+                            {% endfor %}
+                       
+                    </div>
+                    <div class="data type">
+                        <span class="data_title">Entreprise</span>
+                            {% for message in messages %}
+								<span class="data_list">
+									{{message.company}}
+                                </span>
+                            {% endfor %}
+                      
+                    </div>
+                    <div class="data time">
+                        <span class="data_title">Date</span>
+                            {% for message in messages %}
+								<span class="data_list">
+									{{ message.createdAt|date('d-m-y H:i:s', 'Europe/Paris') }}
+                                </span>
+                            {% endfor %}
+                    </div>
+                    <div class="data messages">
+                        <span class="data_title">Messages</span>
+                           {% for message in messages %}
+								<span class="data_list">
+									<a href="/admin/messages/show/{{message.id}}" class="messages_link_btn">
+                                        <button class="show_messages_btn">
+						                    Afficher
+                                        <button>
+					                </a>
+                                </span>
+                            {% endfor %}
+                    </div>
+                    <div class="data delete">
+                        <span class="data_title">Supprimer</span>
+                            {% for message in messages %}
+                            <span class="data_list">
+								<a href="/admin/messages/delete/{{message.id}}">
+						           <i class="fa-solid fa-circle-xmark delete_btn_icn"></i>
+					            </a>
+                            </span>
+                            {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {% endblock %}
