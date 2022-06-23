@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Articles
+{% endblock %}
+
+{% block body %}
+<body class="new-article">
+	{{ include('admin/partials/_sidebar_admin.html.twig') }}
+	<div class="new-article-frame row h-100 d-flex justify-content-center">
+		<div class="new-article-form fw-bold col-6 my-5 row justify-content-center">
+			<h1 class="write-article mt-5 mb-4">Ecrire un article</h1>
+
+			{{ include('admin/articles/_form.html.twig') }}
+
+			
+		</div>
+	</div>
+</body>
+{% endblock %}
