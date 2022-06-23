@@ -7,7 +7,7 @@ aside {
     position: fixed;
     width: 80px;
     left: 0;
-    height: 100%;
+    max-height: 100vh;
     background: $aside-main-color;
     left: -90px;
 
