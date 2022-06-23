@@ -15,8 +15,16 @@ class ArticlesType extends AbstractType
         $builder
             ->add('title', TextType::class, ['label' => 'Titre'])
             ->add('image', TextType::class, ['label' => 'Images'])
-            ->add('articleSumary', TextType::class, ['label' => 'Résumé'])
-            ->add('articleContent', TextType::class, ['label' => 'Contenu'])          
+            ->add('articleSumary', TextType::class, array (
+                'label' => 'Résumé',
+                'attr' => array(
+                    'class' => 'article-input-summary'
+                )))
+            ->add('articleContent', TextType::class,array (
+                'label' => 'Contenu',
+                'attr' => array(
+                    'class' => 'article-input-content'
+                )))
         ;
     }
 
