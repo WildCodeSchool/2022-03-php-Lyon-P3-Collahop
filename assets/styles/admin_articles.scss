@@ -1,0 +1,51 @@
+.new-article {
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+.new-article-frame {
+    background-image: linear-gradient($hover-admin, rgba(0, 0, 0, 0.7)),url(../images/admin/abstract-business-people-and-city-buildings.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.new-article-form {
+    background-color: $color-slogan;
+    margin-left: 16em;
+}
+
+.write-article {
+    width: 90%;
+    padding-left: 0.5em;
+}
+
+#articles {
+    width: 90%;
+}
+
+.article-input-summary {
+    height: 7em;
+}
+
+.article-input-content {
+    height: 12em;
+}
+
+.article-btns {
+    width: 90%;
+}
+
+.btn-article-save {
+    background-color: $color-logo;
+    color: white;
+    width: 7em;
+    height: 2em;
+}
+
+.btn-article-cancel {
+    background-color: white;
+    color: $color-slogan;
+    width: 7em;
+    height: 2em;
+}

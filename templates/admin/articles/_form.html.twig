@@ -1,0 +1,7 @@
+{{ form_start(form, { 'attr': {'class': 'row justify-content-center'} }) }}
+    {{ form_widget(form) }}
+    <div class="article-btns d-flex justify-content-end mb-4">
+        <a class="" href="{{ path('app_articles_index') }}"><button type="button" class="btn btn-article-cancel fw-bold py-1 px-2 mx-2">Annuler</button></a>
+        <button class="btn btn-article-save fw-bold py-1 px-2 mx-0">{{ button_label|default('Sauvegarder') }}</button>
+    </div>
+{{ form_end(form) }}
