@@ -1,15 +1,135 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Accueil
+{% endblock %}
 
 {% block body %}
-    <div class="pink-stripe">
-        <h1>
-            Let's start coding&nbsp;&#129304;
-        </h1>
-    </div>
-    <div class="white-stripe">
-        <img src="{{ asset('build/images/LOGO_WILD_CODE_SCHOOL.png') }}"
-             alt="">
-    </div>
+	<body class="homepage-bg">
+    	{% include ('_navbar.html.twig') %}
+		{% include "home/partials/_sidebar_user.html.twig" %}
+		<div class="container-fluid pt-5">
+			<section class="row homepage_first_section">
+				{% for success, messages in app.flashes %}
+					{% for message in messages %}
+						<div class="flash_success fs-2 alert alert-{{ success }}">
+							{{ message }}
+						</div>
+					{% endfor %}
+				{% endfor %}
+				<div class="col-sm-1  p-0">
+					<div class="semi_circle_left mt-4"></div>
+				</div>
+				<div class="col-sm-10 p-0">
+					<div class="body_text_container py-5 ">
+						<div class="col-lg-11">
+							<h2 class="share_economy py-3">Économie du partage</h2>
+							<h1 class="col-lg-8 col-sm-12 py-2">
+								<span class="transparent_weight">Vous êtes une entreprise
+								</span>
+								en quête de
+								<span class="growth_word">croissance</span>
+								?
+							</h1>
+
+							<p class="col-lg-6 py-4">
+								Collahop vous accompagne pour identifier les opportunités à saisir. Nous avons développé un marché de partage entre entreprises pour développer une économie plus circulaire et plus durable. Vous souhaitez développer vos connaissances sur l'économie collaborative ? Contactez-nous ou téléchargez notre livre blanc ci-dessous !
+							</p>
+						</div>
+						<div class="buttons col-lg-4 fs-5">
+						 	<a class="text-decoration-none" href="{{ path('app_contacts')}}">
+								<button type="button" class="contact_btn">Contacts</button>
+							</a>
+							<a class="dowload_ebook" href="{{ path('ebook_form') }}">
+								<button type="button" class="services_btn">Livre Blanc</button>
+							</a>
+						</div>
+					</div>
+
+					<div class="row justify-content-md-center align-items-end rectangle_group p-0 m-0 mt-3">
+						<div class=" row col-lg-4 m-0 rectangle_1  ">
+							<div class="col-lg-4 rectangle_img py-2">
+								<img src="{{ asset('build/images/homepage_img/rectangle_1_home.png') }}" class="img-fluid" alt="Social medias picture">
+							</div>
+							<div class="col-lg-8 encart_body_1">
+								<h4 class="pt-4">Digital Marketing</h4>
+								<p class="rectangle_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.</p>
+							</div>
+						</div>
+						<div class=" row col-lg-4 rectangle_2 m-0">
+							<div class="col-lg-4 rectangle_img py-1">
+								<img src="{{ asset('build/images/homepage_img/rectangle_2_home.png') }}" class="img-fluid" alt="Talking icone picture">
+							</div>
+							<div class="col-lg-8 pt-4">
+								<h4 class="">Beyond consulting
+								</h4>
+								<p class="rectangle_text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.
+								</p>
+							</div>
+						</div>
+						<div class=" row col-lg-4 rectangle_3 m-0">
+							<div class="col-lg-4 rectangle_img py-2">
+								<img src="{{ asset('build/images/homepage_img/rectangle_3_home.png') }}" class="img-fluid" alt="Pen and nodes">
+							</div>
+							<div class="col-lg-8 pt-4">
+								<h4>Graphic design</h4>
+								<p class="rectangle_text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem asperiores ut rerum. Quo quia facilis hic fugit aliquam minima pariatur, quae odit facere necessitatibus perferendis adipisci aliquid alias consequuntur.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 d-flex justify-content-end align-items-center p-0">
+					<div class="semi_circle_right d-flex"></div>
+				</div>
+			</section>
+		</div>
+		<div class="container-fluid-part2 col-xl-12 col-lg-12 d-flex justify-content-center mt-5">
+			<div class="row homepage_second_section col-xl-11 col-lg-11 p-5">
+				<div class="col-xl-3 col-lg-11">
+					<div class="body_part2 p-4">
+						<h1 class="homepage_part2_title">Connaissez-vous
+							<span class="transparent_weight_part2">vos leviers
+							</span>
+							<span class="growth_word_part2">de développement ?
+							</span>
+						</h1>
+					</div>
+					<div class="summary_section p-4">
+						<p>Pour un dirigeant, croître est un enjeu majeur et évoluer est une nécessité. Beaucoup d'entreprises souhaitent développer leur CA mais ne savent pas comment faire.Par manque de temps, d'investissement ou de ressources, vous vous retrouvez à stagner. Il s'agit de penser différemment et d'identifier les axes de développement de votre entreprise avec un diagnostic précis.</p>
+					</div>
+				</div>
+				<div class="row col-xl-9 col-lg-12 d-flex justify-content-around py-5">
+					<div class="punchline1 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
+						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline1.png') }}" alt="...">
+						<p class="punchline_text text-center px-2">Trouvez de nouvelles voies et solutions</p>
+					</div>
+					<div class="punchline2 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
+						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline2.png') }}" alt="...">
+						<p class="punchline_text text-center px-2">Enrichissez vos axes de réflexion et d'innovation</p>
+					</div>
+					<div class="punchline3 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
+						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline3.png') }}" alt="...">
+						<p class="punchline_text text-center px-2">Descontruisez votre façon de penser</p>
+					</div>
+					<div class="punchline4 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
+						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline4.png') }}" alt="...">
+						<p class="punchline_text text-center px-2">Intégrez l'économie du partage dans votre stratégie</p>
+					</div>
+					<div class="d-flex flex-column align-items-center">
+						<img class="timer" src="{{ asset('build/images/homepage_img/horloge.png') }}" alt="...">
+						<p class="get_one_hour d-flex text-center">Vous avez une heure devant vous ?</p>
+					</div>
+					<div class="d-flex justify-content-center">
+						<p class="diagnostic d-flex align-items-center px-4">Diagnostic offert</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			{% include ('home/partials/_footer.html.twig') %}
+		</footer>
+	</body>
 {% endblock %}

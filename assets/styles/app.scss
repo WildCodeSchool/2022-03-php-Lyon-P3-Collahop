@@ -1,2 +1,51 @@
-//start coding by removing this file and adding yours ;)
-@import "wcs";
+$color-typography: #287878;
+$color-logo: #10dddd;
+$color-image: #78a0a0;
+$color-keywords: #2878a0;
+$color-color: #50a0c8;
+$color-slogan: #141728;
+$white: white;
+$hover-btn-color: #f4f3f3;
+$secondary-homepage-color: #7b7b7b;
+$z-fixed: 100;
+$text-align: justify;
+
+$primary: $color-logo;
+$z-fixed: 100;
+
+$font-family-base: 'League Spartan';
+
+/* ===== Admin part ===== */
+
+$user-bg-color : #101527;
+$aside-main-color: #0F162F;
+$hover-admin : #00F0C8;
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "~bootstrap/scss/bootstrap";
+@import "mixins";
+@import "partials/sidebar";
+@import "homepage/homepage_part1";
+@import "homepage/homepage_part2";
+@import "ebook";
+@import "who_are_we_page";
+@import "faq";
+@import "contacts";
+@import "partials/navbar.scss";
+@import "blog";
+@import "admin_articles";
+@import "message";
+@import "partials/sidebar_admin";
+@import "partials/footer";
+@import "login";
+@import "our_services";
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");

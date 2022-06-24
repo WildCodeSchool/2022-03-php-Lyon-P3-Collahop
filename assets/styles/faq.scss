@@ -1,0 +1,225 @@
+.faq_body {
+  background-color: $color-slogan;
+}
+
+.faq_page{
+  background-color: $color-slogan;
+  padding-top: 150px;
+  min-height: 100vh;
+  max-height: 1000vh;
+}
+
+.faq_h1{
+  color: $white;
+  font-size: 5em;
+}
+
+.faq_img{
+  display: flex;
+  justify-content: center;
+}
+
+.left_line, .right_line {
+  border-top: 3px solid rgb(170, 170, 170);
+  width: 42vw;
+  margin-top: 15.5vw;
+  position: absolute;
+}
+
+.left_line{
+  left: 0;
+}
+
+.right_line{
+  right: 0;
+}
+
+.img_faq{
+  width: 20vw;
+  position: relative;
+}
+
+.container_h2{
+  display: flex;
+  justify-content: center;
+}
+
+.frame_h2{
+  width: 35vw;
+  background-color: $color-logo;
+  border-radius: 200px;
+}
+
+.faq_h2{
+  color: $white;
+  vertical-align: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.sentences_block{
+  margin: 0;
+  margin-top: 5vh;
+  justify-content: center;
+}
+
+.sentences_block_first, .sentences_block_second{
+  margin-left: 5vw;
+}
+
+.first_sentence, .second_sentence, .third_sentence, .fourth_sentence, .fifth_sentence, .sixth_sentence, .seventh_sentence, .eighth_sentence{
+  display: flex;
+  margin: 10px;
+}
+.sentence{
+  text-align: left;
+}
+
+.square{
+  height: 15px;
+  width: 15px;
+  background: $color-logo;
+  -ms-transform: rotate(45deg); /* Internet Explorer */
+  -moz-transform: rotate(45deg); /* Firefox */
+  -webkit-transform: rotate(45deg); /* Safari et Chrome */
+  -o-transform: rotate(45deg); /* Opera */ 
+}
+
+.btn{
+  margin: 10px;
+  padding: 0;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.div_square{
+  width: 30px;
+  align-self: center;
+}
+
+.response1, .response2, .response3, .response4, .response5, .response6, .response7, .response8{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 1530px) {
+  .frame_h2{
+  width: 40vw;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .frame_h2{
+  width: 45vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .frame_h2{
+  width: 50vw;
+  }
+
+  .faq_h1{
+    font-size: 4em;
+  }
+
+  .fifth_sentence{
+    margin-top: 0;
+  }
+
+  #collapse4{
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .frame_h2{
+  width: 55vw;
+  }
+
+  .img_faq{
+    width: 30vw;
+  }
+
+  .left_line, .right_line {
+    width: 38vw;
+    margin-top: 23.5vw;
+  }
+}
+
+@media screen and (max-width: 949px) {
+  .faq_page{
+    margin-top: 0;
+  }
+
+  .frame_h2{
+  width: 60vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .frame_h2{
+  width: 65vw;
+  }
+
+  .faq_h1{
+    font-size: 3em;
+  }
+
+  .faq_h2{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .frame_h2{
+  width: 70vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .frame_h2{
+  width: 75vw;
+  }
+
+  .img_faq{
+    width: 50vw;
+  }
+
+  .left_line, .right_line {
+    width: 30vw;
+    margin-top: 39.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .frame_h2{
+  width: 80vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .frame_h2{
+  width: 85vw;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .sentences_block_first, .sentences_block_second{
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .frame_h2{
+  width: 90vw;
+  }
+  
+  .faq_h1{
+    font-size: 2.5em;
+  }
+}

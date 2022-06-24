@@ -1,0 +1,100 @@
+.body_login {
+    background-image: url(../images/login/login.png);
+    -webkit-backdrop-filter: blur(5px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+    margin-top: -150px;
+
+    }
+
+.body_div_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.frame_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 50vh;
+    padding: 1vw;
+}
+
+.left_frame{
+    width: 50%;
+    height: 100%;
+    left: 0;
+}
+
+.body_div_login .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 5vh;
+    border-radius: 15px 0 0 15px;
+}
+
+.body_div_login h2{
+    color: black;
+}
+
+.id_form_login, .pass_form_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.body_div_login .form label{
+    color: black;
+    margin-top: 5vh;
+}
+
+.body_div_login .form input{
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    &:hover {
+        border-left: 10px solid aqua;
+        transition : 0.35s ease-in-out;
+        background-color: $color-slogan;
+        color: white;
+        background-color: rgb(255, 255, 255);
+        color: $color-slogan;
+    }
+}
+
+.body_div_login .form .button{
+    margin-top: 5vh;
+    width: 40%;
+    background-color: $color-logo;
+    color: $color-slogan;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.right_frame{
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-image: url(../images/login/login.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 10px 10px 0;
+    
+}

@@ -1,0 +1,62 @@
+{% block navbar %}
+	<nav id="desktop_menu">
+		<div class="grid">
+			<div id="line"></div>
+			<img
+			class="desktop logo" src="{{ asset('build/images/logo_collahop_blanc.png') }}" alt="Logo Collahop">
+
+			{# Accueil #}
+			<a class="desktop accueil" href="/">Accueil</a>
+			<div class="indicator" id="indicator_accueil"></div>
+
+			{# Nos services #}
+			<a class="desktop services" href="{{ path('app_our_services') }}">Nos services</a>
+			<div class="indicator" id="indicator_services"></div>
+
+			{# Qui sommes-nous ? #}
+			<a class="desktop qui_sommes_nous" href="{{ path('app_who_are_we') }}">Qui sommes-nous ?</a>
+			<div class="indicator" id="indicator_qui_sommes_nous"></div>
+
+			{# Nous contacter #}
+			<a class="desktop contact" href="{{ path('app_contacts') }}">Nous contacter</a>
+			<div class="indicator" id="indicator_contact"></div>
+
+			{# Blog #}
+			<a class="desktop blog" href="/blog">Blog</a>
+			<div class="indicator" id="indicator_blog"></div>
+
+			{# Input Rechercher #}
+			<input type="desktop search" id="desktop_search" name="q" placeholder="Rechercher">
+		</div>
+	</nav>
+
+	{# MENU MOBILE #}
+	<nav>
+		<div id="burger-menu">
+			<span></span>
+		</div>
+		<div class="mobile_line"></div>
+		<div id="mobile_menu">
+			<div class="frame">
+				<ul>
+					<li>
+						<a class="desktop accueil" href="/index.php">Accueil</a>
+					</li>
+					<li>
+						<a class="desktop services" href="#">Nos services</a>
+					</li>
+					<li>
+						<a class="desktop qui_sommes_nous" href="{{ path('app_who_are_we') }}">Qui sommes-nous ?</a>
+					</li>
+					<li>
+						<a class="desktop contact" href="{{ path('app_contacts') }}">Nous contacter</a>
+					</li>
+					<li>
+						<a class="desktop blog" href="#">Blog</a>
+					</li>
+				</ul>
+				<input type="search" id="mobile_search" name="q" placeholder="Rechercher">
+			</div>
+		</div>
+	</nav>
+{% endblock %}

@@ -1,0 +1,130 @@
+.bg-ebook {
+  background-color: $color-slogan;
+}
+
+.ebook {
+  font-family: 'League Spartan';
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/teamwork.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ebook-title {
+  @include text-shadow;
+}
+
+.title-fill-form {
+  color: #A2A2D4;
+  font-weight: 300 !important;
+}
+
+.ebook-input {
+  background-color: #E6E6F9;
+  color: $color-slogan;
+  padding-left: 50px;
+  border-radius: 25px;
+}
+
+.ebook-btn {
+  background-color: #7F7EC2;
+  width: max-content;
+  color: white;
+  font-weight: 600;
+  box-shadow: 3px 3px 2px gray;
+  border-radius: 5px;
+}
+
+.ebook-text {
+  width: 70%;
+  text-align: justify !important;
+  line-height: 1rem;
+  font-weight: 200;
+  color: $color-slogan;
+}
+
+.ebook-header-frame {
+   width: 100%;
+   margin-right: 0;
+}
+
+.ebook-form-frame {
+  width: 100%;
+  margin-right: 0;
+}
+
+.ebook-form {
+  width: 67%
+}
+
+.download-frame {
+  font-family: 'League Spartan' !important;
+  font-size: 30px !important;
+  background-color: $color-logo;
+  color: white;
+  border-radius: 15px;
+  width: 42%;
+  height: 20%;
+}
+
+#logo-download {
+  width: 23px;
+}
+
+.download-frame > div > a{
+  font-family: 'League Spartan' !important;
+  font-size: 20px !important;
+  color: $color-slogan;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .ebook-form {
+    width: 90%;
+}
+  .ebook-header-frame {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    .ebook {
+      background-image: none;
+      background-color: $color-slogan;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+    }
+
+    .ebook-header-frame {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-top: 70px;
+    }
+
+    .ebook-form-frame {
+      margin-left: 0;
+    }
+
+    .ebook-text {
+      width: 95%;
+    }
+
+    .ebook-form {
+      width: 80%;
+    }
+
+    .ebook-frame {
+      padding: 0;
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+  .ebook-form {
+    width: 90%;
+  }
+}
