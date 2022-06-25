@@ -10,8 +10,8 @@
 		</header>
 		{% include "home/partials/_sidebar_user.html.twig" %}
 		<div class="blog_page">
-			<div class="first_part">
-				<p class="category">BLOG</p>
+			<div class="first_part_blog">
+				<p class="category_blog">BLOG</p>
 				<div>
 					<h1 class="blog_h1">
 						<p class="transparent_weight mb-0">Nos articles</p>
@@ -29,16 +29,18 @@
 			<div class="text-center fw-bold">
 				<p class="blog_h2 mt-4">Retrouvez tous nos articles de blog ici<br/>et suivez toutes les tendances du marché de l'économie du partage.<br/>Vous serez un vrai PRO !</p>
 			</div>
-			<div class="container d-flex">
-				<div class="row d-flex justify-content-center">
+
+
+			<div class="container container_blog d-flex">
+				<div class="row row_blog">
 					{% for article in articles %}
-						<a href="blog/{{ article.id }}" class="d-flex col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 m-3">
+						<a href="blog/{{ article.id }}" class="d-flex col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 col-xxxl-2 m-3">
 
 							<div class="article d-flex">
 								<div class="article_img">
 									<div class="img" style="background-image: url({{ article.image }});"></div>
 								</div>
-								<h2>{{ article.title }}</h2>
+								<h2 class="h2_blog">{{ article.title }}</h2>
 								<div class="article_sumary">{{ article.articleSumary }}</div>
 							</div>
 							<div class="date_div">
@@ -48,6 +50,8 @@
 					{% endfor %}
 				</div>
 			</div>
+
+
 		</div>
 
 		<footer>
