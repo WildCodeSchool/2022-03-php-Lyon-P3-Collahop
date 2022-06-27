@@ -26,12 +26,12 @@
     background-position: center;
 }
 
-.first_part {
+.first_part_blog {
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-.category {
+.category_blog {
     font-size: 3.5vw;
     color: $secondary-homepage-color;
     font-weight: bold;
@@ -66,7 +66,14 @@
     font-size: 4vw;
 }
 
+.row_blog{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .articles a {
+    height: 600px;
     text-decoration: none;
     color: none;
     flex-direction: column;
@@ -77,18 +84,19 @@
 
 .articles {
     margin-top: 0;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .article {
 
     width: 100%;
+    height: 100%;
     flex-direction: column;
 }
 
 .article_img {
-    height: 200px;
+    height: 50%;
     border-radius: 20px;
     overflow: hidden;
     margin: 15px 0px;
@@ -100,7 +108,13 @@
     height: 100%;
 }
 
+.h2_blog{
+    height: 20%;
+    font-size: 1.6em;
+}
+
 .article_sumary {
+    height: 40%;
     text-align: justify;
 }
 
@@ -196,12 +210,8 @@
 
 @media screen and (min-width: 768px) {
     .articles a {
-        height: 605px;
-        width: 280px;
-    }
-
-    .article_sumary {
-        height: 290px;
+        height: 600px;
+        width: 400px;
     }
 }
 
@@ -214,17 +224,7 @@
         font-size: 4vw;
     }
 
-    .articles a {
-        height: 560px;
-        width: 325px;
-    }
-
-    .article_sumary {
-        height: 240px;
-    }
-
     .show_blog {
-
         margin-top: 3vw;
     }
 }
@@ -237,49 +237,5 @@
     .show_blog_article_title {
         font-size: 3vw;
         margin: 1vw;
-    }
-}
-
-@media screen and (min-width: 1150px) {
-    .articles a {
-        height: 490px;
-        width: 425px;
-    }
-
-    .article_sumary {
-        height: 170px;
-    }
-}
-
-@media screen and (min-width: 1350px) {
-    .article a {
-        height: 480px;
-        width: 500px;
-    }
-
-    .article_sumary {
-        height: 170px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .articles a {
-        height: 540px;
-        width: 340px;
-    }
-
-    .article_sumary {
-        height: 220px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .articles a {
-        height: 500px;
-        width: 400px;
-    }
-
-    .article_sumary {
-        height: 175px;
     }
 }
