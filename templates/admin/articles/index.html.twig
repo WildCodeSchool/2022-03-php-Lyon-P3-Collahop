@@ -1,42 +1,45 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Articles index{% endblock %}
+{% block title %}Articles index
+{% endblock %}
 
 {% block body %}
-    {{ include('admin/partials/_sidebar_admin.html.twig') }}
-    <h1>Articles index</h1>
+	<body>
+		{{ include('admin/partials/_sidebar_admin.html.twig') }}
+		<h1>Articles index</h1>
 
-    <table class="articles-table">
-        <thead>
-            <tr>
-                <th>Titre</th>
-                <th>Image</th>
-                <th>Résumé</th>
-                <th>Contenu</th>
-                <th>Date</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for article in articles %}
-            <tr>
-                <td>{{ article.title }}</td>
-                <td><img src="{{ article.image }}"></td>
-                <td>{{ article.articleSumary }}</td>
-                <td>{{ article.articleContent }}</td>
-                <td>{{ article.date ? article.date|date('d-m-y H:i:s', 'europe/paris') : '' }}</td>
-                <td>
-                    <a href="{{ path('app_articles_show', {'id': article.id}) }}">Voir</a>
-                    <a href="{{ path('app_articles_edit', {'id': article.id}) }}">Modifier</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">Aucun article trouvé</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+		<table class="articles-table">
+			<thead>
+				<tr>
+					<th>Titre</th>
+					<th>Image</th>
+					<th>Résumé</th>
+					<th>Contenu</th>
+					<th>Date</th>
+					<th>actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for article in articles %}
+					<tr>
+						<td>{{ article.title }}</td>
+						<td><img src="{{ article.image }}"></td>
+						<td>{{ article.articleSumary }}</td>
+						<td>{{ article.articleContent }}</td>
+						<td>{{ article.date ? article.date|date('d-m-y H:i:s', 'europe/paris') : '' }}</td>
+						<td>
+							<a href="{{ path('app_articles_show', {'id': article.id}) }}">Voir</a>
+							<a href="{{ path('app_articles_edit', {'id': article.id}) }}">Modifier</a>
+						</td>
+					</tr>
+				{% else %}
+					<tr>
+						<td colspan="7">Aucun article trouvé</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
 
-    <a href="{{ path('app_articles_new') }}">Créer un article</a>
+		<a href="{{ path('app_articles_new') }}">Créer un article</a>
+	</body>
 {% endblock %}
