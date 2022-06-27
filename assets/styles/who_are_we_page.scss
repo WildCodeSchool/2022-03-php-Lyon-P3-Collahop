@@ -71,7 +71,7 @@ $font-size : 5.8em;
 }
 
 .first_member_notation1 {
-    background-color: rgb(169, 169, 237);
+    background-color: $color-logo;
     margin:0%;
     padding: 0%;
     max-width: 90%;
@@ -82,7 +82,7 @@ $font-size : 5.8em;
 }
 
 .first_member_notation2 {
-    background-color: rgb(169, 169, 237);
+    background-color: $color-logo;
     margin:0%;
     padding: 0%;
     max-width: 80%;
@@ -93,7 +93,7 @@ $font-size : 5.8em;
 }
 
 .first_member_notation3 {
-    background-color: rgb(169, 169, 237);
+    background-color: $color-logo;
     margin:0%;
     padding: 0%;
     max-width: 85%;
@@ -104,7 +104,7 @@ $font-size : 5.8em;
 }
 
 .scd_member_notation1 {
-    background-color: rgb(169, 169, 237);
+    background-color: $color-logo;
     margin:0%;
     padding: 0%;
     max-width: 80%;
@@ -115,7 +115,7 @@ $font-size : 5.8em;
 }
 
 .scd_member_notation2 {
-    background-color: rgb(169, 169, 237);
+    background-color: $color-logo;
     margin:0%;
     padding: 0%;
     max-width: 90%;
@@ -126,7 +126,7 @@ $font-size : 5.8em;
 }
 
 .scd_member_notation3 {
-    background-color: rgb(169, 169, 237);
+    background-color: $color-logo;
     margin:0%;
     padding: 0%;
     max-width: 80%;
@@ -365,4 +365,14 @@ $bg-qsn-4: #007B78;
     width: 80%;
     margin-left: -5%;
     margin-right: 0
+}
+
+@media only screen and (max-width: 500px) {
+    .who {
+        font-size: 32px;
+    }
+
+    .us {
+        font-size: 32px;
+    }
 }
