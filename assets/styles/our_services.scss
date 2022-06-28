@@ -118,6 +118,10 @@
     .our_services_main_container {
         margin-top: 25px;
     }
+
+    .our_services_semi_circle_right {
+        display: none;
+    }
     
     .cards_text {
         height: 15rem;
@@ -130,9 +134,6 @@
         background-repeat: repeat;
     }
 
-    .our_services_semi_circle_right {
-        display: none;
-    }
     .our_services_title {
         font-size: 30px;
     }
@@ -151,7 +152,7 @@
     }
 
     .cards_text {
-        height: 17rem;
+        height: 25rem;
         font-size: 20px;
     }
 
