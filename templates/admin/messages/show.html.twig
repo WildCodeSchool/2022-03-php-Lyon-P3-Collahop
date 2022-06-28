@@ -1,3 +1,22 @@
-<div>
-    {{message}}
-</div>
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Messages
+{% endblock %}
+
+{% block body %}
+	<body class="message_body_bg">
+		{% include "admin/partials/_sidebar_admin.html.twig" %}
+		<div class="message_title_container d-flex row col-lg-12 ">
+			<h2 class="message_title d-flex row col-lg-12 justify-content-center">
+				Bonjour Océane, voici le détail du message reçu :
+			</h2>
+		</div>
+		<div class="message_container d-flex row col-lg-12 justify-content-center mt-5">
+			<div class="message d-flex row col-lg-6 text-break">
+				{{message}}
+			</div>
+		</div>
+	</body>
+
+{% endblock %}
