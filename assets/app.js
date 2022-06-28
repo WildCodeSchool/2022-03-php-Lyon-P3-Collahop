@@ -41,9 +41,6 @@ window.onload = () => {
             alert("Toutes les adresses mail on été copié");
         });
     }
-<<<<<<< HEAD
-});
-=======
 };
 
 /*====== Burger menu mobile ======*/
@@ -63,4 +60,3 @@ if (burgerMenu){
         }
     })
 }
->>>>>>> dev
