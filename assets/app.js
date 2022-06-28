@@ -12,8 +12,10 @@ window.onload = () => {
     let icon = aside.querySelector('.menu_icon');
     let li = aside.querySelectorAll('.side_item');
     
+    
     icon.onclick = () => {
         aside.classList.toggle('expand');
+
     }
     
     for(let i of li) {
@@ -41,7 +43,3 @@ burgerMenu.addEventListener("click", function () {
         document.documentElement.style.overflow = "hidden";
     }
 });
-
-
-
-

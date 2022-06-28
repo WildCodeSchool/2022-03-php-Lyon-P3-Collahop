@@ -1,24 +1,43 @@
+.bg-index-articles {
+    background-color: $color-slogan;
+    color: white;
+}
+
+.index-articles-frame {
+    margin-left: 16em;
+
+    .article-frame {
+        background-color:rgba(23, 94, 82, 0.7);
+        width: 54em;
+
+        .article-admin-img {
+            height: 13.3em;
+            width: 15em;
+        }
+    }
+}
 .new-article {
     overflow-x: hidden;
     font-family: 'Poppins';
-}
-.new-article-frame {
-    background-image: linear-gradient($hover-admin, rgba(0, 0, 0, 0.7)),url(../images/admin/abstract-business-people-and-city-buildings.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
 
-.new-article-form {
-    background-color: $color-slogan;
-    margin-left: 16em;
-}
+    .new-article-frame {
+        background-image: linear-gradient($hover-admin, rgba(0, 0, 0, 0.7)),url(../images/admin/abstract-business-people-and-city-buildings.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
 
-.write-article {
-    width: 90%;
-    padding-left: 0.5em;
+        .new-article-form {
+            background-color: $color-slogan;
+            margin-left: 16em;
+
+            .write-article {
+                width: 90%;
+                padding-left: 0.5em;
+            }
+        }
+    }
 }
 
 #articles {
@@ -27,10 +46,11 @@
 
 .article-input-summary {
     height: 7em;
+    word-break: break-all;
 }
 
 .article-input-content {
-    height: 12em;
+    height: 8em;
 }
 
 .article-btns {
@@ -49,4 +69,18 @@
     color: $color-slogan;
     width: 7em;
     height: 2em;
+}
+
+.btn-delete-article {
+    color: $color-logo;
+    font-weight: bold;
+}
+
+.article-frame-show {
+    background-color:rgba(23, 94, 82, 0.7);
+    width: 54em;
+}
+
+.article-show-img {
+    height: 20em;
 }
