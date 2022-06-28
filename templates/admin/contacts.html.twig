@@ -4,36 +4,81 @@
 {% endblock %}
 
 {% block body %}
-	<body class="contacts_admin_body">
+
+	<body class="contacts_admin_body" onload="CopyToClipboard">
 
 		<header>
 			{% include "admin/partials/_sidebar_admin.html.twig" %}
 		</header>
 
-        <h1 class="text-center m-5"> Liste des contacts enregistré </h1>
-		
-        <div class="table_contacts_admin m-5 p-3">
-        <table class="table text-center">
-			<thead>
-				<tr>
-					<th scope="col"> Nom </th>
-					<th scope="col"> Prénom </th>
-					<th scope="col"> Entreprise </th>
-					<th scope="col"> Adresse email </th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for contact in contacts %}
+		<h1 class="text-center m-5">
+			Liste des contacts enregistré
+		</h1>
+
+		<button type="button" class="btn btn-primary listMailButton ms-5" data-bs-toggle="modal" data-bs-target="#listMail">
+			Liste des adresses mail
+		</button>
+		<div class="modal fade" id="listMail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="listMailLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title listMailH5" id="listMailLabel">
+							Liste des adresses mail
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body listMailBody" id="listMails">
+						{% for contact in contacts %}
+							{{ contact.email }};
+						{% endfor %}
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary px-2" id="copyEmailsBtn">Copier</button>
+						<button type="button" class="btn btn-secondary px-2" data-bs-dismiss="modal">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="table_contacts_admin m-5 p-3">
+			<table class="table text-center">
+				<thead>
 					<tr>
-						<td scope="row"> {{ contact.lastname }} </td>
-						<td> {{ contact.firstname }} </td>
-						<td> {{ contact.company }} </td>
-						<td> {{ contact.email }} </td>
+						<th scope="col">
+							Nom
+						</th>
+						<th scope="col">
+							Prénom
+						</th>
+						<th scope="col">
+							Entreprise
+						</th>
+						<th scope="col">
+							Adresse email
+						</th>
 					</tr>
-				{% endfor %}
-			</tbody>
-		</table>
-        </div>
+				</thead>
+				<tbody>
+					{% for contact in contacts %}
+						<tr>
+							<td scope="row">
+								{{ contact.lastname }}
+							</td>
+							<td>
+								{{ contact.firstname }}
+							</td>
+							<td>
+								{{ contact.company }}
+							</td>
+							<td>
+								{{ contact.email }}
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
 
 	</body>
+
 {% endblock %}
