@@ -1,32 +1,46 @@
-import './styles/app.scss';
+import "./styles/app.scss";
 require("bootstrap");
 
-require('@fortawesome/fontawesome-free/css/all.min.css');
-require('@fortawesome/fontawesome-free/js/all.js');
-
-/*====== Sidebar admin ======*/
+require("@fortawesome/fontawesome-free/css/all.min.css");
+require("@fortawesome/fontawesome-free/js/all.js");
 
 window.onload = () => {
+    /*====== Sidebar admin ======*/
 
-    let aside = document.querySelector('.sidebar_admin');
-    let icon = aside.querySelector('.menu_icon');
-    let li = aside.querySelectorAll('.side_item');
-    
+    let aside = document.querySelector(".sidebar_admin");
+    let icon = aside.querySelector(".menu_icon");
+    let li = aside.querySelectorAll(".side_item");
+
     icon.onclick = () => {
-        aside.classList.toggle('expand');
-    }
-    
-    for(let i of li) {
+        aside.classList.toggle("expand");
+    };
+
+    for (let i of li) {
         i.onclick = activeLi;
     }
-    
+
     function activeLi() {
         const list = Array.from(li);
-        list.forEach(e=>e.classList.remove('active'));
-        this.classList.add('active');
+        list.forEach((e) => e.classList.remove("active"));
+        this.classList.add("active");
     }
-}   
 
+    /*====== Copy button (admin / Contact list) ======*/
+
+    const listEmailsBtn = document.getElementById("copyEmailsBtn");
+
+    if (listEmailsBtn) {
+        listEmailsBtn.addEventListener("click", function () {
+            const containerid = "listMails";
+            window.getSelection;
+            var range = document.createRange();
+            range.selectNode(document.getElementById(containerid));
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            alert("Toutes les adresses mail on été copié");
+        });
+    }
+};
 
 /*====== Burger menu mobile ======*/
 
