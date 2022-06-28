@@ -11,7 +11,6 @@
 }
 
 .blog_body {
-    margin-top: -150px;
     background-color: $color-slogan;
 }
 
@@ -40,6 +39,7 @@
 .transparent_weight {
     color: transparent;
     font-weight: 700;
+    font-size: 1.5em;
     -webkit-text-stroke: 2px rgb(195, 195, 195);
 }
 
@@ -68,7 +68,6 @@
 
 .row_blog{
     display: flex;
-    width: 100%;
     justify-content: space-around;
 }
 
@@ -194,6 +193,10 @@
 }
 
 @media screen and (min-width: 700px) {
+    .transparent_weight {
+        font-size: 1em;
+    }
+
     .blog_h2 {
         font-size: 2vw;
     }
@@ -216,6 +219,16 @@
 }
 
 @media screen and (min-width: 950px) {
+    .blog_body {
+        margin-top: -150px;
+    }
+
+    .category_blog {
+        font-size: 2.2em;
+        color: $secondary-homepage-color;
+        font-weight: bold;
+    }
+
     .blog_page {
         padding-top: 130px;
     }

@@ -13,7 +13,7 @@ class ArticlesFixtures extends Fixture
     {
         $faker = Factory::create();
 
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             $articles = new Articles();
             $articles->setTitle($faker->sentence());
             $articles->setImage($faker->imageUrl());
