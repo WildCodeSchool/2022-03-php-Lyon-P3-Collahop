@@ -1,4 +1,4 @@
-
+/* 
 .dashboard_messages{
     position: relative;
     left: 250px;
@@ -93,3 +93,29 @@
 
 }
 
+ */
+
+.message_admin_body {
+    background-color: $color-slogan;
+    padding-left: 250px;
+}
+
+.message_admin_section {
+    padding: 0 2vw 2vw 2vw;
+}
+
+.show_messages_btn {
+    background: $color-logo; 
+    text-decoration: none; 
+    padding: 5px 25px; 
+    border-radius: 15px; 
+    border: none;
+    
+    &:active {
+        transform: scale(0.92) translateY(-2px);
+    }   
+}
+
+.admin_messages_content td{
+    vertical-align: baseline;
+}
