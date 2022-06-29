@@ -13,7 +13,7 @@ class ContactsFixtures extends Fixture
     {
         $faker = Factory::create();
 
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             $contacts = new Contact();
             $contacts->setFirstname($faker->firstName());
             $contacts->setLastname($faker->lastName());

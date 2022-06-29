@@ -1,0 +1,21 @@
+.message {
+    display: flex;
+    text-align: justify;
+    font-size: 25px;
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 25px;
+    
+}
+
+.message_body_bg {
+        background-color: #141726;
+        background-image: linear-gradient(rgba(34, 29, 56, 0.7), rgba(0, 0, 0, 0.7)),url(../images/our_services.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100vw; 
+        padding: 0%;
+        margin: 0%;
+}
