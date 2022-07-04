@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Articles;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -15,15 +16,16 @@ class ArticlesType extends AbstractType
         $builder
             ->add('title', TextType::class, ['label' => 'Titre'])
             ->add('image', TextType::class, ['label' => 'Images'])
-            ->add('articleSumary', TextType::class, array (
+            ->add('articleSumary', TextareaType::class, array (
                 'label' => 'Résumé',
                 'attr' => array(
                     'class' => 'article-input-summary'
                 )))
-            ->add('articleContent', TextType::class, array (
+            ->add('articleContent', TextareaType::class, array (
                 'label' => 'Contenu',
                 'attr' => array(
-                    'class' => 'article-input-content'
+                    'class' => 'article-input-content',
+                    'id' => 'article-content'
                 )))
         ;
     }
