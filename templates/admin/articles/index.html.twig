@@ -11,15 +11,15 @@
 			<div class="container">
 				<div class="row row-cols-1 g-2 justify-content-center">
 					{% for article in articles %}
-						<div class="article-frame h-100 d-flex align-items-start justify-content-between rounded-3 m-2">
+						<div class="article-frame h-100 d-flex align-items-center justify-content-between rounded-3 m-2">
 							<img class="article-admin-img img-fluid m-3" src="{{ article.image }}">
 							<div class="w-100">
 								<h3 class="text-center p-3 article-admin-title m-0">{{ article.title }}<span class="fs-6">
 										({{ article.date ? article.date|date('d-m-y', 'europe/paris') : '' }})</span>
 								</h3>
-								<p class="h-100 text-break text-start p-3 mx-3 mb-0" colspan="2">{{ article.articleSumary }}</p>
+								<p class="article-admin-summary text-break text-start mx-3 mb-0" colspan="2">{{ article.articleSumary }}</p>
 								<div>
-									<p class="d-flex justify-content-center m-0">
+									<p class="d-flex justify-content-center m-0 mb-2">
 										<a href="{{ path('app_articles_show', {'id': article.id}) }}">
 											<button type="button" class="btn btn-article-cancel fw-bold py-1 px-2 mx-2">Voir</button>
 										</a>

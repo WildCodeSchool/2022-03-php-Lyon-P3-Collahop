@@ -3,15 +3,24 @@
     color: white;
 }
 
+.article-admin-summary {
+    height: 7.5em;
+}
+
+.article-admin-title {
+    font-size: 1.5em;
+    height: 3.5em;
+}
+
 .index-articles-frame {
     margin-left: 16em;
 
     .article-frame {
         background-color:rgba(23, 94, 82, 0.7);
-        width: 54em;
+        width: 68em;
 
         .article-admin-img {
-            height: 13.3em;
+            height: 13.5em;
             width: 15em;
         }
     }
