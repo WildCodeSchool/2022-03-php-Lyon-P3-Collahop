@@ -28,14 +28,29 @@ window.onload = () => {
     /*====== Copy button (admin / Contact list) ======*/
 
     const listEmailsBtn = document.getElementById("copyEmailsBtn");
+    const listEmailsSubscribeBtn = document.getElementById("copyEmailsSubscribedBtn");
 
     if (listEmailsBtn) {
         listEmailsBtn.addEventListener("click", function () {
-            const containerid = "listMails";
+            document.getSelection().removeAllRanges();
+            let containerid = "listMails";
             window.getSelection;
-            var range = document.createRange();
+            let range = document.createRange();
             range.selectNode(document.getElementById(containerid));
             window.getSelection().addRange(range);
+            document.execCommand("copy");
+            alert("Toutes les adresses mail on été copié");
+        });
+    }
+
+    if (listEmailsSubscribeBtn) {
+        listEmailsSubscribeBtn.addEventListener("click", function () {
+            let containerSubscribeId = "listMailsSubscribed";
+            document.getSelection().removeAllRanges();
+            window.getSelection;
+            let rangeSubscribe = document.createRange();
+            rangeSubscribe.selectNode(document.getElementById(containerSubscribeId));
+            window.getSelection().addRange(rangeSubscribe);
             document.execCommand("copy");
             alert("Toutes les adresses mail on été copié");
         });
