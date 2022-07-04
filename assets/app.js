@@ -9,13 +9,14 @@ window.onload = () => {
 
     let aside = document.querySelector(".sidebar_admin");
     let icon = aside.querySelector(".menu_icon");
-    let li = aside.querySelectorAll(".side_item");
-
+    let li = aside.querySelectorAll(".side_item");    
+    
     icon.onclick = () => {
-        aside.classList.toggle("expand");
-    };
+        aside.classList.toggle('expand');
 
-    for (let i of li) {
+    }
+    
+    for(let i of li) {
         i.onclick = activeLi;
     }
 
