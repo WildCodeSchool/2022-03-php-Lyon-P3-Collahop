@@ -22,12 +22,8 @@ class AdminController extends AbstractController
     public function contacts(ContactRepository $contactRepository): Response
     {
         $contacts = $contactRepository->findAll();
-
-/*         $contactsSubscribed = $contactRepository->findBy(['newsletter_subscribe' => $newsletter_subscribe]); */
-
         return $this->render('/admin/contacts.html.twig', [
             'contacts' => $contacts,
-/*             'contactsSubscribed' => $contactsSubscribed, */
         ]);
     }
 }
