@@ -5,11 +5,11 @@
 
 aside {
     position: fixed;
-    width: 80px;
+    width: 250px;
     left: 0;
-    height: 100%;
+    max-height: 100vh;
     background: $aside-main-color;
-    left: -90px;
+    left: 0px;
 
 
     a {
@@ -34,6 +34,9 @@ aside {
             cursor: pointer;
             text-align: center;
             .xmark {
+                display: initial;
+            }
+            .menu_sidebar {
                 display: none;
             }
         }
@@ -148,12 +151,12 @@ li.active {
 
 aside.expand {
     width: 250px;
-    left: 0;
+    left: -250px;
     .menu_icon>.xmark {
-        display: initial;
+        display: none;
     }
 
     .menu_icon>.menu_sidebar {
-        display: none;
+        display: initial;
     }
 }

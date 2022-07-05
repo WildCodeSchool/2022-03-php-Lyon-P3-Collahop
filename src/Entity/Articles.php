@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\ArticlesRepository;
 use DateTime;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ArticlesRepository::class)]
@@ -15,6 +16,7 @@ class Articles
     private int $id;
 
     #[ORM\Column(type: 'string', length: 255)]
+    #[Assert\Length(max: 80, maxMessage: 'Le titre est limité à 80 caractères')]
     private string $title;
 
     #[ORM\Column(type: 'string', length: 255)]
@@ -24,6 +26,7 @@ class Articles
     private string $articleContent;
 
     #[ORM\Column(type: 'text')]
+    #[Assert\Length(max: 360, maxMessage: 'Le résumé est limité à 360 caractères')]
     private string $articleSumary;
 
     #[ORM\Column(type: 'date')]

@@ -1,42 +1,42 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Articles index{% endblock %}
+{% block title %}Articles index
+{% endblock %}
 
 {% block body %}
-    {{ include('admin/partials/_sidebar_admin.html.twig') }}
-    <h1>Articles index</h1>
-
-    <table class="articles-table">
-        <thead>
-            <tr>
-                <th>Titre</th>
-                <th>Image</th>
-                <th>Résumé</th>
-                <th>Contenu</th>
-                <th>Date</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for article in articles %}
-            <tr>
-                <td>{{ article.title }}</td>
-                <td><img src="{{ article.image }}"></td>
-                <td>{{ article.articleSumary }}</td>
-                <td>{{ article.articleContent }}</td>
-                <td>{{ article.date ? article.date|date('d-m-y H:i:s', 'europe/paris') : '' }}</td>
-                <td>
-                    <a href="{{ path('app_articles_show', {'id': article.id}) }}">Voir</a>
-                    <a href="{{ path('app_articles_edit', {'id': article.id}) }}">Modifier</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">Aucun article trouvé</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('app_articles_new') }}">Créer un article</a>
+	<body class="bg-index-articles">
+		{{ include('admin/partials/_sidebar_admin.html.twig') }}
+		<div class="index-articles-frame">
+			<h1 class="text-center m-5">Articles publiés</h1>
+			<div class="container">
+				<div class="row row-cols-1 g-2 justify-content-center">
+					{% for article in articles %}
+						<div class="article-frame h-100 d-flex align-items-center justify-content-between rounded-3 m-2">
+							<img class="article-admin-img img-fluid m-3" src="{{ article.image }}">
+							<div class="w-100">
+								<h3 class="text-center p-3 article-admin-title m-0">{{ article.title }}<span class="fs-6">
+										({{ article.date ? article.date|date('d-m-y', 'europe/paris') : '' }})</span>
+								</h3>
+								<p class="article-admin-summary text-break text-start mx-3 mb-0" colspan="2">{{ article.articleSumary }}</p>
+								<div>
+									<p class="d-flex justify-content-center m-0 mb-2">
+										<a href="{{ path('app_articles_show', {'id': article.id}) }}">
+											<button type="button" class="btn btn-article-cancel fw-bold py-1 px-2 mx-2">Voir</button>
+										</a>
+										<a href="{{ path('app_articles_edit', {'id': article.id}) }}">
+											<button type="button" class="btn btn-article-save fw-bold py-1 px-2 mx-0">Modifier</button>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					{% else %}
+						<div>
+							<p colspan="7">Aucun article trouvé</p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</body>
 {% endblock %}

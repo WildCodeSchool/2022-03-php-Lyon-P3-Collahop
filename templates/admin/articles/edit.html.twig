@@ -1,13 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Articles{% endblock %}
+{% block title %}Edit Articles
+{% endblock %}
 
 {% block body %}
-    <h1>Edit Articles</h1>
-
-    {{ include('admin/articles/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href="{{ path('app_articles_index') }}">back to list</a>
-
-    {{ include('admin/articles/_delete_form.html.twig') }}
+<body class="new-article">
+	{{ include('admin/partials/_sidebar_admin.html.twig') }}
+	<div class="new-article-frame row h-100 d-flex justify-content-center">
+		<div class="new-article-form fw-bold col-6 my-5 row justify-content-center">
+			<h1 class="write-article mt-5 mb-4">Modifier l'article</h1>
+			{{ include('admin/articles/_form.html.twig', {'button_label': 'Sauvegarder'}) }}
+            <div class="d-flex flex-column align-items-center">
+                {{ include('admin/articles/_delete_form.html.twig') }}
+                <a class ="p-2" href="{{ path('app_articles_index') }}">Retour</a>
+            </div>
+		</div>
+	</div>
+</body>
 {% endblock %}

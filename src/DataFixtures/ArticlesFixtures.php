@@ -13,12 +13,12 @@ class ArticlesFixtures extends Fixture
     {
         $faker = Factory::create();
 
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             $articles = new Articles();
-            $articles->setTitle($faker->sentence());
+            $articles->setTitle($faker->text(80));
             $articles->setImage($faker->imageUrl());
             $articles->setArticleContent($faker->paragraph(500));
-            $articles->setArticleSumary($faker->paragraph());
+            $articles->setArticleSumary($faker->text(360));
             $articles->setDate();
             $manager->persist($articles);
         }

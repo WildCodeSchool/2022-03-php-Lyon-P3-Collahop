@@ -1,90 +1,85 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MessagesController!
+{% block title %}Admin - Messages
 {% endblock %}
 
 {% block body %}
-
-
 	<body class="message_admin_body">
 		{% include "admin/partials/_sidebar_admin.html.twig" %}
 
-    <section class="dashboard_messages">
-        <div class="dash_content_messages">
-            <div class="activity_messages">
-                <div class="title_messages">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="text">Vos messages</span>
-                </div>
+		<section class="message_admin_section">
+		<h1 class="text-center m-5"> Vos messages </h1>
+			<table class="table text-center">
+				<thead>
+					<tr>
+						<th scope="col">
+							Nom
+						</th>
+						<th scope="col">
+							Prénom
+						</th>
+						<th scope="col">
+							Entreprise
+						</th>
+						<th scope="col">
+							Adresse email
+						</th>
+						<th scope="col">
+							Date
+						</th>
+						<th scope="col">
+							Message
+						</th>
+						<th scope="col">
+							Supprimer
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for message in messages %}
+						<tr class="admin_messages_content">
+							<td>
+								{{ message.lastname }}
+							</td>
 
-                <div class="activity_data">
-                    <div class="data names">
-                        <span class="data_title">Prénom</span>
-                            {% for message in messages %}
+							<td>
+								{{ message.firstname }}
+							</td>
+
+							<td>
+								{{ message.company }}
+							</td>
+
+							<td>
+								{{ message.email }}
+							</td>
+
+							<td>
+								{{ message.createdAt|date('d-m-y H:i:s', 'Europe/Paris') }}
+							</td>
+
+							<td>
+								<a href="/admin/messages/show/{{message.id}}" class="messages_link_btn">
+									<button class="show_messages_btn">
+										Afficher
+									</button>
+								</a>
+							</td>
+
+							<td>
 								<span class="data_list">
-									{{message.firstname}}
-                                </span>
-                            {% endfor %}
-                    </div>
-                    <div class="data email">
-                        <span class="data_title">Nom</span>
-                            {% for message in messages %}
-								<span class="data_list">
-									{{message.lastname}}
-                                </span>
-                            {% endfor %}
-                    </div>
-                    <div class="data joined">
-                        <span class="data_title">Email</span>
-                            {% for message in messages %}
-								<span class="data_list">
-									{{message.email}}
-                                </span>
-                            {% endfor %}
-                       
-                    </div>
-                    <div class="data type">
-                        <span class="data_title">Entreprise</span>
-                            {% for message in messages %}
-								<span class="data_list">
-									{{message.company}}
-                                </span>
-                            {% endfor %}
-                      
-                    </div>
-                    <div class="data time">
-                        <span class="data_title">Date</span>
-                            {% for message in messages %}
-								<span class="data_list">
-									{{ message.createdAt|date('d-m-y H:i:s', 'Europe/Paris') }}
-                                </span>
-                            {% endfor %}
-                    </div>
-                    <div class="data messages">
-                        <span class="data_title">Messages</span>
-                           {% for message in messages %}
-								<span class="data_list">
-									<a href="/admin/messages/show/{{message.id}}" class="messages_link_btn">
-                                        <button class="show_messages_btn">
-						                    Afficher
-                                        </button>
-					                </a>
-                                </span>
-                            {% endfor %}
-                    </div>
-                    <div class="data delete">
-                        <span class="data_title">Supprimer</span>
-                            {% for message in messages %}
-                            <span class="data_list">
-								<a href="/admin/messages/delete/{{message.id}}">
-						           <i class="fa-solid fa-circle-xmark delete_btn_icn"></i>
-					            </a>
-                            </span>
-                            {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+									<a href="/admin/messages/delete/{{message.id}}">
+										<i class="fa-solid fa-circle-xmark delete_btn_icn"></i>
+									</a>
+								</span>
+							</td>
+
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</section>
+
+	</body>
 
 {% endblock %}
