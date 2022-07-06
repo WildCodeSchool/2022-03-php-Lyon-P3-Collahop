@@ -17,16 +17,18 @@ class ContactsController extends AbstractController
     public function new(Request $request, ContactRepository $contactRepository, FormManager $formManager): Response
     {
         $contact = new Contact();
-        $contact->setCreatedAt()->setMessage();
+        $contact->setCreatedAt()->setMessage('');
 
         $form = $this->createForm(ContactsType::class, $contact);
         $form->handleRequest($request);
 
         $warning = '';
-        $data = $form->getData();
-        if ($data instanceof Contact) {
-            $message = $data->getMessage();
-            $warning = $formManager->incorrectMessage($message);
+        if ($form->isSubmitted()) {
+            $data = $form->getData();
+            if ($data instanceof Contact) {
+                $message = $data->getMessage();
+                $warning = $formManager->incorrectMessage($message);
+            }
         }
 
         if ($form->isSubmitted() && $form->isValid() && empty($warning)) {
@@ -41,7 +43,6 @@ class ContactsController extends AbstractController
             'form' => $form,
             'contact' => $contact,
             'warning' => $warning,
-            'data' => $data
         ]);
     }
 }
