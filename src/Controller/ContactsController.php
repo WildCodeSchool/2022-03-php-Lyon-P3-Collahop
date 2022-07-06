@@ -26,7 +26,7 @@ class ContactsController extends AbstractController
         $message = $data->getMessage();
         $warning = $formManager->incorrectMessage($message);
 
-        if ($form->isSubmitted() && $form->isValid() && !$warning) {
+        if ($form->isSubmitted() && $form->isValid() && empty($warning)) {
             $contactRepository->add($contact, true);
 
             $this->addFlash('success', 'Votre message a été envoyé avec succès !');
