@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Contact;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -51,6 +52,19 @@ class ContactsType extends AbstractType
                     'class' => 'contact_form_area',
                     'rows' => 9
                 )))
+
+            ->add('message', TextareaType::class, array (
+                'label' => false,
+                'attr' => array(
+                    'placeholder' => 'Votre message',
+                    'class' => 'contact_form_area',
+                    'rows' => 9
+                )))
+
+            ->add('newsletterSubscribe', CheckboxType::class, array (
+                'label' => 'Je souhaite souscrire à la newsletter.',
+                'required' => false,
+                ))
 
             ->add('send', SubmitType::class, array (
                 'label' => 'Envoyer',
