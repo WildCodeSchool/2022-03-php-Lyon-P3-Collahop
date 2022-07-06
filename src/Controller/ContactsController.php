@@ -27,7 +27,9 @@ class ContactsController extends AbstractController
             $data = $form->getData();
             if ($data instanceof Contact) {
                 $message = $data->getMessage();
-                $warning = $formManager->incorrectMessage($message);
+                if ($message) {
+                    $warning = $formManager->incorrectMessage($message);
+                }
             }
         }
 
