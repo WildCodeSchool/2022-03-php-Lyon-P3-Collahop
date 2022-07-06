@@ -16,6 +16,8 @@ class EbookController extends AbstractController
     public function new(Request $request, ContactRepository $contactRepository): Response
     {
         $contact = new Contact();
+        $contact->setCreatedAt();
+
         $form = $this->createForm(EbookType::class, $contact);
         $form->handleRequest($request);
 
