@@ -53,14 +53,6 @@ class ContactsType extends AbstractType
                     'rows' => 9
                 )))
 
-            ->add('message', TextareaType::class, array (
-                'label' => false,
-                'attr' => array(
-                    'placeholder' => 'Votre message',
-                    'class' => 'contact_form_area',
-                    'rows' => 9
-                )))
-
             ->add('newsletterSubscribe', CheckboxType::class, array (
                 'label' => 'Je souhaite souscrire à la newsletter.',
                 'required' => false,
