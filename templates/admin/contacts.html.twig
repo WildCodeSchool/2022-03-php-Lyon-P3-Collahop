@@ -40,6 +40,33 @@
 			</div>
 		</div>
 
+		<button type="button" class="btn btn-primary listMailButton ms-5" data-bs-toggle="modal" data-bs-target="#listMailSubscribed">
+			Newsletter
+		</button>
+		<div class="modal fade" id="listMailSubscribed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="listMailSubscribedLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title listMailH5" id="listMailSubscribedLabel">
+							Liste des adresses mail qui ont souscrit à la newsletter
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body listMailSSubscribedBody" id="listMailsSubscribed">
+						{% for contact in contacts %}
+							{% if contact.newsletterSubscribe == true %}
+								{{ contact.email }}
+							{% endif %}
+						{% endfor %}
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary px-2" id="copyEmailsSubscribedBtn">Copier</button>
+						<button type="button" class="btn btn-secondary px-2" data-bs-dismiss="modal">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="table_contacts_admin m-5 p-3">
 			<table class="table text-center">
 				<thead>

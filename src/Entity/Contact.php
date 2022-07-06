@@ -54,6 +54,9 @@ class Contact
     #[ORM\Column(type: 'datetime')]
     private DateTimeInterface $createdAt;
 
+    #[ORM\Column(type: 'boolean')]
+    private bool $newsletterSubscribe = false;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -127,6 +130,18 @@ class Contact
     public function setCreatedAt(): self
     {
         $this->createdAt = new Datetime('now');
+
+        return $this;
+    }
+
+    public function isNewsletterSubscribe(): ?bool
+    {
+        return $this->newsletterSubscribe;
+    }
+
+    public function setNewsletterSubscribe(bool $newsletterSubscribe): self
+    {
+        $this->newsletterSubscribe = $newsletterSubscribe;
 
         return $this;
     }
