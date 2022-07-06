@@ -22,8 +22,7 @@ class ContactsController extends AbstractController
         $form = $this->createForm(ContactsType::class, $contact);
         $form->handleRequest($request);
 
-        $data = $form->getData();
-        $message = $data->getMessage();
+        $message = $form->get('message')->getData();
         $warning = $formManager->incorrectMessage($message);
 
         if ($form->isSubmitted() && $form->isValid() && empty($warning)) {
@@ -37,7 +36,7 @@ class ContactsController extends AbstractController
         return $this->renderForm('contacts/index.html.twig', [
             'form' => $form,
             'contact' => $contact,
-            'warning' => $warning
+            'warning' => $warning,
         ]);
     }
 }
