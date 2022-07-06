@@ -22,7 +22,7 @@ class ContactsController extends AbstractController
         $form = $this->createForm(ContactsType::class, $contact);
         $form->handleRequest($request);
 
-        $message = $form->get('message')->getData();
+        $message = (string) $form->get('message')->getData();
         $warning = $formManager->incorrectMessage($message);
 
         if ($form->isSubmitted() && $form->isValid() && empty($warning)) {
