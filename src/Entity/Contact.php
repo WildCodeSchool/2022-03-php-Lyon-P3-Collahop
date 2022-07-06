@@ -48,7 +48,6 @@ class Contact
 
     #[ORM\Column(type: 'text', nullable: true)]
     #[Assert\Type('string')]
-
     private string $message;
 
     #[ORM\Column(type: 'datetime')]
