@@ -22,8 +22,12 @@ class ContactsController extends AbstractController
         $form = $this->createForm(ContactsType::class, $contact);
         $form->handleRequest($request);
 
-        $message = (string) $form->get('message')->getData();
-        $warning = $formManager->incorrectMessage($message);
+        $warning = '';
+        $data = $form->getData();
+        if ($data instanceof Contact) {
+            $message = $data->getMessage();
+            $warning = $formManager->incorrectMessage($message);
+        }
 
         if ($form->isSubmitted() && $form->isValid() && empty($warning)) {
             $contactRepository->add($contact, true);
@@ -37,6 +41,7 @@ class ContactsController extends AbstractController
             'form' => $form,
             'contact' => $contact,
             'warning' => $warning,
+            'data' => $data
         ]);
     }
 }
