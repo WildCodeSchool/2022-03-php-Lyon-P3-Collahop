@@ -4,7 +4,7 @@ namespace App\Service;
 
 class FormManager
 {
-    public function incorrectMessage(string $message): string
+    public function incorrectMessage(mixed $message): string
     {
         if (empty($message)) {
             return 'Veuillez écrire votre message';
