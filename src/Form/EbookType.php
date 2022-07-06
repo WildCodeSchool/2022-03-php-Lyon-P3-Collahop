@@ -23,10 +23,10 @@ class EbookType extends AbstractType
              'class' => 'row mx-0 my-3 my-md-2 ebook-input']])
             ->add('email', EmailType::class, ['attr' => ['placeholder' => 'Email',
              'class' => 'row mx-0 my-3 my-md-2 ebook-input']])
-/*              ->add('newsletterSubscribe', CheckboxType::class, array (
+             ->add('newsletterSubscribe', CheckboxType::class, array (
                 'label' => 'Je souhaite souscrire à la newsletter.',
                 'required' => false,
-                )) */
+                ))
         ;
     }
 
