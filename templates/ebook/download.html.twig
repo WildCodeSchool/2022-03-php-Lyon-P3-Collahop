@@ -4,8 +4,8 @@
 {% endblock %}
 
 {% block body %}
-	<body class="bg-dark">
-		<div class="ebook d-flex justify-content-center align-items-center">
+	<body class="bg-ebook">
+		<div class="ebook-download d-flex justify-content-center align-items-center">
 			<div class="download-frame py-5 d-flex flex-column justify-content-evenly align-items-center">
 				<p class="text-center font-family-base">Découvrez nos services !</p>
 				<div>
@@ -15,5 +15,8 @@
 				</div>
 			</div>
 		</div>
+		<footer>
+		{% include ('home/partials/_footer.html.twig') %}
+		</footer>
 	</body>
 {% endblock %}
