@@ -4652,6 +4652,11 @@ thunky@^1.0.2:
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.1.0.tgz#5abaf714a9405db0504732bbccd2cedd9ef9537d"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
 
+tinymce-lang@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/tinymce-lang/-/tinymce-lang-0.0.1.tgz#0a256e99d49674c9cc15f53b47852a1a7552eae0"
+  integrity sha512-WeY02/BlFzwPr3UCTq/D3GHY9yoEi0dzuiMyC7OQDrBJcHRYBKPqsnqGMCNveFNw7Wa/5Q6xBH20zvDxm6eX2A==
+
 tinymce@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-6.0.3.tgz#993db09afa473a764ad8b594cdaf744b2c7e2e74"
