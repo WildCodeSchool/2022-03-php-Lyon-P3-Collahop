@@ -48,7 +48,7 @@ class Contact
 
     #[ORM\Column(type: 'text', nullable: true)]
     #[Assert\Type('string')]
-    private string $message;
+    private ?string $message = null;
 
     #[ORM\Column(type: 'datetime')]
     private DateTimeInterface $createdAt;
@@ -114,7 +114,7 @@ class Contact
         return $this->message;
     }
 
-    public function setMessage(string $message = ''): self
+    public function setMessage(?string $message = ''): self
     {
         $this->message = $message;
 

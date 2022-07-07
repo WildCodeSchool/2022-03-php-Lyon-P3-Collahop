@@ -36,46 +36,50 @@
 					</tr>
 				</thead>
 				<tbody>
+				
 					{% for message in messages %}
-						<tr class="admin_messages_content">
-							<td>
-								{{ message.lastname }}
-							</td>
+						{% if message.message is defined and message.message is not null %}
+							<tr class="admin_messages_content">
+								<td>
+									{{ message.lastname }}
+								</td>
 
-							<td>
-								{{ message.firstname }}
-							</td>
+								<td>
+									{{ message.firstname }}
+								</td>
 
-							<td>
-								{{ message.company }}
-							</td>
+								<td>
+									{{ message.company }}
+								</td>
 
-							<td>
-								{{ message.email }}
-							</td>
+								<td>
+									{{ message.email }}
+								</td>
 
-							<td>
-								{{ message.createdAt|date('d-m-y H:i:s', 'Europe/Paris') }}
-							</td>
+								<td>
+									{{ message.createdAt|date('d-m-y H:i:s', 'Europe/Paris') }}
+								</td>
 
-							<td>
-								<a href="/admin/messages/show/{{message.id}}" class="messages_link_btn">
-									<button class="show_messages_btn">
-										Afficher
-									</button>
-								</a>
-							</td>
-
-							<td>
-								<span class="data_list">
-									<a href="/admin/messages/delete/{{message.id}}">
-										<i class="fa-solid fa-circle-xmark delete_btn_icn"></i>
+								<td>
+									<a href="/admin/messages/show/{{message.id}}" class="messages_link_btn">
+										<button class="show_messages_btn">
+											Afficher
+										</button>
 									</a>
-								</span>
-							</td>
+								</td>
 
-						</tr>
+								<td>
+									<span class="data_list">
+										<a href="/admin/messages/delete/{{message.id}}">
+											<i class="fa-solid fa-circle-xmark delete_btn_icn"></i>
+										</a>
+									</span>
+								</td>
+
+							</tr>
+						{% endif %}
 					{% endfor %}
+					
 				</tbody>
 			</table>
 		</section>
