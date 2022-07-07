@@ -78,6 +78,20 @@
   color: $color-slogan;
 }
 
+.form-check{
+  display: flex;
+  justify-content: center;
+  #ebook_newsletterSubscribe{
+      align-self: center;
+      margin: 0 15px 0 0;
+  }
+  label{
+    color: $color-slogan;
+      position: relative;
+      top: 2px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
 
   .ebook-form {
