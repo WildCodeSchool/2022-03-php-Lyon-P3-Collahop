@@ -27,6 +27,8 @@
 					{{ form_errors(form.company, { 'attr': {'class': ''} }) }}
 					{{ form_widget(form.email) }}
 					{{ form_errors(form.email, { 'attr': {'class': ''} }) }}
+					{{ form_widget(form.newsletterSubscribe) }}
+					{{ form_errors(form.newsletterSubscribe, { 'attr': {'class': ''} }) }}
 
 					<button class="ebook-btn col-4 my-3 px-3 pt-1 fs-5">
 						{{ button_label|default('RECEVOIR') }}</button>

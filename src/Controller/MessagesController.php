@@ -26,12 +26,18 @@ class MessagesController extends AbstractController
         $messageManager = $doctrine->getManager();
         $messageUserContact = $messageManager->getRepository(Contact::class)->find($id);
 
-        if ($messageUserContact != null) {
-            $messageManager->remove($messageUserContact);
-            $messageManager->flush();
+        if (!$messageUserContact) {
+            throw $this->createNotFoundException(
+                'No message found for this contact.'
+            );
         }
 
-        return $this->redirectToRoute('app_messages');
+        $messageUserContact->setMessage(null);
+        $messageManager->flush();
+
+        return $this->redirectToRoute('app_messages', [
+            'id' => $messageUserContact->getId()
+        ]);
     }
 
     #[Route('/admin/messages/show/{id}', methods: ['GET'], name: 'show_messages')]

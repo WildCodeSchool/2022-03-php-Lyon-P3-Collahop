@@ -11,6 +11,16 @@
   background-repeat: no-repeat;
 }
 
+.ebook-download {
+  font-family: 'League Spartan';
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/teamwork.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 77vh;
+}
+
 .ebook-title {
   @include text-shadow;
 }
@@ -76,6 +86,20 @@
   font-family: 'League Spartan' !important;
   font-size: 20px !important;
   color: $color-slogan;
+}
+
+.form-check{
+  display: flex;
+  justify-content: center;
+  #ebook_newsletterSubscribe{
+      align-self: center;
+      margin: 0 15px 0 0;
+  }
+  label{
+    color: $color-slogan;
+      position: relative;
+      top: 2px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
