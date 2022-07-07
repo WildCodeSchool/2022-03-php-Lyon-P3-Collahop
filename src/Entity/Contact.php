@@ -48,7 +48,7 @@ class Contact
 
     #[ORM\Column(type: 'text', nullable: true)]
     #[Assert\Type('string')]
-    private string $message;
+    private ?string $message = null;
 
     #[ORM\Column(type: 'datetime')]
     private DateTimeInterface $createdAt;
