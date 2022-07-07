@@ -98,3 +98,20 @@
     border-radius: 0 10px 10px 0;
     
 }
+
+.bg-admin {
+    background-image: url(../images/admin/abstract-business-people-and-city-buildings.jpg);                      
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+}
+
+.bg-admin-collahop {
+   position: absolute;
+   right: 23vw;
+   top: 25vh;
+   height: 35vh;
+}
