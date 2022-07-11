@@ -22,6 +22,16 @@ class EbookController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $data = $form->getData();
+            if ($data instanceof Contact) {
+                $email = $data->getEmail();
+                if ($email) {
+                    $contactExists = $contactRepository->findOneBy(['email' => $email]);
+                    if ($contactExists) {
+                        $contact = $contactExists;
+                    }
+                }
+            }
             $contactRepository->add($contact, true);
 
             return $this->render('/ebook/download.html.twig');

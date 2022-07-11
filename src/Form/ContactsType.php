@@ -55,6 +55,7 @@ class ContactsType extends AbstractType
 
             ->add('newsletterSubscribe', CheckboxType::class, array (
                 'label' => 'Je souhaite souscrire à la newsletter.',
+                'label_attr' => array('class' => 'text-white'),
                 'required' => false,
                 ))
 
