@@ -10,7 +10,6 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use DateTime;
 
 #[ORM\Entity(repositoryClass: ContactRepository::class)]
-#[UniqueEntity('email', message: 'Cette adresse email existe déjà')]
 class Contact
 {
     #[ORM\Id]
