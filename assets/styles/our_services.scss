@@ -33,12 +33,14 @@
     text-transform: uppercase;
     color: #7b7b7b;
     font-weight: bolder;
+    margin-bottom: 0% !important;
 }
 
 .our_services_title2 {
     font-size: 70px;
     font-weight: bolder;
     @include text-shadow;
+    margin-bottom: 0% !important;
 }
 
 .our_services_dvpmt {
@@ -46,16 +48,20 @@
     color: $color-logo;
     font-weight: bolder;
     @include text-shadow;
+    margin-bottom: 0% !important;
 }
 
 .our_services_text {
     background-color: rgb(6, 101, 112);
-    padding-left: 18px !important;
-    padding-right: 18px !important;
 }
 
 .explication_text {
     text-align: justify;
+}
+
+.our_services_puces {
+    height: 70px;
+    font-family: poppins light !important;
 }
 
 .cards_img {
