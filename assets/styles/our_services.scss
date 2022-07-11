@@ -50,6 +50,8 @@
 
 .our_services_text {
     background-color: rgb(6, 101, 112);
+    padding-left: 18px !important;
+    padding-right: 18px !important;
 }
 
 .explication_text {
@@ -59,7 +61,7 @@
 .cards_img {
     background-image: url(../images/our_services.jpeg);
     background-size: cover;
-    height: 15rem;
+    height: 15rem !important;
     font-size: 6em;
     height: max-content;
     color: $color-logo;
@@ -71,13 +73,15 @@
     font-size: 25px;
     color: black;
     font-weight: bolder;
+    margin-top: 15px;
 }
 
 .cards_text {
     background-color: rgb(239, 235, 235);
     font-size: 25px;
     color: grey;
-    height: 15rem;
+    height: 18rem;
+    padding-bottom: 15px;
 }
 
 .contact_us_btn {
