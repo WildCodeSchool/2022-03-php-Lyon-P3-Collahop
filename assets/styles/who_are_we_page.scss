@@ -299,10 +299,11 @@ $bg-qsn-4: #007B78;
 .undertakings-div {
     margin-left: 10%;
 }
+
 .undertakings {
-    color: $color-image;
-    font-family: 'Poppins';
-    justify-self: start;
+        text-transform: uppercase;
+        font-size: calc(18px + 1.2vw);
+        color: #7b7b7b;
 }
 
 .undertakings-subtitle {
