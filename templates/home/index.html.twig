@@ -7,7 +7,7 @@
 	<body class="homepage-bg">
     	{% include ('_navbar.html.twig') %}
 		{% include "home/partials/_sidebar_user.html.twig" %}
-		<div class="container-fluid pt-5">
+		<div class="container-fluid m-0 p-0 pt-5">
 			<section class="row homepage_first_section">
 				{% for success, messages in app.flashes %}
 					{% for message in messages %}
@@ -23,7 +23,7 @@
 					<div class="body_text_container py-5 px-4 px-lg-0 ">
 						<div class="col-12 col-lg-11">
 							<h2 class="d-flex justify-content-center justify-content-md-start share_economy py-4 py-lg-3">Économie du partage</h2>
-							<h1 class="col-12 col-xl-8 col-sm-12 py-2">
+							<h1 class="col-12 col-xl-8 px-3 px-md-0 col-sm-12 py-2 justify-content-center">
 								<span class="transparent_weight">Vous êtes une entreprise
 								</span>
 								en quête de

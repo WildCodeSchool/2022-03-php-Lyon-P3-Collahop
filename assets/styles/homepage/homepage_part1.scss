@@ -13,6 +13,8 @@ $font-size : 5.8em;
 ::before,
 ::after {
     color: $white;
+    padding: 0;
+    margin: 0;
 }
 
 body :is(h1, h2, h3, h4) {
