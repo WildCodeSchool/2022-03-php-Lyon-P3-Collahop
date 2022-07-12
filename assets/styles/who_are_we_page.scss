@@ -377,7 +377,7 @@ $bg-qsn-4: #007B78;
     margin-right: 0
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1080px) {
     .who {
         font-size: 32px;
     }
@@ -385,4 +385,9 @@ $bg-qsn-4: #007B78;
     .us {
         font-size: 32px;
     }
+
+    .presentation {
+        padding-right: 0px;
+    }
 }
+
