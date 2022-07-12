@@ -191,7 +191,8 @@ $font-size : 5.8em;
           }
 
         .white_font_carousel {
-            color: white!important; 
+            color: white!important;
+            font-weight: bolder;
         }
 
         .punchline_carousel_2 {
@@ -206,6 +207,9 @@ $font-size : 5.8em;
         }
 }
 
+.interlock_white_img {
+    height: 20px;
+}
 
 .semi_circle_left_2 {
     position: absolute;
