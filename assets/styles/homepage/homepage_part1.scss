@@ -13,6 +13,8 @@ $font-size : 5.8em;
 ::before,
 ::after {
     color: $white;
+    padding: 0;
+    margin: 0;
 }
 
 body :is(h1, h2, h3, h4) {
@@ -36,7 +38,7 @@ section :is(p) {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100vw; 
+    
         section {
             margin-top: -105px !important;
         }
@@ -152,7 +154,60 @@ section :is(p) {
             font-size: 1.2em!important;
         }
       }
+
+      .semi_circle_right {
+        height: 12em;
+        width:10em;
+    }
 }
 
+@media screen and (max-width: 950px) {
+    .homepage_container {
+        margin-top:4em;
+      }
+    
+}
 
+@media screen and (max-width: 700px) {
+    
+    .body_text_container {
+        .share_economy {
+            font-size: 1.3em!important;
+        }
 
+        h1 {
+            font-size: 2em!important;
+            .transparent_weight {
+                font-weight: 600 !important;
+                font-size: 1em!important;
+            }
+        }
+      }
+    
+    .contact_btn {
+        width: 140px;
+        font-size: 0.9em;
+    }
+
+    .services_btn {
+        width: 140px;
+        font-size: 0.9em;
+    }
+
+    .homepage_container {
+        margin-top:4em;
+      }
+}
+
+@media screen and (max-width: 390px) {
+    
+    .body_text_container {
+        .share_economy {
+            font-size: 1.1em!important;
+        }
+
+        h1 {
+            font-size: 1.5em!important;
+        }
+      }
+}
