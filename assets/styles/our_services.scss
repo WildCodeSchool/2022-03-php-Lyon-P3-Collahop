@@ -33,12 +33,14 @@
     text-transform: uppercase;
     color: #7b7b7b;
     font-weight: bolder;
+    margin-bottom: 0% !important;
 }
 
 .our_services_title2 {
     font-size: 70px;
     font-weight: bolder;
     @include text-shadow;
+    margin-bottom: 0% !important;
 }
 
 .our_services_dvpmt {
@@ -46,6 +48,7 @@
     color: $color-logo;
     font-weight: bolder;
     @include text-shadow;
+    margin-bottom: 0% !important;
 }
 
 .our_services_text {
@@ -56,10 +59,15 @@
     text-align: justify;
 }
 
+.our_services_puces {
+    height: 70px;
+    font-family: poppins light !important;
+}
+
 .cards_img {
     background-image: url(../images/our_services.jpeg);
     background-size: cover;
-    height: 15rem;
+    height: 15rem !important;
     font-size: 6em;
     height: max-content;
     color: $color-logo;
@@ -71,13 +79,15 @@
     font-size: 25px;
     color: black;
     font-weight: bolder;
+    margin-top: 15px;
 }
 
 .cards_text {
     background-color: rgb(239, 235, 235);
     font-size: 25px;
     color: grey;
-    height: 15rem;
+    height: 18rem;
+    padding-bottom: 15px;
 }
 
 .contact_us_btn {

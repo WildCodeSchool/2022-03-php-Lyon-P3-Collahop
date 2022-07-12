@@ -56,6 +56,11 @@ $font-size : 5.8em;
     -webkit-text-stroke: 2px rgb(195, 195, 195);
 }
 
+.presentation {
+    padding-right: 100px;
+    min-height: 17rem;
+}
+
 .skill {
     font-size: 20px;
     font-weight: bolder;
@@ -191,7 +196,8 @@ $font-size : 5.8em;
           }
 
         .white_font_carousel {
-            color: white!important; 
+            color: white!important;
+            font-weight: bolder;
         }
 
         .punchline_carousel_2 {
@@ -206,6 +212,9 @@ $font-size : 5.8em;
         }
 }
 
+.interlock_white_img {
+    height: 20px;
+}
 
 .semi_circle_left_2 {
     position: absolute;
@@ -299,10 +308,11 @@ $bg-qsn-4: #007B78;
 .undertakings-div {
     margin-left: 10%;
 }
+
 .undertakings {
-    color: $color-image;
-    font-family: 'Poppins';
-    justify-self: start;
+        text-transform: uppercase;
+        font-size: calc(18px + 1.2vw);
+        color: #7b7b7b;
 }
 
 .undertakings-subtitle {
@@ -367,7 +377,7 @@ $bg-qsn-4: #007B78;
     margin-right: 0
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1080px) {
     .who {
         font-size: 32px;
     }
@@ -375,4 +385,9 @@ $bg-qsn-4: #007B78;
     .us {
         font-size: 32px;
     }
+
+    .presentation {
+        padding-right: 0px;
+    }
 }
+

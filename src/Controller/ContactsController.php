@@ -23,6 +23,7 @@ class ContactsController extends AbstractController
         $form->handleRequest($request);
 
         $warning = '';
+        $message = '';
         if ($form->isSubmitted()) {
             $data = $form->getData();
             if ($data instanceof Contact) {
@@ -30,10 +31,18 @@ class ContactsController extends AbstractController
                 if ($message) {
                     $warning = $formManager->incorrectMessage($message);
                 }
+                $email = $data->getEmail();
+                if ($email) {
+                    $contactExists = $contactRepository->findOneBy(['email' => $email]);
+                    if ($contactExists) {
+                        $contact = $contactExists;
+                    }
+                }
             }
         }
 
         if ($form->isSubmitted() && $form->isValid() && empty($warning)) {
+            $contact->setMessage($message);
             $contactRepository->add($contact, true);
 
             $this->addFlash('success', 'Votre message a été envoyé avec succès !');
