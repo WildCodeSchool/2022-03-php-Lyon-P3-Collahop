@@ -7,7 +7,7 @@
 	<body class="homepage-bg">
     	{% include ('_navbar.html.twig') %}
 		{% include "home/partials/_sidebar_user.html.twig" %}
-		<div class="container-fluid pt-5">
+		<div class="container-fluid m-0 p-0 pt-5">
 			<section class="row homepage_first_section">
 				{% for success, messages in app.flashes %}
 					{% for message in messages %}
@@ -23,7 +23,7 @@
 					<div class="body_text_container py-5 px-4 px-lg-0 ">
 						<div class="col-12 col-lg-11">
 							<h2 class="d-flex justify-content-center justify-content-md-start share_economy py-4 py-lg-3">Économie du partage</h2>
-							<h1 class="col-12 col-xl-8 col-sm-12 py-2">
+							<h1 class="col-12 col-xl-8 px-3 px-md-0 col-sm-12 py-2 justify-content-center">
 								<span class="transparent_weight">Vous êtes une entreprise
 								</span>
 								en quête de
@@ -31,7 +31,7 @@
 								?
 							</h1>
 
-							<p class="col-lg-9 col-xl-6 py-4">
+							<p class="col-lg-9 col-xl-6 py-4 px-3 px-md-0">
 								Collahop vous accompagne pour identifier les opportunités à saisir. Nous avons développé un marché de partage entre entreprises pour développer une économie plus circulaire et plus durable. Vous souhaitez développer vos connaissances sur l'économie collaborative ? Contactez-nous ou téléchargez notre livre blanc ci-dessous !
 							</p>
 						</div>
@@ -87,7 +87,7 @@
 			</section>
 		</div>
 		<div class="container-fluid-part2 col-xl-12 col-lg-12 d-flex justify-content-center mt-5">
-			<div class="row homepage_second_section col-xl-11 col-lg-11 p-5">
+			<div class="row homepage_second_section justify-content-center col-xl-11 col-lg-11 p-5">
 				<div class="col-xl-3 col-lg-11">
 					<div class="body_part2 p-4">
 						<h1 class="homepage_part2_title">Connaissez-vous
@@ -97,11 +97,11 @@
 							</span>
 						</h1>
 					</div>
-					<div class="summary_section p-4">
+					<div class="summary_section p-2 p-md-4">
 						<p>Pour un dirigeant, croître est un enjeu majeur et évoluer est une nécessité. Beaucoup d'entreprises souhaitent développer leur CA mais ne savent pas comment faire.Par manque de temps, d'investissement ou de ressources, vous vous retrouvez à stagner. Il s'agit de penser différemment et d'identifier les axes de développement de votre entreprise avec un diagnostic précis.</p>
 					</div>
 				</div>
-				<div class="row col-xl-9 col-lg-12 d-flex justify-content-around py-5">
+				<div class="row col-xl-9 col-lg-12 d-flex justify-content-around m-0 p-0 py-5">
 					<div class="punchline1 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
 						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline1.png') }}" alt="...">
 						<p class="punchline_text text-center px-2">Trouvez de nouvelles voies et solutions</p>
