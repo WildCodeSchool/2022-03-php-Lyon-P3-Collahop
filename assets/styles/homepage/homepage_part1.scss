@@ -36,7 +36,7 @@ section :is(p) {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100vw; 
+    
         section {
             margin-top: -105px !important;
         }
@@ -152,6 +152,34 @@ section :is(p) {
             font-size: 1.2em!important;
         }
       }
+}
+
+@media screen and (max-width: 950px) {
+    
+    .body_text_container {
+        .share_economy {
+            font-size: 1.8em!important;
+            letter-spacing: 0.2em!important;
+        }
+        h1 {
+            font-size: 34px!important;
+            line-height: 1em!important;
+        }
+        p {
+            font-size: 1.2em!important;
+        }
+      }
+    
+    .homepage_container {
+        margin-top:4em;
+      }
+}
+
+@media screen and (max-width: 1400px) {
+    .semi_circle_right {
+        height: 12em;
+        width:10em;
+    }
 }
 
 

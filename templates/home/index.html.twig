@@ -16,14 +16,14 @@
 						</div>
 					{% endfor %}
 				{% endfor %}
-				<div class="col-sm-1  p-0">
+				<div class="col-sm-1 p-0 d-none d-lg-block">
 					<div class="semi_circle_left mt-4"></div>
 				</div>
-				<div class="col-sm-10 p-0">
-					<div class="body_text_container py-5 ">
+				<div class="col-lg-10 col-12 p-0 homepage_container">
+					<div class="body_text_container py-5 px-4 px-lg-0 ">
 						<div class="col-lg-11">
-							<h2 class="share_economy py-3">Économie du partage</h2>
-							<h1 class="col-lg-8 col-sm-12 py-2">
+							<h2 class="share_economy py-4 py-lg-3">Économie du partage</h2>
+							<h1 class="col-11 col-xl-8 col-sm-12 py-2">
 								<span class="transparent_weight">Vous êtes une entreprise
 								</span>
 								en quête de
@@ -31,11 +31,11 @@
 								?
 							</h1>
 
-							<p class="col-lg-6 py-4">
+							<p class="col-lg-9 col-xl-6 py-4">
 								Collahop vous accompagne pour identifier les opportunités à saisir. Nous avons développé un marché de partage entre entreprises pour développer une économie plus circulaire et plus durable. Vous souhaitez développer vos connaissances sur l'économie collaborative ? Contactez-nous ou téléchargez notre livre blanc ci-dessous !
 							</p>
 						</div>
-						<div class="buttons col-lg-4 fs-5">
+						<div class="buttons border col-lg-6 fs-5 d-flex justify-content-evenly justify-content-lg-start">
 						 	<a class="text-decoration-none" href="{{ path('app_contacts')}}">
 								<button type="button" class="contact_btn">Contact</button>
 							</a>
@@ -45,12 +45,12 @@
 						</div>
 					</div>
 
-					<div class="row justify-content-md-center align-items-end rectangle_group p-0 m-0 mt-3">
+					<div class="row justify-content-md-center align-items-end border rectangle_group p-0 m-0 mt-3">
 						<div class="row col-lg-4 m-0 rectangle_1 m-0">
-							<div class="col-lg-4 rectangle_img py-2">
+							<div class="col-3 col-lg-4 rectangle_img py-2 d-flex align-items-center align-items-lg-start">
 								<img src="{{ asset('build/images/homepage_img/rectangle_1_home.png') }}" class="img-fluid" alt="Social medias picture">
 							</div>
-							<div class="col-lg-8 encart_body_1 pt-4">
+							<div class="col-9 col-lg-8 encart_body_1 pt-4">
 								<h4>Etude & Diagnostic</h4>
 								<p class="rectangle_text">
 									Disposez d’une stratégie claire et cohérente pour renforcer votre position. On crée un plan de transformation clé en main en intégrant l’économie du partage dans votre stratégie.
@@ -58,10 +58,10 @@
 							</div>
 						</div>
 						<div class="row col-lg-4 rectangle_2 m-0">
-							<div class="col-lg-4 rectangle_img py-2">
+							<div class="col-lg-4 col-3 rectangle_img d-flex align-items-center align-items-lg-start py-2">
 								<img src="{{ asset('build/images/homepage_img/rectangle_2_home.png') }}" class="img-fluid" alt="Talking icone picture">
 							</div>
-							<div class="col-lg-8 pt-4">
+							<div class="col-lg-8 col-9 pt-4">
 								<h4>Consulting</h4>
 								<p class="rectangle_text">
 									Nos compétences stratégiques nous permettent de vous conseiller sur vos choix à court, moyen et long terme. Nous vous apportons des recommandations opérationnelles avec des objectifs concrets et réalisables.
@@ -69,10 +69,10 @@
 							</div>
 						</div>
 						<div class=" row col-lg-4 rectangle_3 m-0">
-							<div class="col-lg-4 rectangle_img py-2">
+							<div class="col-lg-4 col-3 d-flex align-items-center align-items-lg-start rectangle_img py-2">
 								<img src="{{ asset('build/images/homepage_img/rectangle_3_home.png') }}" class="img-fluid" alt="Pen and nodes">
 							</div>
-							<div class="col-lg-8 pt-4">
+							<div class="col-lg-8 col-9 pt-4">
 								<h4>Solution personnalisée</h4>
 								<p class="rectangle_text">
 									Chaque entreprise est unique, c’est pourquoi la réponse que nous apportons n’est pas stéréotypée et s’appliquera uniquement à vous. La bonne solution est celle que nous construisons ensemble.
@@ -82,7 +82,7 @@
 					</div>
 				</div>
 				<div class="col-lg-1 d-flex justify-content-end align-items-center p-0">
-					<div class="semi_circle_right d-flex"></div>
+					<div class="semi_circle_right d-none d-lg-block"></div>
 				</div>
 			</section>
 		</div>
