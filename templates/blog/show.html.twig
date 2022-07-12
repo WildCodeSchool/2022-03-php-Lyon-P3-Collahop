@@ -17,7 +17,11 @@
 					<div class="img" style="background-image: url({{ article.image }});"></div>
 				</div>
 				<div class="show_blog_article_title text-center">{{ article.title }}</div>
-				<div class="show_blog_article_content">{{ article.articleContent }}</div>
+				<div class="show_blog_article_content">
+					{% autoescape %}
+						{{ article.articleContent|raw }}
+					{% endautoescape %}
+				</div>
 				<div class="date_div m-3">
 					<div class="date">{{ article.date|date('d/m/Y') }}</div>
 				</div>
