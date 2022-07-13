@@ -22,7 +22,10 @@
 						{{ article.articleContent|raw }}
 					{% endautoescape %}
 				</div>
-				<div class="date_div m-3">
+				<div class="date_div">
+					<a href="{{ path('app_blog')}}">
+						<button type="button" class="back_btn">Retour</button>
+					</a>
 					<div class="date">{{ article.date|date('d/m/Y') }}</div>
 				</div>
 			</div>
