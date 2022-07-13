@@ -7,7 +7,7 @@
 	<body class="homepage-bg">
 		{% include ('_navbar.html.twig') %}
 		{% include "home/partials/_sidebar_user.html.twig" %}
-		<div class="container-fluid m-0 p-0 pt-5">
+		<div class="container-fluid pt-5">
 			<section class="row homepage_first_section">
 				{% for success, messages in app.flashes %}
 					{% for message in messages %}
@@ -51,7 +51,7 @@
 								<img src="{{ asset('build/images/homepage_img/rectangle_1_home.png') }}" class="img-fluid" alt="Social medias picture">
 							</div>
 							<div class="col-9 col-md-8 pt-4">
-								<h4>Etude & Diagnostic</h4>
+								<h4 class="frames-subtitles">Etude & Diagnostic</h4>
 								<p class="rectangle_text">
 									Disposez d’une stratégie claire et cohérente pour renforcer votre position. On crée un plan de transformation clé en main en intégrant l’économie du partage dans votre stratégie.
 								</p>
@@ -62,7 +62,7 @@
 								<img src="{{ asset('build/images/homepage_img/rectangle_2_home.png') }}" class="img-fluid" alt="Talking icone picture">
 							</div>
 							<div class="col-md-8 col-9 pt-4">
-								<h4>
+								<h4 class="frames-subtitles">
 									Offre & Consulting</h4>
 								<p class="rectangle_text">
 									Nos compétences stratégiques nous permettent de vous conseiller sur vos choix à court, moyen et long terme. Nous vous apportons des recommandations opérationnelles avec des objectifs concrets et réalisables.
@@ -74,7 +74,7 @@
 								<img src="{{ asset('build/images/homepage_img/rectangle_3_home.png') }}" class="img-fluid" alt="Pen and nodes">
 							</div>
 							<div class="col-md-8 col-9 pt-4">
-								<h4>Solution personnalisée</h4>
+								<h4 class="frames-subtitles">Solution personnalisée</h4>
 								<p class="rectangle_text">
 									Chaque entreprise est unique, c’est pourquoi la réponse que nous apportons n’est pas stéréotypée et s’appliquera uniquement à vous. La bonne solution est celle que nous construisons ensemble.
 								</p>
@@ -90,7 +90,7 @@
 		<div class="container-fluid-part2 col-xl-12 col-lg-12 d-flex justify-content-center mt-5">
 			<div class="row homepage_second_section justify-content-center col-xl-11 col-lg-11 p-2">
 				<div class="h-auto col-xl-4 col-lg-12 col-10">
-					<div class="body_part2 p-4">
+					<div class="body_part2 text-center p-md-4">
 						<h1 class="homepage_part2_title">Connaissez-vous
 							<span class="transparent_weight_part2">vos leviers
 							</span>
