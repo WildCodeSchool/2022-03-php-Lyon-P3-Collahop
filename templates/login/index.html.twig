@@ -22,12 +22,12 @@
 
 						<div class="id_form_login">
 							<label class="form_label" for="username">Identifiant :</label>
-							<input type="email" id="username" class="" name="_username" value="{{ last_username }}" placeholder="Email" required/>
+							<input type="email" id="username" class="identification" name="_username" value="{{ last_username }}" placeholder="Email" required/>
 						</div>
 
 						<div class="pass_form_login">
 							<label class="form_label" for="password">Mot de passe :</label>
-							<input type="password" id="password" class="" name="_password" placeholder="Mot de passe" required/>
+							<input type="password" id="password" class="password" name="_password" placeholder="Mot de passe" required/>
 						</div>
 
 						<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
