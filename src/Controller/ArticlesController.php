@@ -26,6 +26,7 @@ class ArticlesController extends AbstractController
     {
         $article = new Articles();
         $article->setDate();
+        $article->setArticleContent(" ");
         $form = $this->createForm(ArticlesType::class, $article);
         $form->handleRequest($request);
 

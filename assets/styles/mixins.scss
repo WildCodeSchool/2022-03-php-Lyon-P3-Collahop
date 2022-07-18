@@ -34,14 +34,10 @@
         font-size: 0.9em;
         padding-right: 30px;
         padding-top: 20px;
-        padding-bottom: 0px;
-        text-align: $text-align;
+        padding-bottom: 5px;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        -webkit-line-clamp: 6;
         display: -webkit-box;
-        word-wrap: break-word;
 }
 
 @mixin punchline {
