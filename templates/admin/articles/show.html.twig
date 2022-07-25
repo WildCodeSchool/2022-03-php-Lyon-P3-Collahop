@@ -5,26 +5,30 @@
 
 {% block body %}
 	<body class="bg-index-articles d-flex justify-content-center">
-        {{ include('admin/partials/_sidebar_admin.html.twig') }}
-        <div class="article-frame-show h-100 d-flex flex-column align-items-center justify-content-between rounded-3 m-2">
+		{{ include('admin/partials/_sidebar_admin.html.twig') }}
+		<div class="article-frame-show h-100 d-flex flex-column align-items-center justify-content-between rounded-3">
 			<div class="w-100">
 				<h3 class="text-center p-3 article-admin-title m-0">{{ article.title }}</h3>
-                <p class="d-flex justify-content-center m-2"><img class="article-show-img" src="{{ article.image }}"></p>
-				<p class="h-100 text-break text-start p-3 m-3" colspan="2">{{ article.articleSumary }}</p>
+				<p class="d-flex justify-content-center m-2"><img class="article-show-img" src="{{ article.image }}"></p>
+				<div class="admin-article-content h-100 text-break text-start p-3 m-3" colspan="2">
+					{% autoescape %}
+						{{ article.articleContent|raw }}
+					{% endautoescape %}
+				</div>
 				<div>
 					<p class="d-flex justify-content-center m-0">
 						<a href="{{ path('app_articles_edit', {'id': article.id}) }}">
 							<button type="button" class="btn btn-article-cancel fw-bold py-1 px-2 mx-0">Modifier</button>
 						</a>
 					</p>
-                    <div class="d-flex flex-column align-items-center">
-                        {{ include('admin/articles/_delete_form.html.twig') }}
-                        <a class ="p-2" href="{{ path('app_articles_index') }}">Retour</a>
-                    </div>
+					<div class="d-flex flex-column align-items-center">
+						{{ include('admin/articles/_delete_form.html.twig') }}
+						<a class="p-2" href="{{ path('app_articles_index') }}">Retour</a>
+					</div>
 					<p class="text-end my-0 mx-2">{{ article.date ? article.date|date('d-m-y H:i:s', 'europe/paris') : '' }}</p>
 				</div>
 			</div>
 		</div>
-		
+
 	</body>
 {% endblock %}

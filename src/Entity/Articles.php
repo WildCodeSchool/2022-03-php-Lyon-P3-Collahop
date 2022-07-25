@@ -22,8 +22,8 @@ class Articles
     #[ORM\Column(type: 'string', length: 255)]
     private string $image;
 
-    #[ORM\Column(type: 'text')]
-    private string $articleContent;
+    #[ORM\Column(type: 'text', nullable: true)]
+    private ?string $articleContent;
 
     #[ORM\Column(type: 'text')]
     #[Assert\Length(max: 360, maxMessage: 'Le résumé est limité à 360 caractères')]
@@ -66,7 +66,7 @@ class Articles
         return $this->articleContent;
     }
 
-    public function setArticleContent(string $articleContent): self
+    public function setArticleContent(?string $articleContent): self
     {
         $this->articleContent = $articleContent;
 
