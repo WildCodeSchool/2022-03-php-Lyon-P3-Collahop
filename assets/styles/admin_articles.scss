@@ -87,9 +87,16 @@
 
 .article-frame-show {
     background-color:rgba(23, 94, 82, 0.7);
-    width: 54em;
+    width: 70em;
+    margin-left: 15em;
 }
 
 .article-show-img {
     height: 20em;
+}
+
+.admin-article-content { 
+    img {
+    max-width: 99%;
+    }
 }
