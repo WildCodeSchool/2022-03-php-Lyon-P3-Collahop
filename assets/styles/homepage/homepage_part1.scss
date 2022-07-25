@@ -63,7 +63,9 @@ section :is(p) {
 }
 
 /* ===== Text container for the homepage ===== */
-
+.frames-subtitles {
+    font-size: 1.3rem;
+}
 .body_text_container {
     .share_economy {
         font-size: 2.2em;
@@ -117,21 +119,20 @@ section :is(p) {
 
 .rectangle_group {
     padding-top: 30px;
-    
-    .rectangle_text {
-        @include rectangle-text;
-    }
-
+ 
     .rectangle_1 {
         background-color: $color-logo;
+        height: 16rem;
     }
 
     .rectangle_2 {
         background-color: #a19696;
+        height: 16rem;
     }
 
     .rectangle_3 {
         background-color: #313843;
+        height: 16rem;
     }
 
     .rectangle_img {

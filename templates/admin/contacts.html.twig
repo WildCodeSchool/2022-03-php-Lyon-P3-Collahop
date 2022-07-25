@@ -28,8 +28,12 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body listMailBody" id="listMails">
+						{% set contactsArray = [] %}
 						{% for contact in contacts %}
-							{{ contact.email }};
+							{% if contact.email not in contactsArray %}
+								{{ contact.email }};
+								{% set contactsArray = contactsArray|merge([contact.email]) %}
+							{% endif %}
 						{% endfor %}
 					</div>
 					<div class="modal-footer">
@@ -53,9 +57,11 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body listMailSSubscribedBody" id="listMailsSubscribed">
+						{% set contactsArray = [] %}
 						{% for contact in contacts %}
-							{% if contact.newsletterSubscribe == true %}
-								{{ contact.email }}
+							{% if contact.newsletterSubscribe == true and contact.email not in contactsArray %}
+								{{ contact.email }};
+								{% set contactsArray = contactsArray|merge([contact.email]) %}
 							{% endif %}
 						{% endfor %}
 					</div>
@@ -86,21 +92,25 @@
 					</tr>
 				</thead>
 				<tbody>
+					{% set contactsArray = [] %}
 					{% for contact in contacts %}
-						<tr>
-							<td scope="row">
-								{{ contact.lastname }}
-							</td>
-							<td>
-								{{ contact.firstname }}
-							</td>
-							<td>
-								{{ contact.company }}
-							</td>
-							<td>
-								{{ contact.email }}
-							</td>
-						</tr>
+						{% if contact.email not in contactsArray %}
+							<tr>
+								<td scope="row">
+									{{ contact.lastname }}
+								</td>
+								<td>
+									{{ contact.firstname }}
+								</td>
+								<td>
+									{{ contact.company }}
+								</td>
+								<td>
+									{{ contact.email }}
+								</td>
+							</tr>
+							{% set contactsArray = contactsArray|merge([contact.email]) %}
+						{% endif %}
 					{% endfor %}
 				</tbody>
 			</table>
@@ -109,3 +119,5 @@
 	</body>
 
 {% endblock %}
+
+

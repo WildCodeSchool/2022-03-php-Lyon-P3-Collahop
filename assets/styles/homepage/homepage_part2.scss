@@ -5,11 +5,11 @@
 
 .transparent_weight_part2 {
     @include transparent-weight;
-    font-size: 60px;
+    font-size: 2.3rem;
 }
 
 .growth_word_part2 {
-    font-size: 38px;
+    font-size: 2.3rem;
     color: $color-logo;
     @include text-shadow;
 }
@@ -25,7 +25,7 @@
 
 .summary_section {
     text-align : $text-align;
-    font-size: 22px;
+    font-size: 1.3rem;
 }
 
 .punchline1 {
@@ -51,19 +51,19 @@
 .punchline_text {
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.1em;
     @include text-shadow;  
 }
 
 .get_one_hour {
-    font-size: 50px;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
 .diagnostic {
-    height: 70px;
+    height: 2.2em;
     color: #141726;
-    font-size: 38px;
+    font-size: 1.5rem;
     font-weight: 600;
     border: white 1px solid;
     border-radius: 30px;
@@ -77,10 +77,10 @@
         font-size: 24px;
     }
     .homepage_part2_title {
-        font-size: 32px;
+        font-size: 26px;
     }
     .transparent_weight_part2 {
-        font-size: 36px;
+        font-size: 26px;
     }
     .growth_word_part2 {
         font-size: 26px;

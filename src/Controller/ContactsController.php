@@ -31,13 +31,6 @@ class ContactsController extends AbstractController
                 if ($message) {
                     $warning = $formManager->incorrectMessage($message);
                 }
-                $email = $data->getEmail();
-                if ($email) {
-                    $contactExists = $contactRepository->findOneBy(['email' => $email]);
-                    if ($contactExists) {
-                        $contact = $contactExists;
-                    }
-                }
             }
         }
 

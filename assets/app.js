@@ -52,7 +52,7 @@ window.onload = () => {
             rangeSubscribe.selectNode(document.getElementById(containerSubscribeId));
             window.getSelection().addRange(rangeSubscribe);
             document.execCommand("copy");
-            alert("Toutes les adresses mail on été copié");
+            alert("Toutes les adresses mail on été copiées");
         });
     }
 };

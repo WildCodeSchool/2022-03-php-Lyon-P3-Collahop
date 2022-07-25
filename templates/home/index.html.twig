@@ -5,9 +5,9 @@
 
 {% block body %}
 	<body class="homepage-bg">
-    	{% include ('_navbar.html.twig') %}
+		{% include ('_navbar.html.twig') %}
 		{% include "home/partials/_sidebar_user.html.twig" %}
-		<div class="container-fluid m-0 p-0 pt-5">
+		<div class="container-fluid pt-5">
 			<section class="row homepage_first_section">
 				{% for success, messages in app.flashes %}
 					{% for message in messages %}
@@ -36,7 +36,7 @@
 							</p>
 						</div>
 						<div class="buttons col-lg-6 fs-5 d-flex justify-content-around justify-content-md-start">
-						 	<a class="text-decoration-none" href="{{ path('app_contacts')}}">
+							<a class="text-decoration-none" href="{{ path('app_contacts')}}">
 								<button type="button" class="contact_btn">Contact</button>
 							</a>
 							<a class="dowload_ebook" href="{{ path('ebook_form') }}">
@@ -51,7 +51,7 @@
 								<img src="{{ asset('build/images/homepage_img/rectangle_1_home.png') }}" class="img-fluid" alt="Social medias picture">
 							</div>
 							<div class="col-9 col-md-8 pt-4">
-								<h4>Etude & Diagnostic</h4>
+								<h4 class="frames-subtitles">Etude & Diagnostic</h4>
 								<p class="rectangle_text">
 									Disposez d’une stratégie claire et cohérente pour renforcer votre position. On crée un plan de transformation clé en main en intégrant l’économie du partage dans votre stratégie.
 								</p>
@@ -62,7 +62,8 @@
 								<img src="{{ asset('build/images/homepage_img/rectangle_2_home.png') }}" class="img-fluid" alt="Talking icone picture">
 							</div>
 							<div class="col-md-8 col-9 pt-4">
-								<h4> Offre & Consulting</h4>
+								<h4 class="frames-subtitles">
+									Offre & Consulting</h4>
 								<p class="rectangle_text">
 									Nos compétences stratégiques nous permettent de vous conseiller sur vos choix à court, moyen et long terme. Nous vous apportons des recommandations opérationnelles avec des objectifs concrets et réalisables.
 								</p>
@@ -73,7 +74,7 @@
 								<img src="{{ asset('build/images/homepage_img/rectangle_3_home.png') }}" class="img-fluid" alt="Pen and nodes">
 							</div>
 							<div class="col-md-8 col-9 pt-4">
-								<h4>Solution personnalisée</h4>
+								<h4 class="frames-subtitles">Solution personnalisée</h4>
 								<p class="rectangle_text">
 									Chaque entreprise est unique, c’est pourquoi la réponse que nous apportons n’est pas stéréotypée et s’appliquera uniquement à vous. La bonne solution est celle que nous construisons ensemble.
 								</p>
@@ -87,9 +88,9 @@
 			</section>
 		</div>
 		<div class="container-fluid-part2 col-xl-12 col-lg-12 d-flex justify-content-center mt-5">
-			<div class="row homepage_second_section justify-content-center col-xl-11 col-lg-11 p-5">
-				<div class="col-xl-3 col-lg-11">
-					<div class="body_part2 p-4">
+			<div class="row homepage_second_section justify-content-center col-xl-11 col-lg-11 p-2">
+				<div class="h-auto col-xl-4 col-lg-12 col-10">
+					<div class="body_part2 text-center p-md-4">
 						<h1 class="homepage_part2_title">Connaissez-vous
 							<span class="transparent_weight_part2">vos leviers
 							</span>
@@ -101,29 +102,33 @@
 						<p>Pour un dirigeant, croître est un enjeu majeur et évoluer est une nécessité. Beaucoup d'entreprises souhaitent développer leur CA mais ne savent pas comment faire.Par manque de temps, d'investissement ou de ressources, vous vous retrouvez à stagner. Il s'agit de penser différemment et d'identifier les axes de développement de votre entreprise avec un diagnostic précis.</p>
 					</div>
 				</div>
-				<div class="row col-xl-9 col-lg-12 d-flex justify-content-around m-0 p-0 py-5">
-					<div class="punchline1 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
-						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline1.png') }}" alt="...">
-						<p class="punchline_text text-center px-2">Trouvez de nouvelles voies et solutions</p>
+				<div class="h-auto d-flex flex-column col-xl-8 col-lg-12 col-10">
+					<div class="row gx-3 d-flex justify-content-around m-0 p-0 pt-3">
+						<div class="punchline1 h-auto col col-9 col-md-5 col-xl-2 d-flex align-items-center flex-column my-4">
+							<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline1.png') }}" alt="...">
+							<p class="punchline_text text-center px-2">Trouvez de nouvelles voies et solutions</p>
+						</div>
+						<div class="punchline2 h-auto col col-9 col-md-5 col-xl-2 d-flex align-items-center flex-column my-4">
+							<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline2.png') }}" alt="...">
+							<p class="punchline_text text-center px-2">Enrichissez vos axes de réflexion et d'innovation</p>
+						</div>
+						<div class="punchline3 h-auto col col-9 col-md-5 col-xl-2 d-flex align-items-center flex-column my-4">
+							<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline3.png') }}" alt="...">
+							<p class="punchline_text text-center px-2">Descontruisez votre façon de penser</p>
+						</div>
+						<div class="punchline4 h-auto col col-9 col-md-5 col-xl-2 d-flex align-items-center flex-column my-4">
+							<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline4.png') }}" alt="...">
+							<p class="punchline_text text-center px-2">Intégrez l'économie du partage dans votre stratégie</p>
+						</div>
 					</div>
-					<div class="punchline2 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
-						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline2.png') }}" alt="...">
-						<p class="punchline_text text-center px-2">Enrichissez vos axes de réflexion et d'innovation</p>
-					</div>
-					<div class="punchline3 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
-						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline3.png') }}" alt="...">
-						<p class="punchline_text text-center px-2">Descontruisez votre façon de penser</p>
-					</div>
-					<div class="punchline4 col-xl-2 col-lg-5 d-flex align-items-center flex-column my-4">
-						<img class="homepage_part2_img" src="{{ asset('build/images/homepage_img/logo_punchline4.png') }}" alt="...">
-						<p class="punchline_text text-center px-2">Intégrez l'économie du partage dans votre stratégie</p>
-					</div>
-					<div class="d-flex flex-column align-items-center">
-						<img class="timer" src="{{ asset('build/images/homepage_img/horloge.png') }}" alt="...">
-						<p class="get_one_hour d-flex text-center">Vous avez une heure devant vous ?</p>
-					</div>
-					<div class="d-flex justify-content-center">
-						<p class="diagnostic d-flex align-items-center px-4">Diagnostic offert</p>
+					<div class="row">
+						<div class="d-flex flex-column align-items-center">
+							<img class="timer" src="{{ asset('build/images/homepage_img/horloge.png') }}" alt="...">
+							<p class="get_one_hour d-flex text-center">Vous avez une heure devant vous ?</p>
+						</div>
+						<div class="d-flex justify-content-center">
+							<p class="diagnostic d-flex align-items-center px-4">Diagnostic offert</p>
+						</div>
 					</div>
 				</div>
 			</div>
