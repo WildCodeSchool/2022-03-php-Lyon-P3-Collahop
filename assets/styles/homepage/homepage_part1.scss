@@ -117,26 +117,63 @@ section :is(p) {
 
 /* ===== Rectangle group homepage section ===== */
 
-.rectangle_group {
-    padding-top: 30px;
- 
+.rectangle_group { 
+    padding: 0;
+
+    .row_table{
+        --bs-gutter-x: 0;
+    }
+
     .rectangle_1 {
         background-color: $color-logo;
-        height: 16rem;
+
+        padding: 0;
     }
 
     .rectangle_2 {
         background-color: #a19696;
-        height: 16rem;
+        padding: 0;
     }
 
     .rectangle_3 {
         background-color: #313843;
-        height: 16rem;
+        padding: 0;
+    }
+
+    .test{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .testt{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rectangle_title{
+        height: 20%;
+    }
+
+    .rectangle_text{
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .rectangle_img {
-        max-width: 130px;
+        width: 20%;
+        padding: 0 0 0 10px;
+    }
+
+    p{
+        margin: 0;
     }
 }
 
@@ -147,10 +184,12 @@ section :is(p) {
             font-size: 1.8em!important;
             letter-spacing: 0.2em!important;
         }
+
         h1 {
             font-size: 64px!important;
             line-height: 1em!important;
         }
+
         p {
             font-size: 1.2em!important;
         }
@@ -162,15 +201,27 @@ section :is(p) {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .rectangle_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .img-fluid {
+    max-width: 60%;
+    }
+}
+
 @media screen and (max-width: 950px) {
     .homepage_container {
         margin-top:4em;
       }
-    
 }
 
 @media screen and (max-width: 700px) {
-    
     .body_text_container {
         .share_economy {
             font-size: 1.3em!important;
@@ -183,7 +234,7 @@ section :is(p) {
                 font-size: 1em!important;
             }
         }
-      }
+    }
     
     .contact_btn {
         width: 140px;
@@ -197,7 +248,13 @@ section :is(p) {
 
     .homepage_container {
         margin-top:4em;
-      }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .row_table{
+        padding: 0 10px 0 10px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -210,5 +267,5 @@ section :is(p) {
         h1 {
             font-size: 1.5em!important;
         }
-      }
+    }
 }
