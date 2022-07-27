@@ -124,3 +124,21 @@ SOFTWARE.
 
 ## Acknowledgments
 
+## Create administor account
+
+In the terminal, copy/past this command :
+  symfony console security:hash-password
+
+After that, you have to write the password to hash it.
+Copy the password hash
+
+In the terminal, write this command and replace "USERNAME" by the user of the database:
+  mysql -u USERNAME -p
+
+Write the user password of the database.
+
+Use the database by writing this command:
+  USE collahop;
+
+To finish, you just have to write this command replacing "EMAILADMIN" by the email of the administrator and replacing "PASSWORDHASH" by the password hashed a few lines before:
+  INSERT INTO user (email, roles, password) VALUES ('EMAILADMIN', '["ROLE_ADMIN"]', 'PASSWORDHASH');
